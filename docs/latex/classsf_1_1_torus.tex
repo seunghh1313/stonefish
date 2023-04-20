@@ -1,0 +1,90 @@
+\hypertarget{classsf_1_1_torus}{}\doxysection{sf\+::Torus Class Reference}
+\label{classsf_1_1_torus}\index{sf::Torus@{sf::Torus}}
+
+
+A class representing a torus-\/shaped rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Torus.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Torus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_torus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Torus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_torus__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_torus_a24b81cc3ca4cb666c6acbd11c707565c}{Torus}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, Scalar major\+Radius, Scalar minor\+Radius, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_torus_a9205db80966ee8a7225c8ab67772c3f9}\label{classsf_1_1_torus_a9205db80966ee8a7225c8ab67772c3f9}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_torus_a9205db80966ee8a7225c8ab67772c3f9}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_torus_a7b9f0a29823c3bc57bd3777bceb029ac}\label{classsf_1_1_torus_a7b9f0a29823c3bc57bd3777bceb029ac}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_torus_a7b9f0a29823c3bc57bd3777bceb029ac}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape for the torus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a torus-\/shaped rigid body. 
+
+Definition at line 34 of file Torus.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_torus_a24b81cc3ca4cb666c6acbd11c707565c}\label{classsf_1_1_torus_a24b81cc3ca4cb666c6acbd11c707565c}} 
+\index{sf::Torus@{sf::Torus}!Torus@{Torus}}
+\index{Torus@{Torus}!sf::Torus@{sf::Torus}}
+\doxysubsubsection{\texorpdfstring{Torus()}{Torus()}}
+{\footnotesize\ttfamily sf\+::\+Torus\+::\+Torus (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{Scalar}]{major\+Radius,  }\item[{Scalar}]{minor\+Radius,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the torus \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em major\+Radius} & a major radius of the torus \\
+\hline
+{\em minor\+Radius} & a minor radius of the torus \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for torus) \\
+\hline
+{\em material} & the name of the material the torus is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the torus walls, if positive the torus is treated as shell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Torus.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Torus.\+h\item 
+Library/src/entities/solids/Torus.\+cpp\end{DoxyCompactItemize}

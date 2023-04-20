@@ -1,0 +1,163 @@
+\hypertarget{classsf_1_1_fixed_joint}{}\doxysection{sf\+::Fixed\+Joint Class Reference}
+\label{classsf_1_1_fixed_joint}\index{sf::FixedJoint@{sf::FixedJoint}}
+
+
+A class representing a fixed joint.  
+
+
+
+
+{\ttfamily \#include $<$Fixed\+Joint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Fixed\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classsf_1_1_fixed_joint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Fixed\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classsf_1_1_fixed_joint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_fixed_joint_a677addb30921a57290050cf0409d0e30}{Fixed\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid)
+\begin{DoxyCompactList}\small\item\em A constructor to create fixed joint between solid and world. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_fixed_joint_a57813388dcd94c44cb07c949c52d5327}{Fixed\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidA, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidB)
+\begin{DoxyCompactList}\small\item\em A constructor to create fixed joint between two solid bodies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_fixed_joint_affb4df75822cd1179c6dccfe92bf8487}{Fixed\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid, \mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$fe, int link\+Id, const Vector3 \&pivot)
+\begin{DoxyCompactList}\small\item\em A constructor to create fixed joint between a solid body and a link of a multibody. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_fixed_joint_ab13e2e68d95ff8b3bf7605141a24d73a}{Fixed\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$feA, \mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$feB, int link\+IdA, int link\+IdB, const Vector3 \&pivot)
+\begin{DoxyCompactList}\small\item\em A constructor to create fixed joint between two multibodies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_a66d3bf51eb5d291853e2d44538932d60}\label{classsf_1_1_fixed_joint_a66d3bf51eb5d291853e2d44538932d60}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_fixed_joint_a66d3bf51eb5d291853e2d44538932d60}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_a241a773d2c4dc22fbb5158f8de20ce46}\label{classsf_1_1_fixed_joint_a241a773d2c4dc22fbb5158f8de20ce46}} 
+Joint\+Type \mbox{\hyperlink{classsf_1_1_fixed_joint_a241a773d2c4dc22fbb5158f8de20ce46}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a fixed joint. 
+
+Definition at line 37 of file Fixed\+Joint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_a677addb30921a57290050cf0409d0e30}\label{classsf_1_1_fixed_joint_a677addb30921a57290050cf0409d0e30}} 
+\index{sf::FixedJoint@{sf::FixedJoint}!FixedJoint@{FixedJoint}}
+\index{FixedJoint@{FixedJoint}!sf::FixedJoint@{sf::FixedJoint}}
+\doxysubsubsection{\texorpdfstring{FixedJoint()}{FixedJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily sf\+::\+Fixed\+Joint\+::\+Fixed\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid }\end{DoxyParamCaption})}
+
+
+
+A constructor to create fixed joint between solid and world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em solid} & a pointer to the solid body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Fixed\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_a57813388dcd94c44cb07c949c52d5327}\label{classsf_1_1_fixed_joint_a57813388dcd94c44cb07c949c52d5327}} 
+\index{sf::FixedJoint@{sf::FixedJoint}!FixedJoint@{FixedJoint}}
+\index{FixedJoint@{FixedJoint}!sf::FixedJoint@{sf::FixedJoint}}
+\doxysubsubsection{\texorpdfstring{FixedJoint()}{FixedJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily sf\+::\+Fixed\+Joint\+::\+Fixed\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidA,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidB }\end{DoxyParamCaption})}
+
+
+
+A constructor to create fixed joint between two solid bodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em solidA} & a pointer to the first solid body \\
+\hline
+{\em solidB} & a pointer to the second solid body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Fixed\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_affb4df75822cd1179c6dccfe92bf8487}\label{classsf_1_1_fixed_joint_affb4df75822cd1179c6dccfe92bf8487}} 
+\index{sf::FixedJoint@{sf::FixedJoint}!FixedJoint@{FixedJoint}}
+\index{FixedJoint@{FixedJoint}!sf::FixedJoint@{sf::FixedJoint}}
+\doxysubsubsection{\texorpdfstring{FixedJoint()}{FixedJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily sf\+::\+Fixed\+Joint\+::\+Fixed\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid,  }\item[{\mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$}]{fe,  }\item[{int}]{link\+Id,  }\item[{const Vector3 \&}]{pivot }\end{DoxyParamCaption})}
+
+
+
+A constructor to create fixed joint between a solid body and a link of a multibody. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em solid} & a pointer to the solid body \\
+\hline
+{\em fe} & a pointer to the multibody \\
+\hline
+{\em link\+Id} & an index of the link of the multibody \\
+\hline
+{\em pivot} & a connection point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Fixed\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_fixed_joint_ab13e2e68d95ff8b3bf7605141a24d73a}\label{classsf_1_1_fixed_joint_ab13e2e68d95ff8b3bf7605141a24d73a}} 
+\index{sf::FixedJoint@{sf::FixedJoint}!FixedJoint@{FixedJoint}}
+\index{FixedJoint@{FixedJoint}!sf::FixedJoint@{sf::FixedJoint}}
+\doxysubsubsection{\texorpdfstring{FixedJoint()}{FixedJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily sf\+::\+Fixed\+Joint\+::\+Fixed\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$}]{feA,  }\item[{\mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$}]{feB,  }\item[{int}]{link\+IdA,  }\item[{int}]{link\+IdB,  }\item[{const Vector3 \&}]{pivot }\end{DoxyParamCaption})}
+
+
+
+A constructor to create fixed joint between two multibodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em feA} & a pointer to the first multibody \\
+\hline
+{\em feB} & a pointer to the second multibody \\
+\hline
+{\em link\+IdA} & an index of the link of the first multibody \\
+\hline
+{\em link\+IdB} & an index of the link of the second multibody \\
+\hline
+{\em pivot} & a connection point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Fixed\+Joint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/joints/Fixed\+Joint.\+h\item 
+Library/src/joints/Fixed\+Joint.\+cpp\end{DoxyCompactItemize}

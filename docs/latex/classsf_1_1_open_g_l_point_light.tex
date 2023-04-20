@@ -1,0 +1,107 @@
+\hypertarget{classsf_1_1_open_g_l_point_light}{}\doxysection{sf\+::Open\+G\+L\+Point\+Light Class Reference}
+\label{classsf_1_1_open_g_l_point_light}\index{sf::OpenGLPointLight@{sf::OpenGLPointLight}}
+
+
+A class implementing an Open\+GL point light (shadow not supported).  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Point\+Light.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+Point\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classsf_1_1_open_g_l_point_light__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+Point\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_open_g_l_point_light__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_point_light_a50ea7f476428139714ad2a6873b682bb}{Open\+G\+L\+Point\+Light}} (glm\+::vec3 position, G\+Lfloat radius, glm\+::vec3 color, G\+Lfloat lum)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_point_light_a719b3eac22af7b6ee38ab7626e8070e5}{Setup\+Shader}} (\mbox{\hyperlink{structsf_1_1_light_u_b_o}{Light\+U\+BO}} $\ast$ubo)
+\begin{DoxyCompactList}\small\item\em A method to set up light data in Lights U\+BO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_point_light_a0377dd15adbeba0b4f60aacc9737a340}\label{classsf_1_1_open_g_l_point_light_a0377dd15adbeba0b4f60aacc9737a340}} 
+Light\+Type \mbox{\hyperlink{classsf_1_1_open_g_l_point_light_a0377dd15adbeba0b4f60aacc9737a340}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing an Open\+GL point light (shadow not supported). 
+
+Definition at line 45 of file Open\+G\+L\+Point\+Light.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_point_light_a50ea7f476428139714ad2a6873b682bb}\label{classsf_1_1_open_g_l_point_light_a50ea7f476428139714ad2a6873b682bb}} 
+\index{sf::OpenGLPointLight@{sf::OpenGLPointLight}!OpenGLPointLight@{OpenGLPointLight}}
+\index{OpenGLPointLight@{OpenGLPointLight}!sf::OpenGLPointLight@{sf::OpenGLPointLight}}
+\doxysubsubsection{\texorpdfstring{OpenGLPointLight()}{OpenGLPointLight()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+Point\+Light\+::\+Open\+G\+L\+Point\+Light (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position,  }\item[{G\+Lfloat}]{radius,  }\item[{glm\+::vec3}]{color,  }\item[{G\+Lfloat}]{lum }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position of the light in the world frame \mbox{[}m\mbox{]} \\
+\hline
+{\em radius} & the radius of the light source \mbox{[}m\mbox{]} \\
+\hline
+{\em color} & the color of the light \\
+\hline
+{\em lum} & the luminous power of the light \mbox{[}lm\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Open\+G\+L\+Point\+Light.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_point_light_a719b3eac22af7b6ee38ab7626e8070e5}\label{classsf_1_1_open_g_l_point_light_a719b3eac22af7b6ee38ab7626e8070e5}} 
+\index{sf::OpenGLPointLight@{sf::OpenGLPointLight}!SetupShader@{SetupShader}}
+\index{SetupShader@{SetupShader}!sf::OpenGLPointLight@{sf::OpenGLPointLight}}
+\doxysubsubsection{\texorpdfstring{SetupShader()}{SetupShader()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Point\+Light\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsf_1_1_light_u_b_o}{Light\+U\+BO}} $\ast$}]{ubo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to set up light data in Lights U\+BO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ubo} & a pointer to the light U\+BO structure \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_light_a4b99ece9838b27fc714a10fd71dfbb88}{sf\+::\+Open\+G\+L\+Light}}.
+
+
+
+Definition at line 51 of file Open\+G\+L\+Point\+Light.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Point\+Light.\+h\item 
+Library/src/graphics/Open\+G\+L\+Point\+Light.\+cpp\end{DoxyCompactItemize}

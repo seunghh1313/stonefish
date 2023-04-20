@@ -1,0 +1,4 @@
+<map id="sf::ScenarioParser" name="sf::ScenarioParser">
+<area shape="rect" id="node1" title="A class that implements parsing of XML files describing a simulation scenario." alt="" coords="5,95,144,121"/>
+<area shape="rect" id="node2" href="$classsf_1_1_console.html" title="A class implementing a text console." alt="" coords="28,5,121,32"/>
+</map>

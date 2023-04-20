@@ -1,0 +1,68 @@
+\hypertarget{structsf_1_1_mesh}{}\doxysection{sf\+::Mesh Struct Reference}
+\label{structsf_1_1_mesh}\index{sf::Mesh@{sf::Mesh}}
+
+
+A structure containing mesh data.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Data\+Structs.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Mesh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{structsf_1_1_mesh__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_ab079a90d4a13cf8a498398b10ec00ed1}\label{structsf_1_1_mesh_ab079a90d4a13cf8a498398b10ec00ed1}} 
+void $\ast$ {\bfseries get\+Face\+Data\+Pointer} () const
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_acd581daba8baf87b2e56cc5d2317acb0}\label{structsf_1_1_mesh_acd581daba8baf87b2e56cc5d2317acb0}} 
+virtual bool {\bfseries is\+Texturable} () const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_aedd1eb588a784c84ecb51da5f00f8329}\label{structsf_1_1_mesh_aedd1eb588a784c84ecb51da5f00f8329}} 
+virtual size\+\_\+t {\bfseries get\+Num\+Of\+Vertices} () const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_a48c4aeeff191c071333d8d4fbd572fe8}\label{structsf_1_1_mesh_a48c4aeeff191c071333d8d4fbd572fe8}} 
+virtual void $\ast$ {\bfseries get\+Vertex\+Data\+Pointer} () const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_a7edca0b4ba5d1bb2b1fed56ba86630ca}\label{structsf_1_1_mesh_a7edca0b4ba5d1bb2b1fed56ba86630ca}} 
+virtual size\+\_\+t {\bfseries get\+Vertex\+Size} () const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_ab65993bf58e3c5faebb5fe976e5d13c5}\label{structsf_1_1_mesh_ab65993bf58e3c5faebb5fe976e5d13c5}} 
+virtual glm\+::vec3 {\bfseries get\+Vertex\+Pos} (size\+\_\+t vertex\+ID) const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_ac9eb9cded724fdbc2195867e9489d068}\label{structsf_1_1_mesh_ac9eb9cded724fdbc2195867e9489d068}} 
+virtual glm\+::vec3 {\bfseries get\+Vertex\+Pos} (size\+\_\+t face\+ID, unsigned short index) const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_a2c25d0798c454e0214d9ab9b12968bdc}\label{structsf_1_1_mesh_a2c25d0798c454e0214d9ab9b12968bdc}} 
+virtual glm\+::vec3 {\bfseries Compute\+Face\+Normal} (size\+\_\+t face\+ID) const =0
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_aa7e073081550153834cb43f641d63c15}\label{structsf_1_1_mesh_aa7e073081550153834cb43f641d63c15}} 
+virtual G\+Lfloat {\bfseries Compute\+Face\+Area} (size\+\_\+t face\+ID) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsf_1_1_mesh_a876f47d5accc035e491239ff3f887c11}\label{structsf_1_1_mesh_a876f47d5accc035e491239ff3f887c11}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_face}{Face}} $>$ {\bfseries faces}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A structure containing mesh data. 
+
+Definition at line 172 of file Open\+G\+L\+Data\+Structs.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Data\+Structs.\+h\end{DoxyCompactItemize}

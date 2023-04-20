@@ -1,0 +1,211 @@
+\hypertarget{classsf_1_1_cylindrical_joint}{}\doxysection{sf\+::Cylindrical\+Joint Class Reference}
+\label{classsf_1_1_cylindrical_joint}\index{sf::CylindricalJoint@{sf::CylindricalJoint}}
+
+
+A class representing a cylindrical joint.  
+
+
+
+
+{\ttfamily \#include $<$Cylindrical\+Joint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Cylindrical\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classsf_1_1_cylindrical_joint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Cylindrical\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classsf_1_1_cylindrical_joint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_cylindrical_joint_a03d4712c53d689f973abb399d68237ac}{Cylindrical\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidA, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidB, const Vector3 \&pivot, const Vector3 \&axis, bool collide\+Linked=true)
+\begin{DoxyCompactList}\small\item\em A constructor (a cylindrical joint between two solid bodies). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_adabb60b7620654e73b9687a25d0532e6}{Apply\+Force}} (Scalar F)
+\begin{DoxyCompactList}\small\item\em A method used to apply force to the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_a87118607e993fa328929b631d91924fc}{Apply\+Torque}} (Scalar T)
+\begin{DoxyCompactList}\small\item\em A method used to apply torque to the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_aae23b6a7d5af1af6f1e4f568530b661f}\label{classsf_1_1_cylindrical_joint_aae23b6a7d5af1af6f1e4f568530b661f}} 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_aae23b6a7d5af1af6f1e4f568530b661f}{Apply\+Damping}} ()
+\begin{DoxyCompactList}\small\item\em A method applying damping to the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_ab52b7517cfa39339d69b77566c58a0a9}\label{classsf_1_1_cylindrical_joint_ab52b7517cfa39339d69b77566c58a0a9}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_cylindrical_joint_ab52b7517cfa39339d69b77566c58a0a9}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_ad0479634fd1a67829e5f7b0e77d2e477}{set\+Damping}} (Scalar linear\+Constant\+Factor, Scalar linear\+Viscous\+Factor, Scalar angular\+Constant\+Factor, Scalar angular\+Viscous\+Factor)
+\begin{DoxyCompactList}\small\item\em A method to set the damping characteristics of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_ace1605328c59775cf5feb0f5d486f307}{set\+Limits}} (Scalar linear\+Min, Scalar linear\+Max, Scalar angular\+Min, Scalar angular\+Max)
+\begin{DoxyCompactList}\small\item\em A method to set the limits of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_cylindrical_joint_a3d0ab0a530e182a387d1efca0b4926fa}{set\+IC}} (Scalar displacement, Scalar angle)
+\begin{DoxyCompactList}\small\item\em A method to set the desired initial conditions of the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_a88637605b3153b51502002ffa7c9753b}\label{classsf_1_1_cylindrical_joint_a88637605b3153b51502002ffa7c9753b}} 
+Joint\+Type \mbox{\hyperlink{classsf_1_1_cylindrical_joint_a88637605b3153b51502002ffa7c9753b}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a cylindrical joint. 
+
+Definition at line 36 of file Cylindrical\+Joint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_a03d4712c53d689f973abb399d68237ac}\label{classsf_1_1_cylindrical_joint_a03d4712c53d689f973abb399d68237ac}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!CylindricalJoint@{CylindricalJoint}}
+\index{CylindricalJoint@{CylindricalJoint}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{CylindricalJoint()}{CylindricalJoint()}}
+{\footnotesize\ttfamily sf\+::\+Cylindrical\+Joint\+::\+Cylindrical\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidA,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidB,  }\item[{const Vector3 \&}]{pivot,  }\item[{const Vector3 \&}]{axis,  }\item[{bool}]{collide\+Linked = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+A constructor (a cylindrical joint between two solid bodies). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the cylindrical joint \\
+\hline
+{\em solidA} & pointer to the first solid body \\
+\hline
+{\em solidB} & pointer to the second solid body \\
+\hline
+{\em pivot} & a point where the axis of joint is located \\
+\hline
+{\em axis} & a vector parallel to the joint axis \\
+\hline
+{\em collide\+Linked} & a flag that sets if the bodies connected by the joint should coliide \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Cylindrical\+Joint.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_adabb60b7620654e73b9687a25d0532e6}\label{classsf_1_1_cylindrical_joint_adabb60b7620654e73b9687a25d0532e6}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!ApplyForce@{ApplyForce}}
+\index{ApplyForce@{ApplyForce}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{ApplyForce()}{ApplyForce()}}
+{\footnotesize\ttfamily void sf\+::\+Cylindrical\+Joint\+::\+Apply\+Force (\begin{DoxyParamCaption}\item[{Scalar}]{F }\end{DoxyParamCaption})}
+
+
+
+A method used to apply force to the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & force to be applied to the joint \mbox{[}N\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Cylindrical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_a87118607e993fa328929b631d91924fc}\label{classsf_1_1_cylindrical_joint_a87118607e993fa328929b631d91924fc}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!ApplyTorque@{ApplyTorque}}
+\index{ApplyTorque@{ApplyTorque}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{ApplyTorque()}{ApplyTorque()}}
+{\footnotesize\ttfamily void sf\+::\+Cylindrical\+Joint\+::\+Apply\+Torque (\begin{DoxyParamCaption}\item[{Scalar}]{T }\end{DoxyParamCaption})}
+
+
+
+A method used to apply torque to the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & torque to be applied to the joint \mbox{[}Nm\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Cylindrical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_ad0479634fd1a67829e5f7b0e77d2e477}\label{classsf_1_1_cylindrical_joint_ad0479634fd1a67829e5f7b0e77d2e477}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!setDamping@{setDamping}}
+\index{setDamping@{setDamping}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{setDamping()}{setDamping()}}
+{\footnotesize\ttfamily void sf\+::\+Cylindrical\+Joint\+::set\+Damping (\begin{DoxyParamCaption}\item[{Scalar}]{linear\+Constant\+Factor,  }\item[{Scalar}]{linear\+Viscous\+Factor,  }\item[{Scalar}]{angular\+Constant\+Factor,  }\item[{Scalar}]{angular\+Viscous\+Factor }\end{DoxyParamCaption})}
+
+
+
+A method to set the damping characteristics of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Constant\+Factor} & a constant damping force \mbox{[}N\mbox{]} \\
+\hline
+{\em linear\+Viscous\+Factor} & a coefficient of viscous damping \mbox{[}N$\ast$s$\ast$rad$^\wedge$-\/1\mbox{]} \\
+\hline
+{\em angular\+Constant\+Factor} & a constant damping torque \mbox{[}Nm\mbox{]} \\
+\hline
+{\em angular\+Viscous\+Factor} & a coefficient of viscous damping \mbox{[}Nm$\ast$s$\ast$rad$^\wedge$-\/1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Cylindrical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_a3d0ab0a530e182a387d1efca0b4926fa}\label{classsf_1_1_cylindrical_joint_a3d0ab0a530e182a387d1efca0b4926fa}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!setIC@{setIC}}
+\index{setIC@{setIC}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{setIC()}{setIC()}}
+{\footnotesize\ttfamily void sf\+::\+Cylindrical\+Joint\+::set\+IC (\begin{DoxyParamCaption}\item[{Scalar}]{displacement,  }\item[{Scalar}]{angle }\end{DoxyParamCaption})}
+
+
+
+A method to set the desired initial conditions of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displacement} & the initial displacement of the joint \mbox{[}m\mbox{]} \\
+\hline
+{\em angle} & the initial angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Cylindrical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_cylindrical_joint_ace1605328c59775cf5feb0f5d486f307}\label{classsf_1_1_cylindrical_joint_ace1605328c59775cf5feb0f5d486f307}} 
+\index{sf::CylindricalJoint@{sf::CylindricalJoint}!setLimits@{setLimits}}
+\index{setLimits@{setLimits}!sf::CylindricalJoint@{sf::CylindricalJoint}}
+\doxysubsubsection{\texorpdfstring{setLimits()}{setLimits()}}
+{\footnotesize\ttfamily void sf\+::\+Cylindrical\+Joint\+::set\+Limits (\begin{DoxyParamCaption}\item[{Scalar}]{linear\+Min,  }\item[{Scalar}]{linear\+Max,  }\item[{Scalar}]{angular\+Min,  }\item[{Scalar}]{angular\+Max }\end{DoxyParamCaption})}
+
+
+
+A method to set the limits of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Min} & the minimum displacement of the joint \mbox{[}m\mbox{]} \\
+\hline
+{\em linear\+Max} & the maximum displacement of the joint \mbox{[}m\mbox{]} \\
+\hline
+{\em angular\+Min} & the minimum rotation angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+{\em angular\+Max} & the maximum rotation angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Cylindrical\+Joint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/joints/Cylindrical\+Joint.\+h\item 
+Library/src/joints/Cylindrical\+Joint.\+cpp\end{DoxyCompactItemize}

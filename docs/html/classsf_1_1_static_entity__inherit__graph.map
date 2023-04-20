@@ -1,0 +1,7 @@
+<map id="sf::StaticEntity" name="sf::StaticEntity">
+<area shape="rect" id="node1" title="An abstract class defining a static simulation entity." alt="" coords="109,80,225,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_obstacle.html" title="A static obstacle loaded from a file or taking one of the simple geometrical shapes." alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_plane.html" title="A class representing an infinite static plane." alt="" coords="128,155,205,181"/>
+<area shape="rect" id="node5" href="$classsf_1_1_terrain.html" title="A class representing a heightfield terrain." alt="" coords="229,155,315,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="127,5,206,32"/>
+</map>

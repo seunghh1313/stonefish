@@ -1,0 +1,229 @@
+\hypertarget{classsf_1_1_open_g_l_m_s_i_s}{}\doxysection{sf\+::Open\+G\+L\+M\+S\+IS Class Reference}
+\label{classsf_1_1_open_g_l_m_s_i_s}\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+
+
+A class representing a mechanical scanning imaging sonar (\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}}).  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+M\+S\+I\+S.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+M\+S\+IS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classsf_1_1_open_g_l_m_s_i_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+M\+S\+IS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_open_g_l_m_s_i_s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a531e61feb1e5e9cbe611e38845a93a1b}{Open\+G\+L\+M\+S\+IS}} (glm\+::vec3 eye\+Position, glm\+::vec3 direction, glm\+::vec3 sonar\+Up, G\+Lfloat horizontal\+Beam\+Width\+Deg, G\+Lfloat vertical\+Beam\+Width\+Deg, G\+Luint num\+Of\+Steps, G\+Luint num\+Of\+Bins, glm\+::vec2 range\+\_\+)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a18b4dbe156a69510440878ecfe92baca}\label{classsf_1_1_open_g_l_m_s_i_s_a18b4dbe156a69510440878ecfe92baca}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a18b4dbe156a69510440878ecfe92baca}{$\sim$\+Open\+G\+L\+M\+S\+IS}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a410b0ed2ee38ffee8fbe8cbe280d4ada}{Compute\+Output}} (std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \&objects)
+\begin{DoxyCompactList}\small\item\em A method that computes simulated sonar data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a250858988de9256e371295b03b1fffe6}{Draw\+L\+DR}} (G\+Luint destination\+F\+BO, bool updated)
+\begin{DoxyCompactList}\small\item\em A method to render the low dynamic range (final) image to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a927608c5973ab64091bcc23484e8bbd3}\label{classsf_1_1_open_g_l_m_s_i_s_a927608c5973ab64091bcc23484e8bbd3}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a927608c5973ab64091bcc23484e8bbd3}{Update\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em A method that updates sonar world transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a1596ad1ee5368d68af247f10d23982f1}{set\+Noise}} (glm\+::vec2 signal\+Std\+Dev)
+\begin{DoxyCompactList}\small\item\em A method to set the noise properties of the sonar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a8aa3983f96a9a845b773d7861f5aed3f}{set\+Sonar}} (\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em A method to set a pointer to a sonar sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_aebb4d254de2f9901dc4bfea4727686db}\label{classsf_1_1_open_g_l_m_s_i_s_aebb4d254de2f9901dc4bfea4727686db}} 
+\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}} $\ast$ {\bfseries sonar}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a6619e167f2e058656d23ba13d7cf4aac}\label{classsf_1_1_open_g_l_m_s_i_s_a6619e167f2e058656d23ba13d7cf4aac}} 
+G\+Luint {\bfseries n\+Steps}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_aaeafd695e164db1b5c43a62391459b29}\label{classsf_1_1_open_g_l_m_s_i_s_aaeafd695e164db1b5c43a62391459b29}} 
+G\+Luint {\bfseries n\+Bins}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a36b0da8bcf7dde4816396114634d1497}\label{classsf_1_1_open_g_l_m_s_i_s_a36b0da8bcf7dde4816396114634d1497}} 
+glm\+::uvec2 {\bfseries n\+Beam\+Samples}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a2864c490567ce56abb4137a44ca8022c}\label{classsf_1_1_open_g_l_m_s_i_s_a2864c490567ce56abb4137a44ca8022c}} 
+glm\+::mat4 {\bfseries beam\+Rotation}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a212b8be09541e8e64a59bad336296c5e}\label{classsf_1_1_open_g_l_m_s_i_s_a212b8be09541e8e64a59bad336296c5e}} 
+G\+Lint {\bfseries current\+Step}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_aa6f61815d083439e3bb3b7c5356c1889}\label{classsf_1_1_open_g_l_m_s_i_s_aa6f61815d083439e3bb3b7c5356c1889}} 
+glm\+::vec2 {\bfseries fov}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_afdf43c046ad8c540a9c9b731972fb709}\label{classsf_1_1_open_g_l_m_s_i_s_afdf43c046ad8c540a9c9b731972fb709}} 
+glm\+::vec2 {\bfseries rotation\+Limits}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a42347f81774548ee405272fdd9862a23}\label{classsf_1_1_open_g_l_m_s_i_s_a42347f81774548ee405272fdd9862a23}} 
+glm\+::vec2 {\bfseries noise}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_ada838bd9aa6714bb9b74407bd4f5bde0}\label{classsf_1_1_open_g_l_m_s_i_s_ada838bd9aa6714bb9b74407bd4f5bde0}} 
+G\+Luint {\bfseries output\+Tex} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a5b5b825ef79a01e5a83be1c51b6ea7e3}\label{classsf_1_1_open_g_l_m_s_i_s_a5b5b825ef79a01e5a83be1c51b6ea7e3}} 
+G\+Luint {\bfseries fan\+Div}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a3a4f29e6f2d6d24b2bfe8ece74ccb0f4}\label{classsf_1_1_open_g_l_m_s_i_s_a3a4f29e6f2d6d24b2bfe8ece74ccb0f4}} 
+\mbox{\hyperlink{classsf_1_1_g_l_s_l_shader}{G\+L\+S\+L\+Shader}} $\ast$ {\bfseries sonar\+Output\+Shader}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_af6e5571d08de89d253e6d0bedeb78fbd}\label{classsf_1_1_open_g_l_m_s_i_s_af6e5571d08de89d253e6d0bedeb78fbd}} 
+\mbox{\hyperlink{classsf_1_1_g_l_s_l_shader}{G\+L\+S\+L\+Shader}} $\ast$ {\bfseries sonar\+Update\+Shader}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a mechanical scanning imaging sonar (\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}}). 
+
+Definition at line 38 of file Open\+G\+L\+M\+S\+I\+S.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a531e61feb1e5e9cbe611e38845a93a1b}\label{classsf_1_1_open_g_l_m_s_i_s_a531e61feb1e5e9cbe611e38845a93a1b}} 
+\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}!OpenGLMSIS@{OpenGLMSIS}}
+\index{OpenGLMSIS@{OpenGLMSIS}!sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+\doxysubsubsection{\texorpdfstring{OpenGLMSIS()}{OpenGLMSIS()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+M\+S\+I\+S\+::\+Open\+G\+L\+M\+S\+IS (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{eye\+Position,  }\item[{glm\+::vec3}]{direction,  }\item[{glm\+::vec3}]{sonar\+Up,  }\item[{G\+Lfloat}]{horizontal\+Beam\+Width\+Deg,  }\item[{G\+Lfloat}]{vertical\+Beam\+Width\+Deg,  }\item[{G\+Luint}]{num\+Of\+Steps,  }\item[{G\+Luint}]{num\+Of\+Bins,  }\item[{glm\+::vec2}]{range\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye\+Position} & the position of the sonar eye in world space \mbox{[}m\mbox{]} \\
+\hline
+{\em direction} & a unit vector parallel to the sonar central axis \\
+\hline
+{\em sonar\+Up} & a unit vector perpendicular to the sonar plane \\
+\hline
+{\em horizontal\+Beam\+Width\+Deg} & the horizontal width of the sonar beam \mbox{[}deg\mbox{]} \\
+\hline
+{\em vertical\+Beam\+Width\+Deg} & the vertical width of the sonar beam \mbox{[}deg\mbox{]} \\
+\hline
+{\em num\+Of\+Steps} & the number of sonar motor steps \\
+\hline
+{\em num\+Of\+Bins} & the number of sonar range bins \\
+\hline
+{\em range\+\_\+} & the distance to the closest and farthest recorded object \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Open\+G\+L\+M\+S\+I\+S.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a410b0ed2ee38ffee8fbe8cbe280d4ada}\label{classsf_1_1_open_g_l_m_s_i_s_a410b0ed2ee38ffee8fbe8cbe280d4ada}} 
+\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}!ComputeOutput@{ComputeOutput}}
+\index{ComputeOutput@{ComputeOutput}!sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+\doxysubsubsection{\texorpdfstring{ComputeOutput()}{ComputeOutput()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+M\+S\+I\+S\+::\+Compute\+Output (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \&}]{objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that computes simulated sonar data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & a reference to a vector of renderable objects \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_sonar_a0dad8141f8ca5c7f58a841f87f241647}{sf\+::\+Open\+G\+L\+Sonar}}.
+
+
+
+Definition at line 291 of file Open\+G\+L\+M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a250858988de9256e371295b03b1fffe6}\label{classsf_1_1_open_g_l_m_s_i_s_a250858988de9256e371295b03b1fffe6}} 
+\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}!DrawLDR@{DrawLDR}}
+\index{DrawLDR@{DrawLDR}!sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+\doxysubsubsection{\texorpdfstring{DrawLDR()}{DrawLDR()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+M\+S\+I\+S\+::\+Draw\+L\+DR (\begin{DoxyParamCaption}\item[{G\+Luint}]{destination\+F\+BO,  }\item[{bool}]{updated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to render the low dynamic range (final) image to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination\+F\+BO} & the id of the framebuffer used as the destination for rendering \\
+\hline
+{\em updated} & a flag indicating if view content was updated \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_sonar_ab807d0aeb64a0531608f461ad76a246f}{sf\+::\+Open\+G\+L\+Sonar}}.
+
+
+
+Definition at line 380 of file Open\+G\+L\+M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a1596ad1ee5368d68af247f10d23982f1}\label{classsf_1_1_open_g_l_m_s_i_s_a1596ad1ee5368d68af247f10d23982f1}} 
+\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+M\+S\+I\+S\+::set\+Noise (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{signal\+Std\+Dev }\end{DoxyParamCaption})}
+
+
+
+A method to set the noise properties of the sonar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal\+Std\+Dev} & the standard deviation of the echo intensity \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 271 of file Open\+G\+L\+M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_m_s_i_s_a8aa3983f96a9a845b773d7861f5aed3f}\label{classsf_1_1_open_g_l_m_s_i_s_a8aa3983f96a9a845b773d7861f5aed3f}} 
+\index{sf::OpenGLMSIS@{sf::OpenGLMSIS}!setSonar@{setSonar}}
+\index{setSonar@{setSonar}!sf::OpenGLMSIS@{sf::OpenGLMSIS}}
+\doxysubsubsection{\texorpdfstring{setSonar()}{setSonar()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+M\+S\+I\+S\+::set\+Sonar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+A method to set a pointer to a sonar sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em son} & a pointer to a sonar sensor \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 276 of file Open\+G\+L\+M\+S\+I\+S.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+M\+S\+I\+S.\+h\item 
+Library/src/graphics/Open\+G\+L\+M\+S\+I\+S.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{classsf_1_1_open_g_l_ocean_particles}{}\doxysection{sf\+::Open\+G\+L\+Ocean\+Particles Class Reference}
+\label{classsf_1_1_open_g_l_ocean_particles}\index{sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}}
+
+
+A class implementing a particle system simulating underwater snow effect.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Ocean\+Particles.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+Ocean\+Particles\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classsf_1_1_open_g_l_ocean_particles__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+Ocean\+Particles\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classsf_1_1_open_g_l_ocean_particles__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_a38a6810f52676cdf15fb46ad7b2cd830}{Open\+G\+L\+Ocean\+Particles}} (size\+\_\+t num\+Of\+Particles, G\+Lfloat visible\+Range)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_aa9499b62c0dc152b9794907adbba85fe}\label{classsf_1_1_open_g_l_ocean_particles_aa9499b62c0dc152b9794907adbba85fe}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_aa9499b62c0dc152b9794907adbba85fe}{$\sim$\+Open\+G\+L\+Ocean\+Particles}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_a613ace37852c9b86fbdbcac845cdca57}{Update}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam, G\+Lfloat dt)
+\begin{DoxyCompactList}\small\item\em A method updating the positions/velocities of the particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_a8903b4b27c9115edf078c3a1cb228ecf}{Draw}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam, \mbox{\hyperlink{classsf_1_1_open_g_l_ocean}{Open\+G\+L\+Ocean}} $\ast$gl\+Ocn)
+\begin{DoxyCompactList}\small\item\em A method drawing the particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_a87b2124c722cce9718a6090fd4b18e2e}\label{classsf_1_1_open_g_l_ocean_particles_a87b2124c722cce9718a6090fd4b18e2e}} 
+static void \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_a87b2124c722cce9718a6090fd4b18e2e}{Init}} ()
+\begin{DoxyCompactList}\small\item\em A method used to load particle shaders. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_a2a7f532af7829be8cdadda8b64580994}\label{classsf_1_1_open_g_l_ocean_particles_a2a7f532af7829be8cdadda8b64580994}} 
+static void \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_particles_a2a7f532af7829be8cdadda8b64580994}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em A method used to delete particle shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a particle system simulating underwater snow effect. 
+
+Definition at line 39 of file Open\+G\+L\+Ocean\+Particles.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_a38a6810f52676cdf15fb46ad7b2cd830}\label{classsf_1_1_open_g_l_ocean_particles_a38a6810f52676cdf15fb46ad7b2cd830}} 
+\index{sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}!OpenGLOceanParticles@{OpenGLOceanParticles}}
+\index{OpenGLOceanParticles@{OpenGLOceanParticles}!sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}}
+\doxysubsubsection{\texorpdfstring{OpenGLOceanParticles()}{OpenGLOceanParticles()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+Ocean\+Particles\+::\+Open\+G\+L\+Ocean\+Particles (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+Of\+Particles,  }\item[{G\+Lfloat}]{visible\+Range }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Particles} & the number of simulated particles \\
+\hline
+{\em visible\+Range} & a distance at which particles are destroyed/created \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Open\+G\+L\+Ocean\+Particles.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_a8903b4b27c9115edf078c3a1cb228ecf}\label{classsf_1_1_open_g_l_ocean_particles_a8903b4b27c9115edf078c3a1cb228ecf}} 
+\index{sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}!Draw@{Draw}}
+\index{Draw@{Draw}!sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Ocean\+Particles\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam,  }\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_ocean}{Open\+G\+L\+Ocean}} $\ast$}]{gl\+Ocn }\end{DoxyParamCaption})}
+
+
+
+A method drawing the particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+{\em gl\+Ocn} & a pointer to the Open\+GL ocean object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Open\+G\+L\+Ocean\+Particles.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_ocean_particles_a613ace37852c9b86fbdbcac845cdca57}\label{classsf_1_1_open_g_l_ocean_particles_a613ace37852c9b86fbdbcac845cdca57}} 
+\index{sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}!Update@{Update}}
+\index{Update@{Update}!sf::OpenGLOceanParticles@{sf::OpenGLOceanParticles}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Ocean\+Particles\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam,  }\item[{G\+Lfloat}]{dt }\end{DoxyParamCaption})}
+
+
+
+A method updating the positions/velocities of the particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+{\em dt} & time passed since last update \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Open\+G\+L\+Ocean\+Particles.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Ocean\+Particles.\+h\item 
+Library/src/graphics/Open\+G\+L\+Ocean\+Particles.\+cpp\end{DoxyCompactItemize}

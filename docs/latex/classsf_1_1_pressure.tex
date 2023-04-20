@@ -1,0 +1,147 @@
+\hypertarget{classsf_1_1_pressure}{}\doxysection{sf\+::Pressure Class Reference}
+\label{classsf_1_1_pressure}\index{sf::Pressure@{sf::Pressure}}
+
+
+A class representing a pressure sensor.  
+
+
+
+
+{\ttfamily \#include $<$Pressure.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Pressure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classsf_1_1_pressure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Pressure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classsf_1_1_pressure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_pressure_a9423495b8a61414ca6d6d862ed05c85c}{Pressure}} (std\+::string unique\+Name, Scalar frequency=Scalar(-\/1), int history\+Length=-\/1)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}{Internal\+Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method performing internal sensor state update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_pressure_adb79582e519c1e8356df76aedf7d7dad}{set\+Range}} (Scalar max)
+\begin{DoxyCompactList}\small\item\em A method used to set the range of the sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_pressure_aa40dabdf7cbd50013bfaa0d11df86e37}{set\+Noise}} (Scalar pressure\+Std\+Dev)
+\begin{DoxyCompactList}\small\item\em A method used to set the noise characteristics of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_pressure_a1a35808f7726ff51eca7a0a18cc317d9}\label{classsf_1_1_pressure_a1a35808f7726ff51eca7a0a18cc317d9}} 
+Scalar\+Sensor\+Type \mbox{\hyperlink{classsf_1_1_pressure_a1a35808f7726ff51eca7a0a18cc317d9}{get\+Scalar\+Sensor\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the scalar sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a pressure sensor. 
+
+Definition at line 34 of file Pressure.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_pressure_a9423495b8a61414ca6d6d862ed05c85c}\label{classsf_1_1_pressure_a9423495b8a61414ca6d6d862ed05c85c}} 
+\index{sf::Pressure@{sf::Pressure}!Pressure@{Pressure}}
+\index{Pressure@{Pressure}!sf::Pressure@{sf::Pressure}}
+\doxysubsubsection{\texorpdfstring{Pressure()}{Pressure()}}
+{\footnotesize\ttfamily sf\+::\+Pressure\+::\+Pressure (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{frequency = {\ttfamily Scalar(-\/1)},  }\item[{int}]{history\+Length = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (-\/1 if updated every simulation step) \\
+\hline
+{\em history\+Length} & defines\+: -\/1 -\/$>$ no history, 0 -\/$>$ unlimited history, $>$0 -\/$>$ history with a specified length \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Pressure.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}\label{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}} 
+\index{sf::Pressure@{sf::Pressure}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::Pressure@{sf::Pressure}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily void sf\+::\+Pressure\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method performing internal sensor state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}{sf\+::\+Link\+Sensor}}.
+
+
+
+Definition at line 40 of file Pressure.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_pressure_aa40dabdf7cbd50013bfaa0d11df86e37}\label{classsf_1_1_pressure_aa40dabdf7cbd50013bfaa0d11df86e37}} 
+\index{sf::Pressure@{sf::Pressure}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::Pressure@{sf::Pressure}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+Pressure\+::set\+Noise (\begin{DoxyParamCaption}\item[{Scalar}]{pressure\+Std\+Dev }\end{DoxyParamCaption})}
+
+
+
+A method used to set the noise characteristics of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressure\+Std\+Dev} & standard deviation of the pressure measurement noise \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Pressure.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_pressure_adb79582e519c1e8356df76aedf7d7dad}\label{classsf_1_1_pressure_adb79582e519c1e8356df76aedf7d7dad}} 
+\index{sf::Pressure@{sf::Pressure}!setRange@{setRange}}
+\index{setRange@{setRange}!sf::Pressure@{sf::Pressure}}
+\doxysubsubsection{\texorpdfstring{setRange()}{setRange()}}
+{\footnotesize\ttfamily void sf\+::\+Pressure\+::set\+Range (\begin{DoxyParamCaption}\item[{Scalar}]{max }\end{DoxyParamCaption})}
+
+
+
+A method used to set the range of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & the maximum measured pressure \mbox{[}Pa\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Pressure.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/scalar/Pressure.\+h\item 
+Library/src/sensors/scalar/Pressure.\+cpp\end{DoxyCompactItemize}

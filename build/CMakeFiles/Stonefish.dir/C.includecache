@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/choi/stonefish/3rdparty/tinyexpr.c
+tinyexpr.h
+/home/choi/stonefish/3rdparty/tinyexpr.h
+stdlib.h
+-
+math.h
+-
+string.h
+-
+stdio.h
+-
+ctype.h
+-
+limits.h
+-
+
+/home/choi/stonefish/3rdparty/tinyexpr.h
+

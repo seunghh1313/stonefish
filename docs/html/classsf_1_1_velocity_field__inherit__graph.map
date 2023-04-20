@@ -1,0 +1,7 @@
+<map id="sf::VelocityField" name="sf::VelocityField">
+<area shape="rect" id="node1" title="An abstract class representing a velocity field." alt="" coords="111,5,235,32"/>
+<area shape="rect" id="node2" href="$classsf_1_1_jet.html" title="Jet velocity field class." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_pipe.html" title="Pipe (current) velocity field class." alt="" coords="88,80,157,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_stream.html" title="Stream (current) velocity field class." alt="" coords="181,80,269,107"/>
+<area shape="rect" id="node5" href="$classsf_1_1_uniform.html" title="Uniform velocity field class." alt="" coords="294,80,389,107"/>
+</map>

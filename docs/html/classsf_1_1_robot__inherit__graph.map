@@ -1,0 +1,5 @@
+<map id="sf::Robot" name="sf::Robot">
+<area shape="rect" id="node1" title="A class implementing a robotic system composed of a dynamic rigid&#45;body tree, actuators and sensors." alt="" coords="133,5,212,32"/>
+<area shape="rect" id="node2" href="$classsf_1_1_featherstone_robot.html" title="A class implementing a robotic system composed of a dynamic rigid&#45;body tree, actuators and sensors." alt="" coords="5,80,169,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_general_robot.html" title="A class implementing a robotic system composed of a dynamic rigid&#45;body chain/tree/loop,..." alt="" coords="194,80,325,107"/>
+</map>

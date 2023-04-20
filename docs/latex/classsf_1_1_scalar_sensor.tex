@@ -1,0 +1,271 @@
+\hypertarget{classsf_1_1_scalar_sensor}{}\doxysection{sf\+::Scalar\+Sensor Class Reference}
+\label{classsf_1_1_scalar_sensor}\index{sf::ScalarSensor@{sf::ScalarSensor}}
+
+
+An abstract class representing a scalar sensor.  
+
+
+
+
+{\ttfamily \#include $<$Scalar\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Scalar\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_scalar_sensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Scalar\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classsf_1_1_scalar_sensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_scalar_sensor_add880b3646ef35ee7118f849bc77bf22}{Scalar\+Sensor}} (std\+::string unique\+Name, Scalar frequency, int history\+Length)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_aa84cb84f79422bfbfb47bfb1755f9918}\label{classsf_1_1_scalar_sensor_aa84cb84f79422bfbfb47bfb1755f9918}} 
+virtual \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa84cb84f79422bfbfb47bfb1755f9918}{$\sim$\+Scalar\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa9fa7c8963ccdc8bc88d41aa6ac1bd6a}{Internal\+Update}} (Scalar dt)=0
+\begin{DoxyCompactList}\small\item\em A method performing internal sensor state update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a6f7e64a66d985926715386b4742fcf47}\label{classsf_1_1_scalar_sensor_a6f7e64a66d985926715386b4742fcf47}} 
+virtual Sensor\+Type \mbox{\hyperlink{classsf_1_1_scalar_sensor_a6f7e64a66d985926715386b4742fcf47}{get\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the type of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_ab842b496d665bec0731a119fe198d093}\label{classsf_1_1_scalar_sensor_ab842b496d665bec0731a119fe198d093}} 
+virtual void \mbox{\hyperlink{classsf_1_1_scalar_sensor_ab842b496d665bec0731a119fe198d093}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em A method resetting the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a26c5b89bbec3c4ef81eb0f40996b6037}\label{classsf_1_1_scalar_sensor_a26c5b89bbec3c4ef81eb0f40996b6037}} 
+void \mbox{\hyperlink{classsf_1_1_scalar_sensor_a26c5b89bbec3c4ef81eb0f40996b6037}{Clear\+History}} ()
+\begin{DoxyCompactList}\small\item\em A method clearing the history of measurements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa1bfe5a9f4331022b74f2e23459baa99}{Save\+Measurements\+To\+Text\+File}} (const std\+::string \&path, bool include\+Time=true, unsigned int fixed\+Precision=6)
+\begin{DoxyCompactList}\small\item\em A method used to save the measurements to a text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_scalar_sensor_a5ea8d8ffdbfde0249bd8b787ee6e4a5b}{Save\+Measurements\+To\+Octave\+File}} (const std\+::string \&path, bool include\+Time=true, bool separate\+Channels=false)
+\begin{DoxyCompactList}\small\item\em A method used to save the measurements to an Octave file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_abadca964cfe1c152878fb5163a9c6d96}\label{classsf_1_1_scalar_sensor_abadca964cfe1c152878fb5163a9c6d96}} 
+unsigned short \mbox{\hyperlink{classsf_1_1_scalar_sensor_abadca964cfe1c152878fb5163a9c6d96}{get\+Num\+Of\+Channels}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the number of channels of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_acf95414918fdf94b0bef205e2fd29874}\label{classsf_1_1_scalar_sensor_acf95414918fdf94b0bef205e2fd29874}} 
+\mbox{\hyperlink{classsf_1_1_sample}{Sample}} \mbox{\hyperlink{classsf_1_1_scalar_sensor_acf95414918fdf94b0bef205e2fd29874}{get\+Last\+Sample}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the last sample. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a0cf7bf0eaeda03b8c1bbbace0ba2363d}\label{classsf_1_1_scalar_sensor_a0cf7bf0eaeda03b8c1bbbace0ba2363d}} 
+const std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_sample}{Sample}} $>$ $\ast$ \mbox{\hyperlink{classsf_1_1_scalar_sensor_a0cf7bf0eaeda03b8c1bbbace0ba2363d}{get\+History}} ()
+\begin{DoxyCompactList}\small\item\em A method returing a pointer to a copy of the history of sensor measurements. \end{DoxyCompactList}\item 
+Scalar \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa7d2ae3bd503f61e49abe441a0d7f22a}{get\+Value}} (unsigned long int index, unsigned int channel)
+\begin{DoxyCompactList}\small\item\em A method returning the value of the measurement. \end{DoxyCompactList}\item 
+Scalar \mbox{\hyperlink{classsf_1_1_scalar_sensor_a462f392dcd134e3c51341e0440b898db}{get\+Last\+Value}} (unsigned int channel)
+\begin{DoxyCompactList}\small\item\em A method returning the last value of the measurement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsf_1_1_sensor_channel}{Sensor\+Channel}} \mbox{\hyperlink{classsf_1_1_scalar_sensor_a02909e2e8be32089f1d40bf93144b68e}{get\+Sensor\+Channel\+Description}} (unsigned int channel)
+\begin{DoxyCompactList}\small\item\em A method returning the description of a specified channel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a8c65eefceda5c78236814074c7f4c982}\label{classsf_1_1_scalar_sensor_a8c65eefceda5c78236814074c7f4c982}} 
+virtual Scalar\+Sensor\+Type \mbox{\hyperlink{classsf_1_1_scalar_sensor_a8c65eefceda5c78236814074c7f4c982}{get\+Scalar\+Sensor\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the type of scalar sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_af5ec9bd493e8cbec6894837737f01b84}\label{classsf_1_1_scalar_sensor_af5ec9bd493e8cbec6894837737f01b84}} 
+virtual Transform \mbox{\hyperlink{classsf_1_1_scalar_sensor_af5ec9bd493e8cbec6894837737f01b84}{get\+Sensor\+Frame}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the sensor measurement frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a5bf191a2abf97285edf6e0aa252cedd9}\label{classsf_1_1_scalar_sensor_a5bf191a2abf97285edf6e0aa252cedd9}} 
+void {\bfseries Add\+Sample\+To\+History} (const \mbox{\hyperlink{classsf_1_1_sample}{Sample}} \&s)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_adc1dd7171d9444ec7125ff36ed8647a1}\label{classsf_1_1_scalar_sensor_adc1dd7171d9444ec7125ff36ed8647a1}} 
+std\+::deque$<$ \mbox{\hyperlink{classsf_1_1_sample}{Sample}} $\ast$ $>$ {\bfseries history}
+\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a5e7021a34393f65920b430a9680f2f04}\label{classsf_1_1_scalar_sensor_a5e7021a34393f65920b430a9680f2f04}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_sensor_channel}{Sensor\+Channel}} $>$ {\bfseries channels}
+\item 
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a4292340907309b10dd5acc0279ad7e12}\label{classsf_1_1_scalar_sensor_a4292340907309b10dd5acc0279ad7e12}} 
+uint64\+\_\+t {\bfseries sample\+Count}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a scalar sensor. 
+
+Definition at line 87 of file Scalar\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_add880b3646ef35ee7118f849bc77bf22}\label{classsf_1_1_scalar_sensor_add880b3646ef35ee7118f849bc77bf22}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!ScalarSensor@{ScalarSensor}}
+\index{ScalarSensor@{ScalarSensor}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{ScalarSensor()}{ScalarSensor()}}
+{\footnotesize\ttfamily sf\+::\+Scalar\+Sensor\+::\+Scalar\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{frequency,  }\item[{int}]{history\+Length }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (0 if updated every simulation step) \\
+\hline
+{\em history\+Length} & defines\+: -\/1 -\/$>$ no history, 0 -\/$>$ unlimited history, $>$0 -\/$>$ history with a specified length \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Scalar\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a462f392dcd134e3c51341e0440b898db}\label{classsf_1_1_scalar_sensor_a462f392dcd134e3c51341e0440b898db}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!getLastValue@{getLastValue}}
+\index{getLastValue@{getLastValue}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{getLastValue()}{getLastValue()}}
+{\footnotesize\ttfamily Scalar sf\+::\+Scalar\+Sensor\+::get\+Last\+Value (\begin{DoxyParamCaption}\item[{unsigned int}]{channel }\end{DoxyParamCaption})}
+
+
+
+A method returning the last value of the measurement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & the index of the channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+last value of the measurement 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file Scalar\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a02909e2e8be32089f1d40bf93144b68e}\label{classsf_1_1_scalar_sensor_a02909e2e8be32089f1d40bf93144b68e}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!getSensorChannelDescription@{getSensorChannelDescription}}
+\index{getSensorChannelDescription@{getSensorChannelDescription}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{getSensorChannelDescription()}{getSensorChannelDescription()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsf_1_1_sensor_channel}{Sensor\+Channel}} sf\+::\+Scalar\+Sensor\+::get\+Sensor\+Channel\+Description (\begin{DoxyParamCaption}\item[{unsigned int}]{channel }\end{DoxyParamCaption})}
+
+
+
+A method returning the description of a specified channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & the infdex of the channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a structure discribing the channel 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Scalar\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_aa7d2ae3bd503f61e49abe441a0d7f22a}\label{classsf_1_1_scalar_sensor_aa7d2ae3bd503f61e49abe441a0d7f22a}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!getValue@{getValue}}
+\index{getValue@{getValue}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily Scalar sf\+::\+Scalar\+Sensor\+::get\+Value (\begin{DoxyParamCaption}\item[{unsigned long int}]{index,  }\item[{unsigned int}]{channel }\end{DoxyParamCaption})}
+
+
+
+A method returning the value of the measurement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the history \\
+\hline
+{\em channel} & the index of the channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the measurement 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file Scalar\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_aa9fa7c8963ccdc8bc88d41aa6ac1bd6a}\label{classsf_1_1_scalar_sensor_aa9fa7c8963ccdc8bc88d41aa6ac1bd6a}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Scalar\+Sensor\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method performing internal sensor state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_sensor_a9d56588d2d0b417d5021ff616ccb5014}{sf\+::\+Sensor}}.
+
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}{sf\+::\+Link\+Sensor}}, \mbox{\hyperlink{classsf_1_1_joint_sensor_ab14a789669f205ec6115e48f61e4b7bf}{sf\+::\+Joint\+Sensor}}, \mbox{\hyperlink{classsf_1_1_rotary_encoder_ad8f229333bbf284723b821b4a098412e}{sf\+::\+Rotary\+Encoder}}, \mbox{\hyperlink{classsf_1_1_force_torque_ae39a13d7d0c98157558760f48410ae2a}{sf\+::\+Force\+Torque}}, \mbox{\hyperlink{classsf_1_1_i_n_s_aab8b9bc95aed3bdb368f2157058bd2f8}{sf\+::\+I\+NS}}, \mbox{\hyperlink{classsf_1_1_current_ad6b77aa2fa7c9ef85210a878cd7fb71c}{sf\+::\+Current}}, \mbox{\hyperlink{classsf_1_1_d_v_l_ac335050d300d260787e745ac4cd08352}{sf\+::\+D\+VL}}, \mbox{\hyperlink{classsf_1_1_multibeam_aa511201b40766a38f2c529d741d075b4}{sf\+::\+Multibeam}}, \mbox{\hyperlink{classsf_1_1_profiler_a180f5ea652493c9656cc9e51cee4fac9}{sf\+::\+Profiler}}, \mbox{\hyperlink{classsf_1_1_accelerometer_a1f9aab374cdf926df504de6bcd034982}{sf\+::\+Accelerometer}}, \mbox{\hyperlink{classsf_1_1_compass_a03d9c461814e16dd357c6bb382684892}{sf\+::\+Compass}}, \mbox{\hyperlink{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}{sf\+::\+G\+PS}}, \mbox{\hyperlink{classsf_1_1_gyroscope_aed34f7b9142c9e3f459e7dc3a8f3bac6}{sf\+::\+Gyroscope}}, \mbox{\hyperlink{classsf_1_1_i_m_u_a86a29449a8bc145f4cd7e1e1c98d2da2}{sf\+::\+I\+MU}}, \mbox{\hyperlink{classsf_1_1_odometry_aff59f4aec87d16521a1a7190298d6f53}{sf\+::\+Odometry}}, \mbox{\hyperlink{classsf_1_1_pose_afadbc1462d1b20aa395c7067e0503075}{sf\+::\+Pose}}, \mbox{\hyperlink{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}{sf\+::\+Pressure}}, \mbox{\hyperlink{classsf_1_1_real_rotary_encoder_ace48bba40185d71e06fcdba6c5e8380f}{sf\+::\+Real\+Rotary\+Encoder}}, and \mbox{\hyperlink{classsf_1_1_torque_a3b897c896ab90132fde90d2b5c663e59}{sf\+::\+Torque}}.
+
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_a5ea8d8ffdbfde0249bd8b787ee6e4a5b}\label{classsf_1_1_scalar_sensor_a5ea8d8ffdbfde0249bd8b787ee6e4a5b}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!SaveMeasurementsToOctaveFile@{SaveMeasurementsToOctaveFile}}
+\index{SaveMeasurementsToOctaveFile@{SaveMeasurementsToOctaveFile}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{SaveMeasurementsToOctaveFile()}{SaveMeasurementsToOctaveFile()}}
+{\footnotesize\ttfamily void sf\+::\+Scalar\+Sensor\+::\+Save\+Measurements\+To\+Octave\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{bool}]{include\+Time = {\ttfamily true},  }\item[{bool}]{separate\+Channels = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+A method used to save the measurements to an Octave file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & a path to the output file \\
+\hline
+{\em include\+Time} & a flag specifying if the timestamp should be written \\
+\hline
+{\em separate\+Channels} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 224 of file Scalar\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_scalar_sensor_aa1bfe5a9f4331022b74f2e23459baa99}\label{classsf_1_1_scalar_sensor_aa1bfe5a9f4331022b74f2e23459baa99}} 
+\index{sf::ScalarSensor@{sf::ScalarSensor}!SaveMeasurementsToTextFile@{SaveMeasurementsToTextFile}}
+\index{SaveMeasurementsToTextFile@{SaveMeasurementsToTextFile}!sf::ScalarSensor@{sf::ScalarSensor}}
+\doxysubsubsection{\texorpdfstring{SaveMeasurementsToTextFile()}{SaveMeasurementsToTextFile()}}
+{\footnotesize\ttfamily void sf\+::\+Scalar\+Sensor\+::\+Save\+Measurements\+To\+Text\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{bool}]{include\+Time = {\ttfamily true},  }\item[{unsigned int}]{fixed\+Precision = {\ttfamily 6} }\end{DoxyParamCaption})}
+
+
+
+A method used to save the measurements to a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & a path to the output file \\
+\hline
+{\em include\+Time} & a flag specifying if the timestamp should be written \\
+\hline
+{\em fixed\+Precision} & number of decimal places to write \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 155 of file Scalar\+Sensor.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/Scalar\+Sensor.\+h\item 
+Library/src/sensors/Scalar\+Sensor.\+cpp\end{DoxyCompactItemize}

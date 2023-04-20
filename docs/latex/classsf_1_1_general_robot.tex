@@ -1,0 +1,197 @@
+\hypertarget{classsf_1_1_general_robot}{}\doxysection{sf\+::General\+Robot Class Reference}
+\label{classsf_1_1_general_robot}\index{sf::GeneralRobot@{sf::GeneralRobot}}
+
+
+A class implementing a robotic system composed of a dynamic rigid-\/body chain/tree/loop, actuators and sensors.  
+
+
+
+
+{\ttfamily \#include $<$General\+Robot.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::General\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classsf_1_1_general_robot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::General\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classsf_1_1_general_robot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_general_robot_abd6ad212d509d42f938d4d3f25ddb2b1}{General\+Robot}} (std\+::string unique\+Name, bool fixed\+Base=false)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_general_robot_a09a3067ed783d22949e9a9f6d80e7811}\label{classsf_1_1_general_robot_a09a3067ed783d22949e9a9f6d80e7811}} 
+virtual \mbox{\hyperlink{classsf_1_1_general_robot_a09a3067ed783d22949e9a9f6d80e7811}{$\sim$\+General\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_general_robot_ad3211cd80ac7fae3ad81b433e740529e}{Define\+Links}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$base\+Link, std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$ other\+Links=std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$(0), bool self\+Collision=false)
+\begin{DoxyCompactList}\small\item\em A method used to define a list of rigid bodies constituting the mechanical part of the robot (dynamic tree). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_general_robot_a5dc85a245aea11c92b540f97813759db}\label{classsf_1_1_general_robot_a5dc85a245aea11c92b540f97813759db}} 
+void \mbox{\hyperlink{classsf_1_1_general_robot_a5dc85a245aea11c92b540f97813759db}{Build\+Kinematic\+Structure}} ()
+\begin{DoxyCompactList}\small\item\em A method which uses links and joints definitions to build the kinematic structure of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_general_robot_af253b7ee0567ecbbce896aeb36263323}{Add\+Joint\+Sensor}} (\mbox{\hyperlink{classsf_1_1_joint_sensor}{Joint\+Sensor}} $\ast$s, const std\+::string \&monitored\+Joint\+Name)
+\begin{DoxyCompactList}\small\item\em A method used to attach a sensor to a specified joint of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_general_robot_ab2ef0ef62d649fd895454746afeb9bc9}{Add\+Joint\+Actuator}} (\mbox{\hyperlink{classsf_1_1_joint_actuator}{Joint\+Actuator}} $\ast$a, const std\+::string \&actuated\+Joint\+Name)
+\begin{DoxyCompactList}\small\item\em A method used to attach an actuator to a specified joint of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_general_robot_af5f5c7b45852e90f07e0a3b9d0402602}{Add\+To\+Simulation}} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method adding the robot to the simulation world (includes consistency checking). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_general_robot_a19736a4d693299520d3b747b681c8685}\label{classsf_1_1_general_robot_a19736a4d693299520d3b747b681c8685}} 
+Transform \mbox{\hyperlink{classsf_1_1_general_robot_a19736a4d693299520d3b747b681c8685}{get\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the pose of the robot in the world frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_general_robot_a0ffbc6ef320c4b1427619480a2243269}\label{classsf_1_1_general_robot_a0ffbc6ef320c4b1427619480a2243269}} 
+Robot\+Type \mbox{\hyperlink{classsf_1_1_general_robot_a0ffbc6ef320c4b1427619480a2243269}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning type of algorithm used for the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a robotic system composed of a dynamic rigid-\/body chain/tree/loop, actuators and sensors. 
+
+Definition at line 36 of file General\+Robot.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_general_robot_abd6ad212d509d42f938d4d3f25ddb2b1}\label{classsf_1_1_general_robot_abd6ad212d509d42f938d4d3f25ddb2b1}} 
+\index{sf::GeneralRobot@{sf::GeneralRobot}!GeneralRobot@{GeneralRobot}}
+\index{GeneralRobot@{GeneralRobot}!sf::GeneralRobot@{sf::GeneralRobot}}
+\doxysubsubsection{\texorpdfstring{GeneralRobot()}{GeneralRobot()}}
+{\footnotesize\ttfamily sf\+::\+General\+Robot\+::\+General\+Robot (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{bool}]{fixed\+Base = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the robot \\
+\hline
+{\em fixed\+Base} & is the robot fixed to the world? \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file General\+Robot.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_general_robot_ab2ef0ef62d649fd895454746afeb9bc9}\label{classsf_1_1_general_robot_ab2ef0ef62d649fd895454746afeb9bc9}} 
+\index{sf::GeneralRobot@{sf::GeneralRobot}!AddJointActuator@{AddJointActuator}}
+\index{AddJointActuator@{AddJointActuator}!sf::GeneralRobot@{sf::GeneralRobot}}
+\doxysubsubsection{\texorpdfstring{AddJointActuator()}{AddJointActuator()}}
+{\footnotesize\ttfamily void sf\+::\+General\+Robot\+::\+Add\+Joint\+Actuator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_joint_actuator}{Joint\+Actuator}} $\ast$}]{a,  }\item[{const std\+::string \&}]{actuated\+Joint\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to attach an actuator to a specified joint of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a pointer to a joint actuator object \\
+\hline
+{\em actuated\+Joint\+Name} & a name of the joint which is to be driven \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_ad969717e0bbe4fbfcf02086eb84757a2}{sf\+::\+Robot}}.
+
+
+
+Definition at line 91 of file General\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_general_robot_af253b7ee0567ecbbce896aeb36263323}\label{classsf_1_1_general_robot_af253b7ee0567ecbbce896aeb36263323}} 
+\index{sf::GeneralRobot@{sf::GeneralRobot}!AddJointSensor@{AddJointSensor}}
+\index{AddJointSensor@{AddJointSensor}!sf::GeneralRobot@{sf::GeneralRobot}}
+\doxysubsubsection{\texorpdfstring{AddJointSensor()}{AddJointSensor()}}
+{\footnotesize\ttfamily void sf\+::\+General\+Robot\+::\+Add\+Joint\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_joint_sensor}{Joint\+Sensor}} $\ast$}]{s,  }\item[{const std\+::string \&}]{monitored\+Joint\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to attach a sensor to a specified joint of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a pointer to a joint sensor object \\
+\hline
+{\em monitored\+Joint\+Name} & a name of the joint at which the sensor is attached \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_a4306d7b119213c92fe1b79ea774a5820}{sf\+::\+Robot}}.
+
+
+
+Definition at line 80 of file General\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_general_robot_af5f5c7b45852e90f07e0a3b9d0402602}\label{classsf_1_1_general_robot_af5f5c7b45852e90f07e0a3b9d0402602}} 
+\index{sf::GeneralRobot@{sf::GeneralRobot}!AddToSimulation@{AddToSimulation}}
+\index{AddToSimulation@{AddToSimulation}!sf::GeneralRobot@{sf::GeneralRobot}}
+\doxysubsubsection{\texorpdfstring{AddToSimulation()}{AddToSimulation()}}
+{\footnotesize\ttfamily void sf\+::\+General\+Robot\+::\+Add\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$}]{sm,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method adding the robot to the simulation world (includes consistency checking). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & a pointer to a simulation manager \\
+\hline
+{\em origin} & a trasformation from the world origin to the robot origin \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_robot_a030523d874b93ff69d066432716a576e}{sf\+::\+Robot}}.
+
+
+
+Definition at line 102 of file General\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_general_robot_ad3211cd80ac7fae3ad81b433e740529e}\label{classsf_1_1_general_robot_ad3211cd80ac7fae3ad81b433e740529e}} 
+\index{sf::GeneralRobot@{sf::GeneralRobot}!DefineLinks@{DefineLinks}}
+\index{DefineLinks@{DefineLinks}!sf::GeneralRobot@{sf::GeneralRobot}}
+\doxysubsubsection{\texorpdfstring{DefineLinks()}{DefineLinks()}}
+{\footnotesize\ttfamily void sf\+::\+General\+Robot\+::\+Define\+Links (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{base\+Link,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$}]{other\+Links = {\ttfamily std\+:\+:vector$<$\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}}$\ast$$>$(0)},  }\item[{bool}]{self\+Collision = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to define a list of rigid bodies constituting the mechanical part of the robot (dynamic tree). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Link} & a solid contituting the base of the robot \\
+\hline
+{\em other\+Links} & a vector of subsequent links \\
+\hline
+{\em self\+Collision} & a flag determining if self collision between multibody links should be enabled (subsequent links never collide) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_a9e2dfa6c735a1c56ad3aac7e896b9b04}{sf\+::\+Robot}}.
+
+
+
+Definition at line 70 of file General\+Robot.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/core/General\+Robot.\+h\item 
+Library/src/core/General\+Robot.\+cpp\end{DoxyCompactItemize}

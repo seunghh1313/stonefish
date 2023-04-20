@@ -1,0 +1,170 @@
+\hypertarget{classsf_1_1_link_sensor}{}\doxysection{sf\+::Link\+Sensor Class Reference}
+\label{classsf_1_1_link_sensor}\index{sf::LinkSensor@{sf::LinkSensor}}
+
+
+An abstract class representing a sensor attached to a rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Link\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Link\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_link_sensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Link\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classsf_1_1_link_sensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_link_sensor_a9202e473fbd001ce81442b576eb53f31}{Link\+Sensor}} (std\+::string unique\+Name, Scalar frequency, int history\+Length)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a991338309f3523e76c9d7862e5eae2c3}\label{classsf_1_1_link_sensor_a991338309f3523e76c9d7862e5eae2c3}} 
+virtual \mbox{\hyperlink{classsf_1_1_link_sensor_a991338309f3523e76c9d7862e5eae2c3}{$\sim$\+Link\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}{Internal\+Update}} (Scalar dt)=0
+\begin{DoxyCompactList}\small\item\em A method performing internal sensor state update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_acd14122b21065cb5ec664c9e3d996e47}\label{classsf_1_1_link_sensor_acd14122b21065cb5ec664c9e3d996e47}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_link_sensor_acd14122b21065cb5ec664c9e3d996e47}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_link_sensor_affd742d0298093882c937cd5d7c1cc7c}{Attach\+To\+Solid}} (\mbox{\hyperlink{classsf_1_1_moving_entity}{Moving\+Entity}} $\ast$solid, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method used to attach the sensor to a rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_link_sensor_a0a1cb886da0f6064b1916500a777a7b0}{set\+Relative\+Sensor\+Frame}} (const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method used to set the sensor frame in the body frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a4816372749de7ead060bb0ce25f21126}\label{classsf_1_1_link_sensor_a4816372749de7ead060bb0ce25f21126}} 
+Sensor\+Type \mbox{\hyperlink{classsf_1_1_link_sensor_a4816372749de7ead060bb0ce25f21126}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a559a0c377c040bf83135dffbb7197bbc}\label{classsf_1_1_link_sensor_a559a0c377c040bf83135dffbb7197bbc}} 
+virtual Transform \mbox{\hyperlink{classsf_1_1_link_sensor_a559a0c377c040bf83135dffbb7197bbc}{get\+Sensor\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current sensor frame in world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a9efc30cd5e844635edce9f0d33832466}\label{classsf_1_1_link_sensor_a9efc30cd5e844635edce9f0d33832466}} 
+std\+::string \mbox{\hyperlink{classsf_1_1_link_sensor_a9efc30cd5e844635edce9f0d33832466}{get\+Link\+Name}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the name of the link that the sensor is attached to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a86dc3469d36085acf147977665942e61}\label{classsf_1_1_link_sensor_a86dc3469d36085acf147977665942e61}} 
+\mbox{\hyperlink{classsf_1_1_moving_entity}{Moving\+Entity}} $\ast$ {\bfseries attach}
+\item 
+\mbox{\Hypertarget{classsf_1_1_link_sensor_ae15dc87596a7416d5de857a4e74908b4}\label{classsf_1_1_link_sensor_ae15dc87596a7416d5de857a4e74908b4}} 
+Transform {\bfseries o2s}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a sensor attached to a rigid body. 
+
+Definition at line 37 of file Link\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a9202e473fbd001ce81442b576eb53f31}\label{classsf_1_1_link_sensor_a9202e473fbd001ce81442b576eb53f31}} 
+\index{sf::LinkSensor@{sf::LinkSensor}!LinkSensor@{LinkSensor}}
+\index{LinkSensor@{LinkSensor}!sf::LinkSensor@{sf::LinkSensor}}
+\doxysubsubsection{\texorpdfstring{LinkSensor()}{LinkSensor()}}
+{\footnotesize\ttfamily sf\+::\+Link\+Sensor\+::\+Link\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{frequency,  }\item[{int}]{history\+Length }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (0 if updated every simulation step) \\
+\hline
+{\em history\+Length} & defines\+: -\/1 -\/$>$ no history, 0 -\/$>$ unlimited history, $>$0 -\/$>$ history with a specified length \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Link\+Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_link_sensor_affd742d0298093882c937cd5d7c1cc7c}\label{classsf_1_1_link_sensor_affd742d0298093882c937cd5d7c1cc7c}} 
+\index{sf::LinkSensor@{sf::LinkSensor}!AttachToSolid@{AttachToSolid}}
+\index{AttachToSolid@{AttachToSolid}!sf::LinkSensor@{sf::LinkSensor}}
+\doxysubsubsection{\texorpdfstring{AttachToSolid()}{AttachToSolid()}}
+{\footnotesize\ttfamily void sf\+::\+Link\+Sensor\+::\+Attach\+To\+Solid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_moving_entity}{Moving\+Entity}} $\ast$}]{solid,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+A method used to attach the sensor to a rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solid} & a pointer to a rigid body \\
+\hline
+{\em origin} & a transformation from the body frame to the sensor frame \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Link\+Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}\label{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}} 
+\index{sf::LinkSensor@{sf::LinkSensor}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::LinkSensor@{sf::LinkSensor}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Link\+Sensor\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method performing internal sensor state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa9fa7c8963ccdc8bc88d41aa6ac1bd6a}{sf\+::\+Scalar\+Sensor}}.
+
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_i_n_s_aab8b9bc95aed3bdb368f2157058bd2f8}{sf\+::\+I\+NS}}, \mbox{\hyperlink{classsf_1_1_d_v_l_ac335050d300d260787e745ac4cd08352}{sf\+::\+D\+VL}}, \mbox{\hyperlink{classsf_1_1_multibeam_aa511201b40766a38f2c529d741d075b4}{sf\+::\+Multibeam}}, \mbox{\hyperlink{classsf_1_1_profiler_a180f5ea652493c9656cc9e51cee4fac9}{sf\+::\+Profiler}}, \mbox{\hyperlink{classsf_1_1_accelerometer_a1f9aab374cdf926df504de6bcd034982}{sf\+::\+Accelerometer}}, \mbox{\hyperlink{classsf_1_1_compass_a03d9c461814e16dd357c6bb382684892}{sf\+::\+Compass}}, \mbox{\hyperlink{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}{sf\+::\+G\+PS}}, \mbox{\hyperlink{classsf_1_1_gyroscope_aed34f7b9142c9e3f459e7dc3a8f3bac6}{sf\+::\+Gyroscope}}, \mbox{\hyperlink{classsf_1_1_i_m_u_a86a29449a8bc145f4cd7e1e1c98d2da2}{sf\+::\+I\+MU}}, \mbox{\hyperlink{classsf_1_1_odometry_aff59f4aec87d16521a1a7190298d6f53}{sf\+::\+Odometry}}, \mbox{\hyperlink{classsf_1_1_pose_afadbc1462d1b20aa395c7067e0503075}{sf\+::\+Pose}}, and \mbox{\hyperlink{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}{sf\+::\+Pressure}}.
+
+\mbox{\Hypertarget{classsf_1_1_link_sensor_a0a1cb886da0f6064b1916500a777a7b0}\label{classsf_1_1_link_sensor_a0a1cb886da0f6064b1916500a777a7b0}} 
+\index{sf::LinkSensor@{sf::LinkSensor}!setRelativeSensorFrame@{setRelativeSensorFrame}}
+\index{setRelativeSensorFrame@{setRelativeSensorFrame}!sf::LinkSensor@{sf::LinkSensor}}
+\doxysubsubsection{\texorpdfstring{setRelativeSensorFrame()}{setRelativeSensorFrame()}}
+{\footnotesize\ttfamily void sf\+::\+Link\+Sensor\+::set\+Relative\+Sensor\+Frame (\begin{DoxyParamCaption}\item[{const Transform \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+A method used to set the sensor frame in the body frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & a tranformation from the body frame to the sensor frame \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Link\+Sensor.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/scalar/Link\+Sensor.\+h\item 
+Library/src/sensors/scalar/Link\+Sensor.\+cpp\end{DoxyCompactItemize}

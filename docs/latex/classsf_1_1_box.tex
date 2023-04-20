@@ -1,0 +1,88 @@
+\hypertarget{classsf_1_1_box}{}\doxysection{sf\+::Box Class Reference}
+\label{classsf_1_1_box}\index{sf::Box@{sf::Box}}
+
+
+A class representing a box-\/shaped rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Box.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_box__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_box__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_box_ac373f9c0d9f331c31a7219d81f9c27e1}{Box}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, const Vector3 \&dimensions, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_box_aef6631aff7780763dfff9f1a399082a7}\label{classsf_1_1_box_aef6631aff7780763dfff9f1a399082a7}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_box_aef6631aff7780763dfff9f1a399082a7}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_box_ade27aebaa17059d4138135d237f4c706}\label{classsf_1_1_box_ade27aebaa17059d4138135d237f4c706}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_box_ade27aebaa17059d4138135d237f4c706}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape for the box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a box-\/shaped rigid body. 
+
+Definition at line 34 of file Box.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_box_ac373f9c0d9f331c31a7219d81f9c27e1}\label{classsf_1_1_box_ac373f9c0d9f331c31a7219d81f9c27e1}} 
+\index{sf::Box@{sf::Box}!Box@{Box}}
+\index{Box@{Box}!sf::Box@{sf::Box}}
+\doxysubsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily sf\+::\+Box\+::\+Box (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{const Vector3 \&}]{dimensions,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the box \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em dimensions} & a vector of box dimensions (side lengths) \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for box) \\
+\hline
+{\em material} & the name of the material the box is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the box walls, if positive the box is treated as shell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Box.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Box.\+h\item 
+Library/src/entities/solids/Box.\+cpp\end{DoxyCompactItemize}

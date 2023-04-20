@@ -1,0 +1,123 @@
+\hypertarget{classsf_1_1_actuator}{}\doxysection{sf\+::Actuator Class Reference}
+\label{classsf_1_1_actuator}\index{sf::Actuator@{sf::Actuator}}
+
+
+An abstract class representing any actuator.  
+
+
+
+
+{\ttfamily \#include $<$Actuator.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Actuator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_actuator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_actuator_a0bdcfb3e2bad01b7e3524efcea3dd646}{Actuator}} (std\+::string unique\+Name)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_actuator_ab1702a858f2c750da3259d8b3d574268}\label{classsf_1_1_actuator_ab1702a858f2c750da3259d8b3d574268}} 
+virtual \mbox{\hyperlink{classsf_1_1_actuator_ab1702a858f2c750da3259d8b3d574268}{$\sim$\+Actuator}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_actuator_a9220511396d118a2817da1fe069d79d6}{Update}} (Scalar dt)=0
+\begin{DoxyCompactList}\small\item\em A method used to update the internal state of the actuator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_actuator_a10c5e76c82bb29f60d2f8d199c9c47b0}\label{classsf_1_1_actuator_a10c5e76c82bb29f60d2f8d199c9c47b0}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_actuator_a10c5e76c82bb29f60d2f8d199c9c47b0}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the actuator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_actuator_afe4e4fcdb0e13f9efbc665994e77d145}{set\+Display\+Mode}} (Display\+Mode m)
+\begin{DoxyCompactList}\small\item\em A method used to set display mode used for the actuator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_actuator_a3b1831e870e2b800590271823d034c88}\label{classsf_1_1_actuator_a3b1831e870e2b800590271823d034c88}} 
+virtual Actuator\+Type \mbox{\hyperlink{classsf_1_1_actuator_a3b1831e870e2b800590271823d034c88}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the type of the actuator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_actuator_a3a074b11358493cb251139c475507d2d}\label{classsf_1_1_actuator_a3a074b11358493cb251139c475507d2d}} 
+std\+::string \mbox{\hyperlink{classsf_1_1_actuator_a3a074b11358493cb251139c475507d2d}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the name of the actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_actuator_a1ca99e4bb5c8efa1670fdd09f1d52ead}\label{classsf_1_1_actuator_a1ca99e4bb5c8efa1670fdd09f1d52ead}} 
+Display\+Mode {\bfseries dm}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing any actuator. 
+
+Definition at line 40 of file Actuator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_actuator_a0bdcfb3e2bad01b7e3524efcea3dd646}\label{classsf_1_1_actuator_a0bdcfb3e2bad01b7e3524efcea3dd646}} 
+\index{sf::Actuator@{sf::Actuator}!Actuator@{Actuator}}
+\index{Actuator@{Actuator}!sf::Actuator@{sf::Actuator}}
+\doxysubsubsection{\texorpdfstring{Actuator()}{Actuator()}}
+{\footnotesize\ttfamily sf\+::\+Actuator\+::\+Actuator (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name of the actuator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Actuator.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_actuator_afe4e4fcdb0e13f9efbc665994e77d145}\label{classsf_1_1_actuator_afe4e4fcdb0e13f9efbc665994e77d145}} 
+\index{sf::Actuator@{sf::Actuator}!setDisplayMode@{setDisplayMode}}
+\index{setDisplayMode@{setDisplayMode}!sf::Actuator@{sf::Actuator}}
+\doxysubsubsection{\texorpdfstring{setDisplayMode()}{setDisplayMode()}}
+{\footnotesize\ttfamily void sf\+::\+Actuator\+::set\+Display\+Mode (\begin{DoxyParamCaption}\item[{Display\+Mode}]{m }\end{DoxyParamCaption})}
+
+
+
+A method used to set display mode used for the actuator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & flag defining the display mode \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file Actuator.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_actuator_a9220511396d118a2817da1fe069d79d6}\label{classsf_1_1_actuator_a9220511396d118a2817da1fe069d79d6}} 
+\index{sf::Actuator@{sf::Actuator}!Update@{Update}}
+\index{Update@{Update}!sf::Actuator@{sf::Actuator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Actuator\+::\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method used to update the internal state of the actuator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & a time step of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_light_af7ddba704662cbaa9c6ae80893e505ac}{sf\+::\+Light}}, \mbox{\hyperlink{classsf_1_1_servo_aed2297ca611fcbd33d7e7af4823f0cb1}{sf\+::\+Servo}}, \mbox{\hyperlink{classsf_1_1_suction_cup_a242b27d67d9b06c2ea2549b9debcadc3}{sf\+::\+Suction\+Cup}}, \mbox{\hyperlink{classsf_1_1_propeller_ac2c8700d915337f3d836d1f97be398ab}{sf\+::\+Propeller}}, \mbox{\hyperlink{classsf_1_1_rudder_a9194a6e688e4c8e3b5ac5d0513d208ea}{sf\+::\+Rudder}}, \mbox{\hyperlink{classsf_1_1_thruster_a215f38c15cf6c3c599afde3728f6cfce}{sf\+::\+Thruster}}, \mbox{\hyperlink{classsf_1_1_d_c_motor_a7c67f72c93d9e24e089a6ae62e1c9664}{sf\+::\+D\+C\+Motor}}, \mbox{\hyperlink{classsf_1_1_variable_buoyancy_a6170564595665201f3004c4d1a156833}{sf\+::\+Variable\+Buoyancy}}, and \mbox{\hyperlink{classsf_1_1_motor_a7cf83aaa6de72d16c66138807f95e24c}{sf\+::\+Motor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/actuators/Actuator.\+h\item 
+Library/src/actuators/Actuator.\+cpp\end{DoxyCompactItemize}

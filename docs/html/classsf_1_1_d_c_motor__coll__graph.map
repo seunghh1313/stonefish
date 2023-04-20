@@ -1,0 +1,9 @@
+<map id="sf::DCMotor" name="sf::DCMotor">
+<area shape="rect" id="node1" title="A class representing a model of a DC motor." alt="" coords="112,323,211,349"/>
+<area shape="rect" id="node2" href="$classsf_1_1_motor.html" title="A class representing a motor." alt="" coords="122,247,201,273"/>
+<area shape="rect" id="node3" href="$classsf_1_1_joint_actuator.html" title="An abstract class representing a joint actuator." alt="" coords="99,171,224,197"/>
+<area shape="rect" id="node4" href="$classsf_1_1_actuator.html" title="An abstract class representing any actuator." alt="" coords="5,81,101,108"/>
+<area shape="rect" id="node5" href="$classsf_1_1_joint.html" title="An abstract class implementing a general joint." alt="" coords="126,81,197,108"/>
+<area shape="rect" id="node6" href="$classsf_1_1_featherstone_entity.html" title="A class that implements simplified creation of multi&#45;body trees, using Roy Featherstone&#39;s algorithm." alt="" coords="221,81,385,108"/>
+<area shape="rect" id="node7" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="263,5,342,32"/>
+</map>

@@ -1,0 +1,221 @@
+\hypertarget{classsf_1_1_obstacle}{}\doxysection{sf\+::Obstacle Class Reference}
+\label{classsf_1_1_obstacle}\index{sf::Obstacle@{sf::Obstacle}}
+
+
+A static obstacle loaded from a file or taking one of the simple geometrical shapes.  
+
+
+
+
+{\ttfamily \#include $<$Obstacle.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classsf_1_1_obstacle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classsf_1_1_obstacle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_obstacle_a1f0b7d2bd2b48238ecda7c9153564744}{Obstacle}} (std\+::string unique\+Name, std\+::string graphics\+Filename, Scalar graphics\+Scale, const Transform \&graphics\+Origin, std\+::string physics\+Filename, Scalar physics\+Scale, const Transform \&physics\+Origin, bool convex\+Hull, std\+::string material, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor building an obstacle based on mesh files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_obstacle_ad4b0ef6808cfe16611a0ee55e408183b}{Obstacle}} (std\+::string unique\+Name, std\+::string model\+Filename, Scalar scale, const Transform \&origin, bool convex\+Hull, std\+::string material, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor building an obstacle based on a mesh file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_obstacle_aeab14a5fb280e5631c831d05ed7d4655}{Obstacle}} (std\+::string unique\+Name, Scalar sphere\+Radius, const Transform \&origin, std\+::string material, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor building a spherical obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_obstacle_ab42503ade568e4bc104c08bf96881ac9}{Obstacle}} (std\+::string unique\+Name, Vector3 box\+Dimensions, const Transform \&origin, std\+::string material, std\+::string look=\char`\"{}\char`\"{}, unsigned int uv\+Mode=0)
+\begin{DoxyCompactList}\small\item\em A constructor building a box obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_obstacle_ab9e9d9dc8f9b5e6b7d90b397856c5c75}{Obstacle}} (std\+::string unique\+Name, Scalar cylinder\+Radius, Scalar cylinder\+Height, const Transform \&origin, std\+::string material, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor building a cylindrical obstacle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_obstacle_ad66afcc94a4ac3b59e6bf9fa44f1b4fc}\label{classsf_1_1_obstacle_ad66afcc94a4ac3b59e6bf9fa44f1b4fc}} 
+\mbox{\hyperlink{classsf_1_1_obstacle_ad66afcc94a4ac3b59e6bf9fa44f1b4fc}{$\sim$\+Obstacle}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_obstacle_a74cc6c13f788437c4f0a3820b426ff15}\label{classsf_1_1_obstacle_a74cc6c13f788437c4f0a3820b426ff15}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_obstacle_a74cc6c13f788437c4f0a3820b426ff15}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_obstacle_a89465e6c3e257951fe597f5806e87d43}\label{classsf_1_1_obstacle_a89465e6c3e257951fe597f5806e87d43}} 
+Static\+Entity\+Type \mbox{\hyperlink{classsf_1_1_obstacle_a89465e6c3e257951fe597f5806e87d43}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the static body type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A static obstacle loaded from a file or taking one of the simple geometrical shapes. 
+
+Definition at line 34 of file Obstacle.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_obstacle_a1f0b7d2bd2b48238ecda7c9153564744}\label{classsf_1_1_obstacle_a1f0b7d2bd2b48238ecda7c9153564744}} 
+\index{sf::Obstacle@{sf::Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!sf::Obstacle@{sf::Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily sf\+::\+Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{std\+::string}]{graphics\+Filename,  }\item[{Scalar}]{graphics\+Scale,  }\item[{const Transform \&}]{graphics\+Origin,  }\item[{std\+::string}]{physics\+Filename,  }\item[{Scalar}]{physics\+Scale,  }\item[{const Transform \&}]{physics\+Origin,  }\item[{bool}]{convex\+Hull,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor building an obstacle based on mesh files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em graphics\+Filename} & a path to the 3d model used for rendering \\
+\hline
+{\em graphics\+Scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em graphics\+Origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em physics\+Filename} & a path to the 3d model used for physics computation (collisions, fluid dynamics) \\
+\hline
+{\em physics\+Scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em physics\+Origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em convex\+Hull} & a flag determining if the physics mesh should be treated as convex (faster collision) \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Obstacle.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_obstacle_ad4b0ef6808cfe16611a0ee55e408183b}\label{classsf_1_1_obstacle_ad4b0ef6808cfe16611a0ee55e408183b}} 
+\index{sf::Obstacle@{sf::Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!sf::Obstacle@{sf::Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily sf\+::\+Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{std\+::string}]{model\+Filename,  }\item[{Scalar}]{scale,  }\item[{const Transform \&}]{origin,  }\item[{bool}]{convex\+Hull,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor building an obstacle based on a mesh file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em model\+Filename} & a path to the 3d model used for both physics and rendering \\
+\hline
+{\em scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em convex\+Hull} & a flag determining if the physics mesh should be treated as convex (faster collision) \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Obstacle.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_obstacle_aeab14a5fb280e5631c831d05ed7d4655}\label{classsf_1_1_obstacle_aeab14a5fb280e5631c831d05ed7d4655}} 
+\index{sf::Obstacle@{sf::Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!sf::Obstacle@{sf::Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily sf\+::\+Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{sphere\+Radius,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor building a spherical obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em sphere\+Radius} & a radius of the spherical body \\
+\hline
+{\em origin} & a local transformation of the mesh origin \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Obstacle.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_obstacle_ab42503ade568e4bc104c08bf96881ac9}\label{classsf_1_1_obstacle_ab42503ade568e4bc104c08bf96881ac9}} 
+\index{sf::Obstacle@{sf::Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!sf::Obstacle@{sf::Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily sf\+::\+Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Vector3}]{box\+Dimensions,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}},  }\item[{unsigned int}]{uv\+Mode = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+A constructor building a box obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em box\+Dimensions} & a vector of box dimensions (side lengths) \\
+\hline
+{\em origin} & a local transformation of the mesh origin \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em uv\+Mode} & texture coordinates generation mode (0 -\/ texture cross, 1 -\/ same texture on all faces) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file Obstacle.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_obstacle_ab9e9d9dc8f9b5e6b7d90b397856c5c75}\label{classsf_1_1_obstacle_ab9e9d9dc8f9b5e6b7d90b397856c5c75}} 
+\index{sf::Obstacle@{sf::Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!sf::Obstacle@{sf::Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily sf\+::\+Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{cylinder\+Radius,  }\item[{Scalar}]{cylinder\+Height,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor building a cylindrical obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em cylinder\+Radius} & a radius of the cylindrical body \\
+\hline
+{\em cylinder\+Height} & a height of the cylindrical body \\
+\hline
+{\em origin} & a local transformation of the mesh origin \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 139 of file Obstacle.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/statics/Obstacle.\+h\item 
+Library/src/entities/statics/Obstacle.\+cpp\end{DoxyCompactItemize}

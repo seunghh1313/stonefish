@@ -1,0 +1,7 @@
+<map id="sf::RealRotaryEncoder" name="sf::RealRotaryEncoder">
+<area shape="rect" id="node1" title="A class representing a rotary encoder with a specified resolution." alt="" coords="5,304,171,331"/>
+<area shape="rect" id="node2" href="$classsf_1_1_rotary_encoder.html" title="A class representing a rotary encoder with &quot;infinite&quot; resolution." alt="" coords="20,229,156,256"/>
+<area shape="rect" id="node3" href="$classsf_1_1_joint_sensor.html" title="An abstract class representing a sensor attached to a joint." alt="" coords="31,155,145,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="25,80,151,107"/>
+<area shape="rect" id="node5" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="45,5,131,32"/>
+</map>

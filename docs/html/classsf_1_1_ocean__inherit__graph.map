@@ -1,0 +1,5 @@
+<map id="sf::Ocean" name="sf::Ocean">
+<area shape="rect" id="node1" title="A class implementing an ocean." alt="" coords="35,155,118,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_forcefield_entity.html" title="An abstract class representing some kind of a force field." alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="37,5,116,32"/>
+</map>

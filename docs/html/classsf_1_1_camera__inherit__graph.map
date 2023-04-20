@@ -1,0 +1,11 @@
+<map id="sf::Camera" name="sf::Camera">
+<area shape="rect" id="node1" title="An abstract class representing a camera type sensor." alt="" coords="344,155,436,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_color_camera.html" title="A class representing a color camera." alt="" coords="5,229,132,256"/>
+<area shape="rect" id="node5" href="$classsf_1_1_depth_camera.html" title="A class representing a depth camera." alt="" coords="157,229,287,256"/>
+<area shape="rect" id="node6" href="$classsf_1_1_f_l_s.html" title="A class representing a forward looking sonar." alt="" coords="311,229,375,256"/>
+<area shape="rect" id="node7" href="$classsf_1_1_m_s_i_s.html" title="A class representing a mechanical scanning imaging sonar." alt="" coords="400,229,473,256"/>
+<area shape="rect" id="node8" href="$classsf_1_1_multibeam2.html" title="A class representing a multibeam sonar (simulated with a number of depth cameras)." alt="" coords="497,229,616,256"/>
+<area shape="rect" id="node9" href="$classsf_1_1_s_s_s.html" title="A class representing a side&#45;scan sonar." alt="" coords="640,229,705,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_vision_sensor.html" title="An abstract class representing a vision sensor." alt="" coords="327,80,453,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="347,5,433,32"/>
+</map>

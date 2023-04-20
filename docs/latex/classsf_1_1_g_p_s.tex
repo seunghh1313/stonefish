@@ -1,0 +1,129 @@
+\hypertarget{classsf_1_1_g_p_s}{}\doxysection{sf\+::G\+PS Class Reference}
+\label{classsf_1_1_g_p_s}\index{sf::GPS@{sf::GPS}}
+
+
+A class representing a global positioning system (\mbox{\hyperlink{classsf_1_1_g_p_s}{G\+PS}}) sensor.  
+
+
+
+
+{\ttfamily \#include $<$G\+P\+S.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::G\+PS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classsf_1_1_g_p_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::G\+PS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classsf_1_1_g_p_s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_g_p_s_a5c3055fc0e34d6aee6f8a3a58098da1b}{G\+PS}} (std\+::string unique\+Name, Scalar frequency=Scalar(-\/1), int history\+Length=-\/1)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}{Internal\+Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method performing internal sensor state update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_g_p_s_a5202dac124cbbf5c8e85c8459d0aab0a}{set\+Noise}} (Scalar ned\+Dev)
+\begin{DoxyCompactList}\small\item\em A method used to set the noise characteristics of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_g_p_s_a18e1851f87c807b789ed046243f2bdd1}\label{classsf_1_1_g_p_s_a18e1851f87c807b789ed046243f2bdd1}} 
+Scalar \mbox{\hyperlink{classsf_1_1_g_p_s_a18e1851f87c807b789ed046243f2bdd1}{get\+Noise}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the standard deviation of position in meters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_g_p_s_a6fcf479d106b7faae1c9dd0caf284fcb}\label{classsf_1_1_g_p_s_a6fcf479d106b7faae1c9dd0caf284fcb}} 
+Scalar\+Sensor\+Type \mbox{\hyperlink{classsf_1_1_g_p_s_a6fcf479d106b7faae1c9dd0caf284fcb}{get\+Scalar\+Sensor\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the scalar sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a global positioning system (\mbox{\hyperlink{classsf_1_1_g_p_s}{G\+PS}}) sensor. 
+
+Definition at line 34 of file G\+P\+S.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_g_p_s_a5c3055fc0e34d6aee6f8a3a58098da1b}\label{classsf_1_1_g_p_s_a5c3055fc0e34d6aee6f8a3a58098da1b}} 
+\index{sf::GPS@{sf::GPS}!GPS@{GPS}}
+\index{GPS@{GPS}!sf::GPS@{sf::GPS}}
+\doxysubsubsection{\texorpdfstring{GPS()}{GPS()}}
+{\footnotesize\ttfamily sf\+::\+G\+P\+S\+::\+G\+PS (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{frequency = {\ttfamily Scalar(-\/1)},  }\item[{int}]{history\+Length = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (-\/1 if updated every simulation step) \\
+\hline
+{\em history\+Length} & defines\+: -\/1 -\/$>$ no history, 0 -\/$>$ unlimited history, $>$0 -\/$>$ history with a specified length \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file G\+P\+S.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}\label{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}} 
+\index{sf::GPS@{sf::GPS}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::GPS@{sf::GPS}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily void sf\+::\+G\+P\+S\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method performing internal sensor state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}{sf\+::\+Link\+Sensor}}.
+
+
+
+Definition at line 46 of file G\+P\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_g_p_s_a5202dac124cbbf5c8e85c8459d0aab0a}\label{classsf_1_1_g_p_s_a5202dac124cbbf5c8e85c8459d0aab0a}} 
+\index{sf::GPS@{sf::GPS}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::GPS@{sf::GPS}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+G\+P\+S\+::set\+Noise (\begin{DoxyParamCaption}\item[{Scalar}]{ned\+Dev }\end{DoxyParamCaption})}
+
+
+
+A method used to set the noise characteristics of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ned\+Dev} & standard deviation of the \mbox{\hyperlink{classsf_1_1_n_e_d}{N\+ED}} position measurement noise \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file G\+P\+S.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/scalar/G\+P\+S.\+h\item 
+Library/src/sensors/scalar/G\+P\+S.\+cpp\end{DoxyCompactItemize}

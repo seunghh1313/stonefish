@@ -1,0 +1,9 @@
+<map id="sf::OpenGLDepthCamera" name="sf::OpenGLDepthCamera">
+<area shape="rect" id="node1" title="A class representing a depth camera." alt="" coords="121,275,303,301"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_view.html" title="An abstract class representing an OpenGL view." alt="" coords="5,171,128,197"/>
+<area shape="rect" id="node3" href="$structsf_1_1_view_u_b_o.html" title=" " alt="" coords="15,81,118,108"/>
+<area shape="rect" id="node4" href="$classsf_1_1_g_l_s_l_shader.html" title="A class representing a single GLSL shader." alt="" coords="153,171,271,197"/>
+<area shape="rect" id="node5" href="$classsf_1_1_camera.html" title="An abstract class representing a camera type sensor." alt="" coords="378,171,470,197"/>
+<area shape="rect" id="node6" href="$classsf_1_1_vision_sensor.html" title="An abstract class representing a vision sensor." alt="" coords="361,81,487,108"/>
+<area shape="rect" id="node7" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="381,5,467,32"/>
+</map>

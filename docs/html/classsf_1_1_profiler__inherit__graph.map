@@ -1,0 +1,6 @@
+<map id="sf::Profiler" name="sf::Profiler">
+<area shape="rect" id="node1" title="A class representing a single beam profiler." alt="" coords="24,229,112,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_link_sensor.html" title="An abstract class representing a sensor attached to a rigid body." alt="" coords="12,155,124,181"/>
+<area shape="rect" id="node3" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="25,5,111,32"/>
+</map>

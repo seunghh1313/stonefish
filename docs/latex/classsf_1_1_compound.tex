@@ -1,0 +1,237 @@
+\hypertarget{classsf_1_1_compound}{}\doxysection{sf\+::Compound Class Reference}
+\label{classsf_1_1_compound}\index{sf::Compound@{sf::Compound}}
+
+
+A class representing a rigid body built of multiple other rigid bodies.  
+
+
+
+
+{\ttfamily \#include $<$Compound.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Compound\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_compound__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Compound\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_compound__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_compound_a523d1bb935edc13ec76948129d1159f1}{Compound}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$first\+External\+Part, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a7610b3390f61490ba9d5216a14802248}\label{classsf_1_1_compound_a7610b3390f61490ba9d5216a14802248}} 
+\mbox{\hyperlink{classsf_1_1_compound_a7610b3390f61490ba9d5216a14802248}{$\sim$\+Compound}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_compound_ad1d2a1d1bccc0f4f601314f22ed5bb3d}{Add\+Internal\+Part}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method adding new internal rigid body to the compound body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_compound_a5f7405a015a2c143129a8768fecbb74c}{Add\+External\+Part}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method adding new external rigid body to the compound body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_compound_acffdf49aa459e0117f7c9d216e517178}{Compute\+Hydrodynamic\+Forces}} (\mbox{\hyperlink{structsf_1_1_hydrodynamics_settings}{Hydrodynamics\+Settings}} settings, \mbox{\hyperlink{classsf_1_1_ocean}{Ocean}} $\ast$ocn)
+\begin{DoxyCompactList}\small\item\em A method which computes hydrodynamic forces acting on the compound body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_compound_a830c2a846d70b8cd616244827c14af1b}{Compute\+Aerodynamic\+Forces}} (\mbox{\hyperlink{classsf_1_1_atmosphere}{Atmosphere}} $\ast$atm)
+\begin{DoxyCompactList}\small\item\em A method that computes aerodynamics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_compound_ac6ed347b0a80005d6dca3e1467d0063f}{set\+Display\+Internal\+Parts}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em A method that sets if the internal or the external parts of the body should be displayed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a83dc7942320dd644f79216617575e97c}\label{classsf_1_1_compound_a83dc7942320dd644f79216617575e97c}} 
+Scalar \mbox{\hyperlink{classsf_1_1_compound_a83dc7942320dd644f79216617575e97c}{get\+Augmented\+Mass}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the mass or the sum of mass and added mass (depending on type of body). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a9cb4eb2faf8ba766e842946d7ff10d61}\label{classsf_1_1_compound_a9cb4eb2faf8ba766e842946d7ff10d61}} 
+Vector3 \mbox{\hyperlink{classsf_1_1_compound_a9cb4eb2faf8ba766e842946d7ff10d61}{get\+Augmented\+Inertia}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the inertia or the sum of inertia and added mass (depending on type of body). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a27a9b37b6dffe118d183614ce725f1bf}\label{classsf_1_1_compound_a27a9b37b6dffe118d183614ce725f1bf}} 
+\mbox{\hyperlink{structsf_1_1_material}{Material}} \mbox{\hyperlink{classsf_1_1_compound_a27a9b37b6dffe118d183614ce725f1bf}{get\+Material}} (size\+\_\+t part\+Id) const
+\begin{DoxyCompactList}\small\item\em A method returning the material of the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_adebc8c8aaffb6e528f34ee9f31dab609}\label{classsf_1_1_compound_adebc8c8aaffb6e528f34ee9f31dab609}} 
+size\+\_\+t \mbox{\hyperlink{classsf_1_1_compound_adebc8c8aaffb6e528f34ee9f31dab609}{get\+Part\+Id}} (size\+\_\+t collision\+Shape\+Id) const
+\begin{DoxyCompactList}\small\item\em A method returning the part id for the collision shape id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_adca6f0b004d2ce2083a54c8185a3034d}\label{classsf_1_1_compound_adca6f0b004d2ce2083a54c8185a3034d}} 
+const \mbox{\hyperlink{structsf_1_1_compound_part}{Compound\+Part}} \mbox{\hyperlink{classsf_1_1_compound_adca6f0b004d2ce2083a54c8185a3034d}{get\+Part}} (size\+\_\+t part\+Id) const
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to one part of the compound body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_ad91ff864c9fc99a6feb8718af231ed63}\label{classsf_1_1_compound_ad91ff864c9fc99a6feb8718af231ed63}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_compound_ad91ff864c9fc99a6feb8718af231ed63}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of solid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a762201cdacd0a11d61a9598b3913d733}\label{classsf_1_1_compound_a762201cdacd0a11d61a9598b3913d733}} 
+std\+::vector$<$ Vector3 $>$ $\ast$ \mbox{\hyperlink{classsf_1_1_compound_a762201cdacd0a11d61a9598b3913d733}{get\+Mesh\+Vertices}} () const
+\begin{DoxyCompactList}\small\item\em A method that returns a copy of all physics mesh vertices in body origin frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a29b3cadc8945b9e2c4b6420067ac8cda}\label{classsf_1_1_compound_a29b3cadc8945b9e2c4b6420067ac8cda}} 
+bool \mbox{\hyperlink{classsf_1_1_compound_a29b3cadc8945b9e2c4b6420067ac8cda}{is\+Displaying\+Internal\+Parts}} ()
+\begin{DoxyCompactList}\small\item\em A method that informs if the internal parts of the body are displayed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a8375a34c79fd9a18fd98a1e92e3c85ac}\label{classsf_1_1_compound_a8375a34c79fd9a18fd98a1e92e3c85ac}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_compound_a8375a34c79fd9a18fd98a1e92e3c85ac}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that constructs a collision shape for the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_aeeb4420d7c656151a02134da6e31e324}\label{classsf_1_1_compound_aeeb4420d7c656151a02134da6e31e324}} 
+void \mbox{\hyperlink{classsf_1_1_compound_aeeb4420d7c656151a02134da6e31e324}{Build\+Graphical\+Object}} ()
+\begin{DoxyCompactList}\small\item\em A method that builds a graphical object for the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_a3ff53bf4332cbd69a1a5e797299c9e43}\label{classsf_1_1_compound_a3ff53bf4332cbd69a1a5e797299c9e43}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_compound_a3ff53bf4332cbd69a1a5e797299c9e43}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns elements that have to be rendered for the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_compound_ac81074fb357e053a8b530ad7f453c1f0}\label{classsf_1_1_compound_ac81074fb357e053a8b530ad7f453c1f0}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_compound_ac81074fb357e053a8b530ad7f453c1f0}{Render}} (size\+\_\+t part\+Id)
+\begin{DoxyCompactList}\small\item\em A method that returns elements that have to be rendered for a signle part of the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a rigid body built of multiple other rigid bodies. 
+
+Definition at line 42 of file Compound.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_compound_a523d1bb935edc13ec76948129d1159f1}\label{classsf_1_1_compound_a523d1bb935edc13ec76948129d1159f1}} 
+\index{sf::Compound@{sf::Compound}!Compound@{Compound}}
+\index{Compound@{Compound}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{Compound()}{Compound()}}
+{\footnotesize\ttfamily sf\+::\+Compound\+::\+Compound (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{first\+External\+Part,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em first\+External\+Part} & a pointer to the first external rigid body \\
+\hline
+{\em origin} & a transformation from the compound body origin to the first part origin \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Compound.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_compound_a5f7405a015a2c143129a8768fecbb74c}\label{classsf_1_1_compound_a5f7405a015a2c143129a8768fecbb74c}} 
+\index{sf::Compound@{sf::Compound}!AddExternalPart@{AddExternalPart}}
+\index{AddExternalPart@{AddExternalPart}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{AddExternalPart()}{AddExternalPart()}}
+{\footnotesize\ttfamily void sf\+::\+Compound\+::\+Add\+External\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+A method adding new external rigid body to the compound body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solid} & a pointer to the rigid part \\
+\hline
+{\em origin} & a tranformation from the compound body origin to the part origin \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file Compound.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_compound_ad1d2a1d1bccc0f4f601314f22ed5bb3d}\label{classsf_1_1_compound_ad1d2a1d1bccc0f4f601314f22ed5bb3d}} 
+\index{sf::Compound@{sf::Compound}!AddInternalPart@{AddInternalPart}}
+\index{AddInternalPart@{AddInternalPart}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{AddInternalPart()}{AddInternalPart()}}
+{\footnotesize\ttfamily void sf\+::\+Compound\+::\+Add\+Internal\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+A method adding new internal rigid body to the compound body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solid} & a pointer to the rigid part \\
+\hline
+{\em origin} & a tranformation from the compound body origin to the part origin \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file Compound.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_compound_a830c2a846d70b8cd616244827c14af1b}\label{classsf_1_1_compound_a830c2a846d70b8cd616244827c14af1b}} 
+\index{sf::Compound@{sf::Compound}!ComputeAerodynamicForces@{ComputeAerodynamicForces}}
+\index{ComputeAerodynamicForces@{ComputeAerodynamicForces}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{ComputeAerodynamicForces()}{ComputeAerodynamicForces()}}
+{\footnotesize\ttfamily void sf\+::\+Compound\+::\+Compute\+Aerodynamic\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_atmosphere}{Atmosphere}} $\ast$}]{atm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that computes aerodynamics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atm} & a pointer to the atmosphere entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_solid_entity_a31fbc4e2a743d4c58ef5e8183ebd4f01}{sf\+::\+Solid\+Entity}}.
+
+
+
+Definition at line 419 of file Compound.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_compound_acffdf49aa459e0117f7c9d216e517178}\label{classsf_1_1_compound_acffdf49aa459e0117f7c9d216e517178}} 
+\index{sf::Compound@{sf::Compound}!ComputeHydrodynamicForces@{ComputeHydrodynamicForces}}
+\index{ComputeHydrodynamicForces@{ComputeHydrodynamicForces}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{ComputeHydrodynamicForces()}{ComputeHydrodynamicForces()}}
+{\footnotesize\ttfamily void sf\+::\+Compound\+::\+Compute\+Hydrodynamic\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsf_1_1_hydrodynamics_settings}{Hydrodynamics\+Settings}}}]{settings,  }\item[{\mbox{\hyperlink{classsf_1_1_ocean}{Ocean}} $\ast$}]{ocn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method which computes hydrodynamic forces acting on the compound body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & a structure holding settings of the hydrodynamic computation \\
+\hline
+{\em ocn} & a pointer to a fluid entity (only \mbox{\hyperlink{classsf_1_1_ocean}{Ocean}} supported now) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_solid_entity_a3d7bdff4905f432c9314781978f007d3}{sf\+::\+Solid\+Entity}}.
+
+
+
+Definition at line 284 of file Compound.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_compound_ac6ed347b0a80005d6dca3e1467d0063f}\label{classsf_1_1_compound_ac6ed347b0a80005d6dca3e1467d0063f}} 
+\index{sf::Compound@{sf::Compound}!setDisplayInternalParts@{setDisplayInternalParts}}
+\index{setDisplayInternalParts@{setDisplayInternalParts}!sf::Compound@{sf::Compound}}
+\doxysubsubsection{\texorpdfstring{setDisplayInternalParts()}{setDisplayInternalParts()}}
+{\footnotesize\ttfamily void sf\+::\+Compound\+::set\+Display\+Internal\+Parts (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+A method that sets if the internal or the external parts of the body should be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & a flag that informs if the internal parts should be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Compound.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Compound.\+h\item 
+Library/src/entities/solids/Compound.\+cpp\end{DoxyCompactItemize}

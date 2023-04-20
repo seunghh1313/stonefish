@@ -1,0 +1,120 @@
+\hypertarget{classsf_1_1_u_s_b_l_real}{}\doxysection{sf\+::U\+S\+B\+L\+Real Class Reference}
+\label{classsf_1_1_u_s_b_l_real}\index{sf::USBLReal@{sf::USBLReal}}
+
+
+A class representing a realistic \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}} model.  
+
+
+
+
+{\ttfamily \#include $<$U\+S\+B\+L\+Real.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::U\+S\+B\+L\+Real\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classsf_1_1_u_s_b_l_real__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::U\+S\+B\+L\+Real\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classsf_1_1_u_s_b_l_real__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_u_s_b_l_real_a9fb201c38f4ba240e55dc82999fda24c}{U\+S\+B\+L\+Real}} (std\+::string unique\+Name, uint64\+\_\+t device\+Id, Scalar min\+Vertical\+F\+O\+V\+Deg, Scalar max\+Vertical\+F\+O\+V\+Deg, Scalar operating\+Range, Scalar carrier\+Frequency, Scalar baseline)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_real_a786a483174f4b10df1cccc402f1296f4}{set\+Noise}} (Scalar time\+Dev, Scalar sound\+Velocity\+Dev, Scalar phase\+Dev, Scalar baseline\+Error, Scalar depth\+Dev)
+\begin{DoxyCompactList}\small\item\em A method used to set the noise characteristics of the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_real_ac947288678f8f67fe3388ad006afc62e}\label{classsf_1_1_u_s_b_l_real_ac947288678f8f67fe3388ad006afc62e}} 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_real_ac947288678f8f67fe3388ad006afc62e}{Process\+Messages}} ()
+\begin{DoxyCompactList}\small\item\em A method to proccess received messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a realistic \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}} model. 
+
+Definition at line 34 of file U\+S\+B\+L\+Real.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_real_a9fb201c38f4ba240e55dc82999fda24c}\label{classsf_1_1_u_s_b_l_real_a9fb201c38f4ba240e55dc82999fda24c}} 
+\index{sf::USBLReal@{sf::USBLReal}!USBLReal@{USBLReal}}
+\index{USBLReal@{USBLReal}!sf::USBLReal@{sf::USBLReal}}
+\doxysubsubsection{\texorpdfstring{USBLReal()}{USBLReal()}}
+{\footnotesize\ttfamily sf\+::\+U\+S\+B\+L\+Real\+::\+U\+S\+B\+L\+Real (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{uint64\+\_\+t}]{device\+Id,  }\item[{Scalar}]{min\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{max\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{operating\+Range,  }\item[{Scalar}]{carrier\+Frequency,  }\item[{Scalar}]{baseline }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the comm device \\
+\hline
+{\em device\+Id} & an identification code of the device \\
+\hline
+{\em min\+Vertical\+F\+O\+V\+Deg} & the minimum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em max\+Vertical\+F\+O\+V\+Deg} & the maximum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em operating\+Range} & the operating range \mbox{[}m\mbox{]} \\
+\hline
+{\em carrier\+Frequency} & the base frequency of the signal \mbox{[}Hz\mbox{]} \\
+\hline
+{\em baseline} & the distance between transducers forming one pair \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file U\+S\+B\+L\+Real.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_real_a786a483174f4b10df1cccc402f1296f4}\label{classsf_1_1_u_s_b_l_real_a786a483174f4b10df1cccc402f1296f4}} 
+\index{sf::USBLReal@{sf::USBLReal}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::USBLReal@{sf::USBLReal}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+U\+S\+B\+L\+Real\+::set\+Noise (\begin{DoxyParamCaption}\item[{Scalar}]{time\+Dev,  }\item[{Scalar}]{sound\+Velocity\+Dev,  }\item[{Scalar}]{phase\+Dev,  }\item[{Scalar}]{baseline\+Error,  }\item[{Scalar}]{depth\+Dev }\end{DoxyParamCaption})}
+
+
+
+A method used to set the noise characteristics of the device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Dev} & standard deviation of the T\+OF measurement \mbox{[}s\mbox{]} \\
+\hline
+{\em sound\+Velocity\+Dev} & standard deviation of the sound velocity in water \mbox{[}m/s\mbox{]} \\
+\hline
+{\em phase\+Dev} & standard deviation of the phase measurement \mbox{[}1\mbox{]} \\
+\hline
+{\em baseline\+Error} & the error in the distance between transducers forming a pair \mbox{[}m\mbox{]} \\
+\hline
+{\em depth\+Dev} & standard deviation of the depth measurement \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file U\+S\+B\+L\+Real.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/comms/U\+S\+B\+L\+Real.\+h\item 
+Library/src/comms/U\+S\+B\+L\+Real.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="sf::Accelerometer" name="sf::Accelerometer">
+<area shape="rect" id="node1" title="A class representing an accelerometer." alt="" coords="5,229,141,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_link_sensor.html" title="An abstract class representing a sensor attached to a rigid body." alt="" coords="17,155,129,181"/>
+<area shape="rect" id="node3" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="11,80,136,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="31,5,116,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sf::OpenGLRealCamera" name="sf::OpenGLRealCamera">
+<area shape="rect" id="node1" title="A class implementing a real camera in OpenGL." alt="" coords="5,155,177,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_camera.html" title="An abstract class implementing a camera view." alt="" coords="20,80,163,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_open_g_l_view.html" title="An abstract class representing an OpenGL view." alt="" coords="30,5,153,32"/>
+</map>

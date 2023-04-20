@@ -1,0 +1,4 @@
+<map id="sf::OceanCurrentsUBO" name="sf::OceanCurrentsUBO">
+<area shape="rect" id="node1" title="A structure representing the ocean currents UBO." alt="" coords="5,95,172,121"/>
+<area shape="rect" id="node2" href="$structsf_1_1_velocity_field_u_b_o.html" title="A structure representing a velocity field UBO (std140 aligned)." alt="" coords="12,5,165,32"/>
+</map>

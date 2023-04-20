@@ -1,0 +1,140 @@
+\hypertarget{classsf_1_1_suction_cup}{}\doxysection{sf\+::Suction\+Cup Class Reference}
+\label{classsf_1_1_suction_cup}\index{sf::SuctionCup@{sf::SuctionCup}}
+
+
+A class representing a thruster.  
+
+
+
+
+{\ttfamily \#include $<$Suction\+Cup.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Suction\+Cup\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classsf_1_1_suction_cup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Suction\+Cup\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_suction_cup__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_suction_cup_a2670e2dd8e4e6de29b02c3704ed0a3c6}{Suction\+Cup}} (std\+::string unique\+Name)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_suction_cup_ae35c288887062e0fbe29c1c62c10eca4}\label{classsf_1_1_suction_cup_ae35c288887062e0fbe29c1c62c10eca4}} 
+\mbox{\hyperlink{classsf_1_1_suction_cup_ae35c288887062e0fbe29c1c62c10eca4}{$\sim$\+Suction\+Cup}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_suction_cup_aa72e2dff0b16d0268cb14e304d3c7232}{Attach\+To\+Solid}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$body, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method used to attach the actuator to a specified rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_suction_cup_a242b27d67d9b06c2ea2549b9debcadc3}{Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method used to update the internal state of the thruster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a8b12826c537d6ddda0b467bd78319d52}\label{classsf_1_1_suction_cup_a8b12826c537d6ddda0b467bd78319d52}} 
+void {\bfseries Engage} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm)
+\item 
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a53fe75aa921b20d4bdbe919cac911a60}\label{classsf_1_1_suction_cup_a53fe75aa921b20d4bdbe919cac911a60}} 
+void {\bfseries set\+Pump} (bool enabled)
+\item 
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a28a1c2abc41e2463ea6a3b3a2c2fc280}\label{classsf_1_1_suction_cup_a28a1c2abc41e2463ea6a3b3a2c2fc280}} 
+bool {\bfseries get\+Pump} () const
+\item 
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a9d1267059e9ce1e0d69f3ec0a3692b9d}\label{classsf_1_1_suction_cup_a9d1267059e9ce1e0d69f3ec0a3692b9d}} 
+Actuator\+Type \mbox{\hyperlink{classsf_1_1_suction_cup_a9d1267059e9ce1e0d69f3ec0a3692b9d}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a thruster. 
+
+Definition at line 37 of file Suction\+Cup.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a2670e2dd8e4e6de29b02c3704ed0a3c6}\label{classsf_1_1_suction_cup_a2670e2dd8e4e6de29b02c3704ed0a3c6}} 
+\index{sf::SuctionCup@{sf::SuctionCup}!SuctionCup@{SuctionCup}}
+\index{SuctionCup@{SuctionCup}!sf::SuctionCup@{sf::SuctionCup}}
+\doxysubsubsection{\texorpdfstring{SuctionCup()}{SuctionCup()}}
+{\footnotesize\ttfamily sf\+::\+Suction\+Cup\+::\+Suction\+Cup (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the suction cup actuator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Suction\+Cup.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_suction_cup_aa72e2dff0b16d0268cb14e304d3c7232}\label{classsf_1_1_suction_cup_aa72e2dff0b16d0268cb14e304d3c7232}} 
+\index{sf::SuctionCup@{sf::SuctionCup}!AttachToSolid@{AttachToSolid}}
+\index{AttachToSolid@{AttachToSolid}!sf::SuctionCup@{sf::SuctionCup}}
+\doxysubsubsection{\texorpdfstring{AttachToSolid()}{AttachToSolid()}}
+{\footnotesize\ttfamily void sf\+::\+Suction\+Cup\+::\+Attach\+To\+Solid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{body,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to attach the actuator to a specified rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solid} & a pointer to a rigid body \\
+\hline
+{\em origin} & a transformation from the body origin to the actuator origin \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_link_actuator_abb33decb20bb669f931fe9eda36943e0}{sf\+::\+Link\+Actuator}}.
+
+
+
+Definition at line 59 of file Suction\+Cup.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_suction_cup_a242b27d67d9b06c2ea2549b9debcadc3}\label{classsf_1_1_suction_cup_a242b27d67d9b06c2ea2549b9debcadc3}} 
+\index{sf::SuctionCup@{sf::SuctionCup}!Update@{Update}}
+\index{Update@{Update}!sf::SuctionCup@{sf::SuctionCup}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void sf\+::\+Suction\+Cup\+::\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to update the internal state of the thruster. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & a time step of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_actuator_a9220511396d118a2817da1fe069d79d6}{sf\+::\+Actuator}}.
+
+
+
+Definition at line 67 of file Suction\+Cup.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/actuators/Suction\+Cup.\+h\item 
+Library/src/actuators/Suction\+Cup.\+cpp\end{DoxyCompactItemize}

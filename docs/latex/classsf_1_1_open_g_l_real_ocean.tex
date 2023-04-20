@@ -1,0 +1,256 @@
+\hypertarget{classsf_1_1_open_g_l_real_ocean}{}\doxysection{sf\+::Open\+G\+L\+Real\+Ocean Class Reference}
+\label{classsf_1_1_open_g_l_real_ocean}\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+
+
+A class implementing reallistic deformed ocean in Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Real\+Ocean.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+Real\+Ocean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classsf_1_1_open_g_l_real_ocean__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+Real\+Ocean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classsf_1_1_open_g_l_real_ocean__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a6be7d1c1011d54edfc9d3e1df71ab99e}{Open\+G\+L\+Real\+Ocean}} (G\+Lfloat size, G\+Lfloat state, S\+D\+L\+\_\+mutex $\ast$hydrodynamics)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a1e4bd39b6837f6725e4a2044d02d6614}\label{classsf_1_1_open_g_l_real_ocean_a1e4bd39b6837f6725e4a2044d02d6614}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a1e4bd39b6837f6725e4a2044d02d6614}{$\sim$\+Open\+G\+L\+Real\+Ocean}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a7b19b1a559274e6ba1862415b5fde758}{Simulate}} (G\+Lfloat dt)
+\begin{DoxyCompactList}\small\item\em A method that simulates wave propagation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_adbbb70863055e45cf541928554d1e398}{Update\+Surface}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em A method that updates the wave mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_ad53c13d390ee0e146a4f48bc958f44cb}{Draw\+Surface}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em A method that draws the surface of the ocean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a7a3eca6911a6cda59c5260bc4f8b8a88}{Draw\+Backsurface}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em A method that draws the surface of the ocean, seen from underwater. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_acc5a74e6f90e1e1e9f4578573299ec33}{Draw\+Underwater\+Mask}} (\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em A method that generates the stencil mask. \end{DoxyCompactList}\item 
+G\+Lfloat \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a132d0e0e85efdc7636f58c6d8a03d8c2}{Compute\+Wave\+Height}} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em A method to get wave height at a specified coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_real_ocean_a8e5af4dd35660f605b3c156e66cda2ab}{set\+Wireframe}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em A method do enable wireframe rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing reallistic deformed ocean in Open\+GL. 
+
+Definition at line 45 of file Open\+G\+L\+Real\+Ocean.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a6be7d1c1011d54edfc9d3e1df71ab99e}\label{classsf_1_1_open_g_l_real_ocean_a6be7d1c1011d54edfc9d3e1df71ab99e}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!OpenGLRealOcean@{OpenGLRealOcean}}
+\index{OpenGLRealOcean@{OpenGLRealOcean}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{OpenGLRealOcean()}{OpenGLRealOcean()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Open\+G\+L\+Real\+Ocean (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{size,  }\item[{G\+Lfloat}]{state,  }\item[{S\+D\+L\+\_\+mutex $\ast$}]{hydrodynamics }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of the ocean surface mesh \mbox{[}m\mbox{]} \\
+\hline
+{\em state} & the state of the ocean, if $>$0 the ocean is rendered with geometric waves otherwise as a plane with wave texture \\
+\hline
+{\em hydrodynamics} & a pointer to a mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a132d0e0e85efdc7636f58c6d8a03d8c2}\label{classsf_1_1_open_g_l_real_ocean_a132d0e0e85efdc7636f58c6d8a03d8c2}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!ComputeWaveHeight@{ComputeWaveHeight}}
+\index{ComputeWaveHeight@{ComputeWaveHeight}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{ComputeWaveHeight()}{ComputeWaveHeight()}}
+{\footnotesize\ttfamily G\+Lfloat sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Compute\+Wave\+Height (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to get wave height at a specified coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate in world frame \mbox{[}m\mbox{]} \\
+\hline
+{\em y} & the y coordinate in world frame \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wave height \mbox{[}m\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_a8f5954b3795d6b4ee4d0cb4c8551794b}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 287 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a7a3eca6911a6cda59c5260bc4f8b8a88}\label{classsf_1_1_open_g_l_real_ocean_a7a3eca6911a6cda59c5260bc4f8b8a88}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!DrawBacksurface@{DrawBacksurface}}
+\index{DrawBacksurface@{DrawBacksurface}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{DrawBacksurface()}{DrawBacksurface()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Draw\+Backsurface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that draws the surface of the ocean, seen from underwater. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_a1c260b48bb5345ab820d0f60b84e49c5}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 465 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_ad53c13d390ee0e146a4f48bc958f44cb}\label{classsf_1_1_open_g_l_real_ocean_ad53c13d390ee0e146a4f48bc958f44cb}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!DrawSurface@{DrawSurface}}
+\index{DrawSurface@{DrawSurface}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{DrawSurface()}{DrawSurface()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Draw\+Surface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that draws the surface of the ocean. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_aa1298fe3c2318a7d023d5c3262fa06c3}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 426 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_acc5a74e6f90e1e1e9f4578573299ec33}\label{classsf_1_1_open_g_l_real_ocean_acc5a74e6f90e1e1e9f4578573299ec33}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!DrawUnderwaterMask@{DrawUnderwaterMask}}
+\index{DrawUnderwaterMask@{DrawUnderwaterMask}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{DrawUnderwaterMask()}{DrawUnderwaterMask()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Draw\+Underwater\+Mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that generates the stencil mask. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_a80c73f1f932958dc160ef93afd65466c}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 507 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a8e5af4dd35660f605b3c156e66cda2ab}\label{classsf_1_1_open_g_l_real_ocean_a8e5af4dd35660f605b3c156e66cda2ab}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!setWireframe@{setWireframe}}
+\index{setWireframe@{setWireframe}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{setWireframe()}{setWireframe()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::set\+Wireframe (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+A method do enable wireframe rendering. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & a flag to indicating if wireframe should be enabled \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 236 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_a7b19b1a559274e6ba1862415b5fde758}\label{classsf_1_1_open_g_l_real_ocean_a7b19b1a559274e6ba1862415b5fde758}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!Simulate@{Simulate}}
+\index{Simulate@{Simulate}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{Simulate()}{Simulate()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Simulate (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that simulates wave propagation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & time since last update \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_ae5393b532370d71301a653ef5a00d691}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 299 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_real_ocean_adbbb70863055e45cf541928554d1e398}\label{classsf_1_1_open_g_l_real_ocean_adbbb70863055e45cf541928554d1e398}} 
+\index{sf::OpenGLRealOcean@{sf::OpenGLRealOcean}!UpdateSurface@{UpdateSurface}}
+\index{UpdateSurface@{UpdateSurface}!sf::OpenGLRealOcean@{sf::OpenGLRealOcean}}
+\doxysubsubsection{\texorpdfstring{UpdateSurface()}{UpdateSurface()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Real\+Ocean\+::\+Update\+Surface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{cam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that updates the wave mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam} & a pointer to the active camera \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_open_g_l_ocean_ad5a2371f145a11ca02c1eb587d626064}{sf\+::\+Open\+G\+L\+Ocean}}.
+
+
+
+Definition at line 324 of file Open\+G\+L\+Real\+Ocean.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Real\+Ocean.\+h\item 
+Library/src/graphics/Open\+G\+L\+Real\+Ocean.\+cpp\end{DoxyCompactItemize}

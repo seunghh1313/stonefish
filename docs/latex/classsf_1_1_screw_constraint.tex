@@ -1,0 +1,104 @@
+\hypertarget{classsf_1_1_screw_constraint}{}\doxysection{sf\+::Screw\+Constraint Class Reference}
+\label{classsf_1_1_screw_constraint}\index{sf::ScrewConstraint@{sf::ScrewConstraint}}
+
+
+A class implementing a screw type constraint (not tested).  
+
+
+
+
+{\ttfamily \#include $<$Screw\+Constraint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Screw\+Constraint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classsf_1_1_screw_constraint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Screw\+Constraint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classsf_1_1_screw_constraint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_acc19618e83e58b6196d318d8f71c8414}\label{classsf_1_1_screw_constraint_acc19618e83e58b6196d318d8f71c8414}} 
+{\bfseries Screw\+Constraint} (bt\+Rigid\+Body \&\+\_\+rbA, bt\+Rigid\+Body \&\+\_\+rbB, const Transform \&\+\_\+frame\+InA, const Transform \&\+\_\+frame\+InB, bool \+\_\+use\+Linear\+Reference\+FrameA)
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a4a661af3bb9ecb47bd01611991852af9}\label{classsf_1_1_screw_constraint_a4a661af3bb9ecb47bd01611991852af9}} 
+{\bfseries Screw\+Constraint} (bt\+Rigid\+Body \&\+\_\+rbB, const Transform \&\+\_\+frame\+InB, bool \+\_\+use\+Linear\+Reference\+FrameA)
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_af883957a2f7cc593522fc3f3fdd9cd5c}\label{classsf_1_1_screw_constraint_af883957a2f7cc593522fc3f3fdd9cd5c}} 
+virtual void {\bfseries get\+Info1} (bt\+Constraint\+Info1 $\ast$\+\_\+info)
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_ab4be1b90410534c645d60522ad564e6a}\label{classsf_1_1_screw_constraint_ab4be1b90410534c645d60522ad564e6a}} 
+virtual void {\bfseries get\+Info2} (bt\+Constraint\+Info2 $\ast$\+\_\+info)
+\item 
+void \mbox{\hyperlink{classsf_1_1_screw_constraint_ad18093ad2d41b15c400ba85cd8538b82}{\+\_\+get\+Info1\+Non\+Virtual}} (bt\+Constraint\+Info1 $\ast$info)
+\item 
+void \mbox{\hyperlink{classsf_1_1_screw_constraint_ab4c7e803756b28c79f36213f6933f9f1}{\+\_\+get\+Info2\+Non\+Virtual}} (bt\+Constraint\+Info2 $\ast$info, const Transform \&transA, const Transform \&transB, const Vector3 \&lin\+VelA, const Vector3 \&lin\+VelB, Scalar rb\+Ainv\+Mass, Scalar rb\+Binv\+Mass)
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a43bbb82acf673248840a54168a170080}\label{classsf_1_1_screw_constraint_a43bbb82acf673248840a54168a170080}} 
+Scalar {\bfseries get\+Linear\+Position} ()
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a316bc729ac6096d740e4011b526cc0dc}\label{classsf_1_1_screw_constraint_a316bc729ac6096d740e4011b526cc0dc}} 
+Scalar {\bfseries get\+Angular\+Position} ()
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a87612d8cdeb59ff5043b1becd4a9c120}\label{classsf_1_1_screw_constraint_a87612d8cdeb59ff5043b1becd4a9c120}} 
+bt\+Rigid\+Body \& {\bfseries get\+Rigid\+BodyA} ()
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_adca4bb200f6003064cc1973ccd4cd126}\label{classsf_1_1_screw_constraint_adca4bb200f6003064cc1973ccd4cd126}} 
+bt\+Rigid\+Body \& {\bfseries get\+Rigid\+BodyB} ()
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a42ece6a4570ae06dd416f623829bc1f3}\label{classsf_1_1_screw_constraint_a42ece6a4570ae06dd416f623829bc1f3}} 
+virtual void {\bfseries set\+Thread\+Pitch} (double \+\_\+thread\+Pitch)
+\item 
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_a6e7f89c8c7729f413006a9c0bdadea1d}\label{classsf_1_1_screw_constraint_a6e7f89c8c7729f413006a9c0bdadea1d}} 
+virtual double {\bfseries get\+Thread\+Pitch} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a screw type constraint (not tested). 
+
+Definition at line 37 of file Screw\+Constraint.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_ad18093ad2d41b15c400ba85cd8538b82}\label{classsf_1_1_screw_constraint_ad18093ad2d41b15c400ba85cd8538b82}} 
+\index{sf::ScrewConstraint@{sf::ScrewConstraint}!\_getInfo1NonVirtual@{\_getInfo1NonVirtual}}
+\index{\_getInfo1NonVirtual@{\_getInfo1NonVirtual}!sf::ScrewConstraint@{sf::ScrewConstraint}}
+\doxysubsubsection{\texorpdfstring{\_getInfo1NonVirtual()}{\_getInfo1NonVirtual()}}
+{\footnotesize\ttfamily void sf\+::\+Screw\+Constraint\+::\+\_\+get\+Info1\+Non\+Virtual (\begin{DoxyParamCaption}\item[{bt\+Constraint\+Info1 $\ast$}]{info }\end{DoxyParamCaption})}
+
+this is a modified version of void bt\+Slider\+Constraint\+::get\+Info1(bt\+Constraint\+Info1$\ast$ info) with the rotational limits always turned on. The rotational limit constraint is modified to be a screw constraint in bt\+Screw\+Constraint\+::\+\_\+get\+Info2\+Non\+Virtual which is a copy of bt\+Slider\+Constraint\+::get\+Info2\+Non\+Virtual.
+
+Definition at line 596 of file Screw\+Constraint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_screw_constraint_ab4c7e803756b28c79f36213f6933f9f1}\label{classsf_1_1_screw_constraint_ab4c7e803756b28c79f36213f6933f9f1}} 
+\index{sf::ScrewConstraint@{sf::ScrewConstraint}!\_getInfo2NonVirtual@{\_getInfo2NonVirtual}}
+\index{\_getInfo2NonVirtual@{\_getInfo2NonVirtual}!sf::ScrewConstraint@{sf::ScrewConstraint}}
+\doxysubsubsection{\texorpdfstring{\_getInfo2NonVirtual()}{\_getInfo2NonVirtual()}}
+{\footnotesize\ttfamily void sf\+::\+Screw\+Constraint\+::\+\_\+get\+Info2\+Non\+Virtual (\begin{DoxyParamCaption}\item[{bt\+Constraint\+Info2 $\ast$}]{info,  }\item[{const Transform \&}]{transA,  }\item[{const Transform \&}]{transB,  }\item[{const Vector3 \&}]{lin\+VelA,  }\item[{const Vector3 \&}]{lin\+VelB,  }\item[{Scalar}]{rb\+Ainv\+Mass,  }\item[{Scalar}]{rb\+Binv\+Mass }\end{DoxyParamCaption})}
+
+This is a copy of bt\+Slider\+Constraint\+::get\+Info2\+Non\+Virtual(...) with minor changes to the ax1 direction constraint. Mainly, the axial limit constraint is always on and is changed to a screw constraint.
+
+First, always turn on
+
+Definition at line 60 of file Screw\+Constraint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/core/Screw\+Constraint.\+h\item 
+Library/src/core/Screw\+Constraint.\+cpp\end{DoxyCompactItemize}

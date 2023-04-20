@@ -1,0 +1,5 @@
+<map id="sf::ConsoleSimulationThreadData" name="sf::ConsoleSimulationThreadData">
+<area shape="rect" id="node1" title="A structure used to pass information between threads." alt="" coords="5,184,244,211"/>
+<area shape="rect" id="node2" href="$classsf_1_1_simulation_app.html" title="An abstract class that defines an application interface hosting a simulation manager." alt="" coords="57,95,193,121"/>
+<area shape="rect" id="node3" href="$classsf_1_1_console.html" title="A class implementing a text console." alt="" coords="78,5,171,32"/>
+</map>

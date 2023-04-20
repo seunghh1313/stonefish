@@ -1,0 +1,23 @@
+<map id="sf::ScalarSensor" name="sf::ScalarSensor">
+<area shape="rect" id="node1" title="An abstract class representing a scalar sensor." alt="" coords="139,81,264,108"/>
+<area shape="rect" id="node3" href="$classsf_1_1_current.html" title="A class representing an electrical current sensor." alt="" coords="325,31,414,57"/>
+<area shape="rect" id="node4" href="$classsf_1_1_joint_sensor.html" title="An abstract class representing a sensor attached to a joint." alt="" coords="312,81,427,108"/>
+<area shape="rect" id="node9" href="$classsf_1_1_link_sensor.html" title="An abstract class representing a sensor attached to a rigid body." alt="" coords="313,411,425,437"/>
+<area shape="rect" id="node2" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="5,81,91,108"/>
+<area shape="rect" id="node5" href="$classsf_1_1_force_torque.html" title="A class representing a 6&#45;axis force/torque sensor." alt="" coords="483,5,602,32"/>
+<area shape="rect" id="node6" href="$classsf_1_1_rotary_encoder.html" title="A class representing a rotary encoder with &quot;infinite&quot; resolution." alt="" coords="475,56,611,83"/>
+<area shape="rect" id="node8" href="$classsf_1_1_torque.html" title="A class representing a torque sensor." alt="" coords="501,107,585,133"/>
+<area shape="rect" id="node7" href="$classsf_1_1_real_rotary_encoder.html" title="A class representing a rotary encoder with a specified resolution." alt="" coords="659,56,824,83"/>
+<area shape="rect" id="node10" href="$classsf_1_1_accelerometer.html" title="A class representing an accelerometer." alt="" coords="475,157,611,184"/>
+<area shape="rect" id="node11" href="$classsf_1_1_compass.html" title="A class representing a compass." alt="" coords="492,208,593,235"/>
+<area shape="rect" id="node12" href="$classsf_1_1_d_v_l.html" title="A class representing a Dopple velocity log (DVL) sensor with four beams." alt="" coords="509,259,576,285"/>
+<area shape="rect" id="node13" href="$classsf_1_1_g_p_s.html" title="A class representing a global positioning system (GPS) sensor." alt="" coords="509,309,576,336"/>
+<area shape="rect" id="node14" href="$classsf_1_1_gyroscope.html" title="A class representing a 3&#45;axis gyroscope." alt="" coords="487,360,598,387"/>
+<area shape="rect" id="node15" href="$classsf_1_1_i_m_u.html" title="A class representing an inertial measurement unit (IMU)." alt="" coords="509,411,576,437"/>
+<area shape="rect" id="node16" href="$classsf_1_1_i_n_s.html" title="A class representing an inertial navigation system (INS)." alt="" coords="511,461,574,488"/>
+<area shape="rect" id="node17" href="$classsf_1_1_multibeam.html" title="A class representing a multibeam (raycasting, single plane of beams)." alt="" coords="487,512,598,539"/>
+<area shape="rect" id="node18" href="$classsf_1_1_odometry.html" title="A class representing a sensor that captures the pose and velocities of a body." alt="" coords="489,563,596,589"/>
+<area shape="rect" id="node19" href="$classsf_1_1_pose.html" title="A class representing a sensor that captures the pose of a rigid body." alt="" coords="507,613,579,640"/>
+<area shape="rect" id="node20" href="$classsf_1_1_pressure.html" title="A class representing a pressure sensor." alt="" coords="494,664,591,691"/>
+<area shape="rect" id="node21" href="$classsf_1_1_profiler.html" title="A class representing a single beam profiler." alt="" coords="499,715,587,741"/>
+</map>

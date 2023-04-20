@@ -1,0 +1,9 @@
+<map id="sf::DVL" name="sf::DVL">
+<area shape="rect" id="node1" title="A class representing a Dopple velocity log (DVL) sensor with four beams." alt="" coords="109,260,176,287"/>
+<area shape="rect" id="node2" href="$classsf_1_1_link_sensor.html" title="An abstract class representing a sensor attached to a rigid body." alt="" coords="87,184,199,211"/>
+<area shape="rect" id="node3" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="5,95,131,121"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="25,5,111,32"/>
+<area shape="rect" id="node5" href="$classsf_1_1_moving_entity.html" title="An abstract class representing a moving rigid body." alt="" coords="155,95,282,121"/>
+<area shape="rect" id="node6" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="157,5,235,32"/>
+<area shape="rect" id="node7" href="$structsf_1_1_material.html" title="A structure holding material properties." alt="" coords="259,5,354,32"/>
+</map>

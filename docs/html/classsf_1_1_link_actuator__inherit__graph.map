@@ -1,0 +1,10 @@
+<map id="sf::LinkActuator" name="sf::LinkActuator">
+<area shape="rect" id="node1" title="An abstract class representing an actuator that can be attached to a rigid body." alt="" coords="271,80,394,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_light.html" title="A class representing a light of two common types: omni and spot." alt="" coords="5,155,79,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_propeller.html" title="A class representing a propeller working in air, driven by a motor." alt="" coords="103,155,202,181"/>
+<area shape="rect" id="node5" href="$classsf_1_1_rudder.html" title="A class representing a rudder working in water." alt="" coords="227,155,313,181"/>
+<area shape="rect" id="node6" href="$classsf_1_1_suction_cup.html" title="A class representing a thruster." alt="" coords="338,155,453,181"/>
+<area shape="rect" id="node7" href="$classsf_1_1_thruster.html" title="A class representing a thruster." alt="" coords="477,155,572,181"/>
+<area shape="rect" id="node8" href="$classsf_1_1_variable_buoyancy.html" title="A class implementing a variable buoyancy system (VBS)." alt="" coords="596,155,755,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_actuator.html" title="An abstract class representing any actuator." alt="" coords="285,5,381,32"/>
+</map>

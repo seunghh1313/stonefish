@@ -1,0 +1,11 @@
+<map id="sf::LinkActuator" name="sf::LinkActuator">
+<area shape="rect" id="node1" title="An abstract class representing an actuator that can be attached to a rigid body." alt="" coords="137,273,259,300"/>
+<area shape="rect" id="node2" href="$classsf_1_1_actuator.html" title="An abstract class representing any actuator." alt="" coords="129,184,225,211"/>
+<area shape="rect" id="node3" href="$classsf_1_1_solid_entity.html" title="An abstract class representing a rigid body." alt="" coords="249,184,360,211"/>
+<area shape="rect" id="node4" href="$classsf_1_1_moving_entity.html" title="An abstract class representing a moving rigid body." alt="" coords="36,95,163,121"/>
+<area shape="rect" id="node5" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node6" href="$structsf_1_1_material.html" title="A structure holding material properties." alt="" coords="108,5,203,32"/>
+<area shape="rect" id="node7" href="$structsf_1_1_renderable.html" title="A structure that represents a renderable object." alt="" coords="187,95,302,121"/>
+<area shape="rect" id="node8" href="$structsf_1_1_mesh.html" title="A structure containing mesh data." alt="" coords="327,95,403,121"/>
+<area shape="rect" id="node9" href="$structsf_1_1_body_physics_settings.html" title="A structure defining the physics computation settings for the body." alt="" coords="427,95,603,121"/>
+</map>

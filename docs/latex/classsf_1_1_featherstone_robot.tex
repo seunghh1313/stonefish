@@ -1,0 +1,224 @@
+\hypertarget{classsf_1_1_featherstone_robot}{}\doxysection{sf\+::Featherstone\+Robot Class Reference}
+\label{classsf_1_1_featherstone_robot}\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+
+
+A class implementing a robotic system composed of a dynamic rigid-\/body tree, actuators and sensors.  
+
+
+
+
+{\ttfamily \#include $<$Featherstone\+Robot.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Featherstone\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classsf_1_1_featherstone_robot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Featherstone\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classsf_1_1_featherstone_robot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_featherstone_robot_aceb2ee883dd6ad3408b270132569a33f}{Featherstone\+Robot}} (std\+::string unique\+Name, bool fixed\+Base=false)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a71a59a33b234e7f841c107ebacb95b52}\label{classsf_1_1_featherstone_robot_a71a59a33b234e7f841c107ebacb95b52}} 
+virtual \mbox{\hyperlink{classsf_1_1_featherstone_robot_a71a59a33b234e7f841c107ebacb95b52}{$\sim$\+Featherstone\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_featherstone_robot_ad788f2014ed5d533ceb6bbcadede515e}{Define\+Links}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$base\+Link, std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$ other\+Links=std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$(0), bool self\+Collision=false)
+\begin{DoxyCompactList}\small\item\em A method used to define a list of rigid bodies constituting the mechanical part of the robot (dynamic tree). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a936d66bebe610325b79d8b71ae373f2e}\label{classsf_1_1_featherstone_robot_a936d66bebe610325b79d8b71ae373f2e}} 
+void \mbox{\hyperlink{classsf_1_1_featherstone_robot_a936d66bebe610325b79d8b71ae373f2e}{Build\+Kinematic\+Structure}} ()
+\begin{DoxyCompactList}\small\item\em A method which uses links and joints definitions to build the kinematic structure of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_featherstone_robot_a89891fbe3cb9abe4ebde3de955c3be34}{Add\+Joint\+Sensor}} (\mbox{\hyperlink{classsf_1_1_joint_sensor}{Joint\+Sensor}} $\ast$s, const std\+::string \&monitored\+Joint\+Name)
+\begin{DoxyCompactList}\small\item\em A method used to attach a sensor to a specified joint of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_featherstone_robot_ad0ea33c895a683c9b667392b8fb50e1d}{Add\+Joint\+Actuator}} (\mbox{\hyperlink{classsf_1_1_joint_actuator}{Joint\+Actuator}} $\ast$a, const std\+::string \&actuated\+Joint\+Name)
+\begin{DoxyCompactList}\small\item\em A method used to attach an actuator to a specified joint of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_featherstone_robot_a4e64472ae2c39f3bae6ba9d700320398}{Add\+To\+Simulation}} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method adding the robot to the simulation world (includes consistency checking). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a97a783ceadb5f6438da70bb55be106d6}\label{classsf_1_1_featherstone_robot_a97a783ceadb5f6438da70bb55be106d6}} 
+Transform \mbox{\hyperlink{classsf_1_1_featherstone_robot_a97a783ceadb5f6438da70bb55be106d6}{get\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the pose of the robot in the world frame. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsf_1_1_featherstone_robot_af22796770ba750857670b14706dcd427}{get\+Link\+Index}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em A method returning the index of the link. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a254eb198b6f95c059f46c6271dac6da4}\label{classsf_1_1_featherstone_robot_a254eb198b6f95c059f46c6271dac6da4}} 
+Robot\+Type \mbox{\hyperlink{classsf_1_1_featherstone_robot_a254eb198b6f95c059f46c6271dac6da4}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning type of algorithm used for the robot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a6ed9e49740932d966acc61b3cd8fb0bd}\label{classsf_1_1_featherstone_robot_a6ed9e49740932d966acc61b3cd8fb0bd}} 
+\mbox{\hyperlink{classsf_1_1_featherstone_entity}{Featherstone\+Entity}} $\ast$ \mbox{\hyperlink{classsf_1_1_featherstone_robot_a6ed9e49740932d966acc61b3cd8fb0bd}{get\+Dynamics}} ()
+\begin{DoxyCompactList}\small\item\em A method returning a point to the underlaying Featherstone entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a robotic system composed of a dynamic rigid-\/body tree, actuators and sensors. 
+
+Definition at line 36 of file Featherstone\+Robot.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_aceb2ee883dd6ad3408b270132569a33f}\label{classsf_1_1_featherstone_robot_aceb2ee883dd6ad3408b270132569a33f}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!FeatherstoneRobot@{FeatherstoneRobot}}
+\index{FeatherstoneRobot@{FeatherstoneRobot}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{FeatherstoneRobot()}{FeatherstoneRobot()}}
+{\footnotesize\ttfamily sf\+::\+Featherstone\+Robot\+::\+Featherstone\+Robot (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{bool}]{fixed\+Base = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the robot \\
+\hline
+{\em fixed\+Base} & is the robot fixed to the world? \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Featherstone\+Robot.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_ad0ea33c895a683c9b667392b8fb50e1d}\label{classsf_1_1_featherstone_robot_ad0ea33c895a683c9b667392b8fb50e1d}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!AddJointActuator@{AddJointActuator}}
+\index{AddJointActuator@{AddJointActuator}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{AddJointActuator()}{AddJointActuator()}}
+{\footnotesize\ttfamily void sf\+::\+Featherstone\+Robot\+::\+Add\+Joint\+Actuator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_joint_actuator}{Joint\+Actuator}} $\ast$}]{a,  }\item[{const std\+::string \&}]{actuated\+Joint\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to attach an actuator to a specified joint of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a pointer to a joint actuator object \\
+\hline
+{\em actuated\+Joint\+Name} & a name of the joint which is to be driven \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_ad969717e0bbe4fbfcf02086eb84757a2}{sf\+::\+Robot}}.
+
+
+
+Definition at line 260 of file Featherstone\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a89891fbe3cb9abe4ebde3de955c3be34}\label{classsf_1_1_featherstone_robot_a89891fbe3cb9abe4ebde3de955c3be34}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!AddJointSensor@{AddJointSensor}}
+\index{AddJointSensor@{AddJointSensor}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{AddJointSensor()}{AddJointSensor()}}
+{\footnotesize\ttfamily void sf\+::\+Featherstone\+Robot\+::\+Add\+Joint\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_joint_sensor}{Joint\+Sensor}} $\ast$}]{s,  }\item[{const std\+::string \&}]{monitored\+Joint\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to attach a sensor to a specified joint of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a pointer to a joint sensor object \\
+\hline
+{\em monitored\+Joint\+Name} & a name of the joint at which the sensor is attached \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_a4306d7b119213c92fe1b79ea774a5820}{sf\+::\+Robot}}.
+
+
+
+Definition at line 248 of file Featherstone\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_a4e64472ae2c39f3bae6ba9d700320398}\label{classsf_1_1_featherstone_robot_a4e64472ae2c39f3bae6ba9d700320398}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!AddToSimulation@{AddToSimulation}}
+\index{AddToSimulation@{AddToSimulation}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{AddToSimulation()}{AddToSimulation()}}
+{\footnotesize\ttfamily void sf\+::\+Featherstone\+Robot\+::\+Add\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$}]{sm,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method adding the robot to the simulation world (includes consistency checking). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & a pointer to a simulation manager \\
+\hline
+{\em origin} & a trasformation from the world origin to the robot origin \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_robot_a030523d874b93ff69d066432716a576e}{sf\+::\+Robot}}.
+
+
+
+Definition at line 239 of file Featherstone\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_ad788f2014ed5d533ceb6bbcadede515e}\label{classsf_1_1_featherstone_robot_ad788f2014ed5d533ceb6bbcadede515e}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!DefineLinks@{DefineLinks}}
+\index{DefineLinks@{DefineLinks}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{DefineLinks()}{DefineLinks()}}
+{\footnotesize\ttfamily void sf\+::\+Featherstone\+Robot\+::\+Define\+Links (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{base\+Link,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$ $>$}]{other\+Links = {\ttfamily std\+:\+:vector$<$\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}}$\ast$$>$(0)},  }\item[{bool}]{self\+Collision = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to define a list of rigid bodies constituting the mechanical part of the robot (dynamic tree). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Link} & a solid contituting the base of the robot \\
+\hline
+{\em other\+Links} & a vector of subsequent links \\
+\hline
+{\em self\+Collision} & a flag determining if self collision between multibody links should be enabled (subsequent links never collide) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_robot_a9e2dfa6c735a1c56ad3aac7e896b9b04}{sf\+::\+Robot}}.
+
+
+
+Definition at line 95 of file Featherstone\+Robot.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_featherstone_robot_af22796770ba750857670b14706dcd427}\label{classsf_1_1_featherstone_robot_af22796770ba750857670b14706dcd427}} 
+\index{sf::FeatherstoneRobot@{sf::FeatherstoneRobot}!getLinkIndex@{getLinkIndex}}
+\index{getLinkIndex@{getLinkIndex}!sf::FeatherstoneRobot@{sf::FeatherstoneRobot}}
+\doxysubsubsection{\texorpdfstring{getLinkIndex()}{getLinkIndex()}}
+{\footnotesize\ttfamily int sf\+::\+Featherstone\+Robot\+::get\+Link\+Index (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+A method returning the index of the link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the link 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Featherstone\+Robot.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/core/Featherstone\+Robot.\+h\item 
+Library/src/core/Featherstone\+Robot.\+cpp\end{DoxyCompactItemize}

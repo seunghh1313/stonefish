@@ -1,0 +1,169 @@
+\hypertarget{classsf_1_1_u_s_b_l}{}\doxysection{sf\+::U\+S\+BL Class Reference}
+\label{classsf_1_1_u_s_b_l}\index{sf::USBL@{sf::USBL}}
+
+
+An abstract class representing a \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}}.  
+
+
+
+
+{\ttfamily \#include $<$U\+S\+B\+L.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::U\+S\+BL\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classsf_1_1_u_s_b_l__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::U\+S\+BL\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classsf_1_1_u_s_b_l__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_u_s_b_l_ab7dd68c18f5f8aab88e5cc9b16fae17f}{U\+S\+BL}} (std\+::string unique\+Name, uint64\+\_\+t device\+Id, Scalar min\+Vertical\+F\+O\+V\+Deg, Scalar max\+Vertical\+F\+O\+V\+Deg, Scalar operating\+Range)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_aa4d00f5cfc803d8e0bc1b34c0b4e0575}{Internal\+Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method performing internal comm state update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_a2348b175c7f9dc74c545e8aa0bc22589}{Enable\+Auto\+Ping}} (Scalar rate=Scalar(0))
+\begin{DoxyCompactList}\small\item\em A method used to enable the auto pinging of connected transponder to monitor its position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_add35be34cb17e729ff7a53959e4dfb69}\label{classsf_1_1_u_s_b_l_add35be34cb17e729ff7a53959e4dfb69}} 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_add35be34cb17e729ff7a53959e4dfb69}{Disable\+Auto\+Ping}} ()
+\begin{DoxyCompactList}\small\item\em A method to diable the autp pinging funtion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_aa4232ec6bad693d2f7b72f2303623fbe}\label{classsf_1_1_u_s_b_l_aa4232ec6bad693d2f7b72f2303623fbe}} 
+std\+::map$<$ uint64\+\_\+t, \mbox{\hyperlink{structsf_1_1_beacon_info}{Beacon\+Info}} $>$ \& \mbox{\hyperlink{classsf_1_1_u_s_b_l_aa4232ec6bad693d2f7b72f2303623fbe}{get\+Beacon\+Info}} ()
+\begin{DoxyCompactList}\small\item\em A method to get the current information about the acoustic beacons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_aa68c82929db9e7cee1fde73e24d60a8d}\label{classsf_1_1_u_s_b_l_aa68c82929db9e7cee1fde73e24d60a8d}} 
+Comm\+Type \mbox{\hyperlink{classsf_1_1_u_s_b_l_aa68c82929db9e7cee1fde73e24d60a8d}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the comm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_ad7e3e69aff92a25ad4c4995b640e432c}\label{classsf_1_1_u_s_b_l_ad7e3e69aff92a25ad4c4995b640e432c}} 
+virtual void \mbox{\hyperlink{classsf_1_1_u_s_b_l_ad7e3e69aff92a25ad4c4995b640e432c}{Process\+Messages}} ()=0
+\begin{DoxyCompactList}\small\item\em A method to proccess received messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_ab96bf014670913803818d09f665c28fb}\label{classsf_1_1_u_s_b_l_ab96bf014670913803818d09f665c28fb}} 
+bool {\bfseries ping}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a0a8e84a3006a31d053922e7db9e6cee5}\label{classsf_1_1_u_s_b_l_a0a8e84a3006a31d053922e7db9e6cee5}} 
+Scalar {\bfseries ping\+Rate}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a1898ce134d87588308acd0e9486aeb5b}\label{classsf_1_1_u_s_b_l_a1898ce134d87588308acd0e9486aeb5b}} 
+Scalar {\bfseries ping\+Time}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a85bf5f922490a857a677d1c88fa6bd40}\label{classsf_1_1_u_s_b_l_a85bf5f922490a857a677d1c88fa6bd40}} 
+std\+::map$<$ uint64\+\_\+t, \mbox{\hyperlink{structsf_1_1_beacon_info}{Beacon\+Info}} $>$ {\bfseries beacons}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_ad4ecd1958182bd0b38ca7a7e947c146e}\label{classsf_1_1_u_s_b_l_ad4ecd1958182bd0b38ca7a7e947c146e}} 
+bool {\bfseries noise}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a8408ae662127a2e28a5a9995fbe8a844}\label{classsf_1_1_u_s_b_l_a8408ae662127a2e28a5a9995fbe8a844}} 
+static std\+::random\+\_\+device {\bfseries random\+Device}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a75bed4e0ceede1d201960000684e9cc5}\label{classsf_1_1_u_s_b_l_a75bed4e0ceede1d201960000684e9cc5}} 
+static std\+::mt19937 {\bfseries random\+Generator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}}. 
+
+Definition at line 46 of file U\+S\+B\+L.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_ab7dd68c18f5f8aab88e5cc9b16fae17f}\label{classsf_1_1_u_s_b_l_ab7dd68c18f5f8aab88e5cc9b16fae17f}} 
+\index{sf::USBL@{sf::USBL}!USBL@{USBL}}
+\index{USBL@{USBL}!sf::USBL@{sf::USBL}}
+\doxysubsubsection{\texorpdfstring{USBL()}{USBL()}}
+{\footnotesize\ttfamily sf\+::\+U\+S\+B\+L\+::\+U\+S\+BL (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{uint64\+\_\+t}]{device\+Id,  }\item[{Scalar}]{min\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{max\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{operating\+Range }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the comm device \\
+\hline
+{\em device\+Id} & an identification code of the device \\
+\hline
+{\em min\+Vertical\+F\+O\+V\+Deg} & the minimum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em max\+Vertical\+F\+O\+V\+Deg} & the maximum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em operating\+Range} & the operating range \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file U\+S\+B\+L.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_a2348b175c7f9dc74c545e8aa0bc22589}\label{classsf_1_1_u_s_b_l_a2348b175c7f9dc74c545e8aa0bc22589}} 
+\index{sf::USBL@{sf::USBL}!EnableAutoPing@{EnableAutoPing}}
+\index{EnableAutoPing@{EnableAutoPing}!sf::USBL@{sf::USBL}}
+\doxysubsubsection{\texorpdfstring{EnableAutoPing()}{EnableAutoPing()}}
+{\footnotesize\ttfamily void sf\+::\+U\+S\+B\+L\+::\+Enable\+Auto\+Ping (\begin{DoxyParamCaption}\item[{Scalar}]{rate = {\ttfamily Scalar(0)} }\end{DoxyParamCaption})}
+
+
+
+A method used to enable the auto pinging of connected transponder to monitor its position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rate} & how often the ping should be sent (0 for continuous mode) \mbox{[}Hz\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file U\+S\+B\+L.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_aa4d00f5cfc803d8e0bc1b34c0b4e0575}\label{classsf_1_1_u_s_b_l_aa4d00f5cfc803d8e0bc1b34c0b4e0575}} 
+\index{sf::USBL@{sf::USBL}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::USBL@{sf::USBL}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily void sf\+::\+U\+S\+B\+L\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method performing internal comm state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_acoustic_modem_aafa4867d0badd79811a4b697b695a6ec}{sf\+::\+Acoustic\+Modem}}.
+
+
+
+Definition at line 66 of file U\+S\+B\+L.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/comms/U\+S\+B\+L.\+h\item 
+Library/src/comms/U\+S\+B\+L.\+cpp\end{DoxyCompactItemize}

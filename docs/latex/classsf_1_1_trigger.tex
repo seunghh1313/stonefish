@@ -1,0 +1,189 @@
+\hypertarget{classsf_1_1_trigger}{}\doxysection{sf\+::Trigger Class Reference}
+\label{classsf_1_1_trigger}\index{sf::Trigger@{sf::Trigger}}
+
+
+A class implementing a virtual object that can be used to trigger actions.  
+
+
+
+
+{\ttfamily \#include $<$Trigger.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Trigger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classsf_1_1_trigger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Trigger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classsf_1_1_trigger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_trigger_a129054fd1a54e38da47600a763eb1c38}{Trigger}} (std\+::string unique\+Name, Scalar radius, const Transform \&origin, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor of a spherical trigger object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_trigger_aac3bf8c9bd78eb3cd00e656bb3f7a258}{Trigger}} (std\+::string unique\+Name, Scalar radius, Scalar length, const Transform \&origin, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor of a cylindrical trigger object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_trigger_a3f26d452e73e10213ff41cd60cba3998}{Trigger}} (std\+::string unique\+Name, const Vector3 \&dimensions, const Transform \&origin, std\+::string look=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em A constructor of a box-\/shaped trigger object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_trigger_a331addec30dbf9a919c777922f404d5c}{Add\+Active\+Solid}} (\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid)
+\begin{DoxyCompactList}\small\item\em A method used to add solids that will call actions if they come in contact with the trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_trigger_a267c0c12c060df9c4e288d5531dba4dd}{Activate}} (bt\+Collision\+Object $\ast$co)
+\begin{DoxyCompactList}\small\item\em A method used to activate actions for a collision object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trigger_aa015b85802c6cd3765dcc9359069a75b}\label{classsf_1_1_trigger_aa015b85802c6cd3765dcc9359069a75b}} 
+void \mbox{\hyperlink{classsf_1_1_trigger_aa015b85802c6cd3765dcc9359069a75b}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em A method that clears the activity flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trigger_a14af02409df0f3391c6726a42bd399ae}\label{classsf_1_1_trigger_a14af02409df0f3391c6726a42bd399ae}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_trigger_a14af02409df0f3391c6726a42bd399ae}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the trigger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trigger_aa27a7ac3bb2f0fc133d20813ab0b5eca}\label{classsf_1_1_trigger_aa27a7ac3bb2f0fc133d20813ab0b5eca}} 
+bool \mbox{\hyperlink{classsf_1_1_trigger_aa27a7ac3bb2f0fc133d20813ab0b5eca}{is\+Active}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the activity status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trigger_abdcd2c11a137f32bc2f15081a70e729e}\label{classsf_1_1_trigger_abdcd2c11a137f32bc2f15081a70e729e}} 
+Forcefield\+Type \mbox{\hyperlink{classsf_1_1_trigger_abdcd2c11a137f32bc2f15081a70e729e}{get\+Forcefield\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the force field type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a virtual object that can be used to trigger actions. 
+
+Definition at line 35 of file Trigger.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_trigger_a129054fd1a54e38da47600a763eb1c38}\label{classsf_1_1_trigger_a129054fd1a54e38da47600a763eb1c38}} 
+\index{sf::Trigger@{sf::Trigger}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!sf::Trigger@{sf::Trigger}}
+\doxysubsubsection{\texorpdfstring{Trigger()}{Trigger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily sf\+::\+Trigger\+::\+Trigger (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{radius,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor of a spherical trigger object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the trigger \\
+\hline
+{\em radius} & the radius of the sphere \mbox{[}m\mbox{]} \\
+\hline
+{\em origin} & the position of the trigger in the world frame \\
+\hline
+{\em look} & a name of the material used when rendering the trigger \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Trigger.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_trigger_aac3bf8c9bd78eb3cd00e656bb3f7a258}\label{classsf_1_1_trigger_aac3bf8c9bd78eb3cd00e656bb3f7a258}} 
+\index{sf::Trigger@{sf::Trigger}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!sf::Trigger@{sf::Trigger}}
+\doxysubsubsection{\texorpdfstring{Trigger()}{Trigger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily sf\+::\+Trigger\+::\+Trigger (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{radius,  }\item[{Scalar}]{length,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor of a cylindrical trigger object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the trigger \\
+\hline
+{\em radius} & the radius of the cylinder \mbox{[}m\mbox{]} \\
+\hline
+{\em length} & the length of the cylinder \mbox{[}m\mbox{]} \\
+\hline
+{\em origin} & the position of the trigger in the world frame \\
+\hline
+{\em look} & a name of the material used when rendering the trigger \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Trigger.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_trigger_a3f26d452e73e10213ff41cd60cba3998}\label{classsf_1_1_trigger_a3f26d452e73e10213ff41cd60cba3998}} 
+\index{sf::Trigger@{sf::Trigger}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!sf::Trigger@{sf::Trigger}}
+\doxysubsubsection{\texorpdfstring{Trigger()}{Trigger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily sf\+::\+Trigger\+::\+Trigger (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{const Vector3 \&}]{dimensions,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+A constructor of a box-\/shaped trigger object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the trigger \\
+\hline
+{\em dimensions} & the length of the box sides \mbox{[}m\mbox{]} \\
+\hline
+{\em origin} & the position of the trigger in the world frame \\
+\hline
+{\em look} & a name of the material used when rendering the trigger \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Trigger.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_trigger_a267c0c12c060df9c4e288d5531dba4dd}\label{classsf_1_1_trigger_a267c0c12c060df9c4e288d5531dba4dd}} 
+\index{sf::Trigger@{sf::Trigger}!Activate@{Activate}}
+\index{Activate@{Activate}!sf::Trigger@{sf::Trigger}}
+\doxysubsubsection{\texorpdfstring{Activate()}{Activate()}}
+{\footnotesize\ttfamily void sf\+::\+Trigger\+::\+Activate (\begin{DoxyParamCaption}\item[{bt\+Collision\+Object $\ast$}]{co }\end{DoxyParamCaption})}
+
+
+
+A method used to activate actions for a collision object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & a pointer to a collision object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file Trigger.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_trigger_a331addec30dbf9a919c777922f404d5c}\label{classsf_1_1_trigger_a331addec30dbf9a919c777922f404d5c}} 
+\index{sf::Trigger@{sf::Trigger}!AddActiveSolid@{AddActiveSolid}}
+\index{AddActiveSolid@{AddActiveSolid}!sf::Trigger@{sf::Trigger}}
+\doxysubsubsection{\texorpdfstring{AddActiveSolid()}{AddActiveSolid()}}
+{\footnotesize\ttfamily void sf\+::\+Trigger\+::\+Add\+Active\+Solid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid }\end{DoxyParamCaption})}
+
+
+
+A method used to add solids that will call actions if they come in contact with the trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solid} & a pointer to a rigid body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file Trigger.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/forcefields/Trigger.\+h\item 
+Library/src/entities/forcefields/Trigger.\+cpp\end{DoxyCompactItemize}

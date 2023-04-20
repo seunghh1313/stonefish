@@ -1,0 +1,272 @@
+\hypertarget{classsf_1_1_open_g_l_trackball}{}\doxysection{sf\+::Open\+G\+L\+Trackball Class Reference}
+\label{classsf_1_1_open_g_l_trackball}\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+
+
+A class implementing a camera that can be rotated as a trackball, with mouse.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Trackball.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+Trackball\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classsf_1_1_open_g_l_trackball__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+Trackball\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_open_g_l_trackball__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_trackball_af3f1f229b891b3629a91ae78390e6ea8}{Open\+G\+L\+Trackball}} (glm\+::vec3 center\+Position, G\+Lfloat orbit\+Radius, glm\+::vec3 up, G\+Lint originX, G\+Lint originY, G\+Lint width, G\+Lint height, G\+Lfloat horizontal\+Fov\+Deg, glm\+::vec2 range)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_aa7577686f76f0c618747367211373484}\label{classsf_1_1_open_g_l_trackball_aa7577686f76f0c618747367211373484}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_trackball_aa7577686f76f0c618747367211373484}{$\sim$\+Open\+G\+L\+Trackball}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a07b0416fa3db9ecd55253489488d05f3}{Rotate}} (glm\+::quat rot)
+\begin{DoxyCompactList}\small\item\em A method to apply a rotation to the trackball. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_ac4b2e09911b9b510bbd083d27f21bdeb}{Move\+Center}} (glm\+::vec3 step)
+\begin{DoxyCompactList}\small\item\em A method to move the center of the trackball orbit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_ad51a3270f00a48e37d08d35030e30dc6}{Glue\+To\+Moving}} (\mbox{\hyperlink{classsf_1_1_moving_entity}{Moving\+Entity}} $\ast$ent)
+\begin{DoxyCompactList}\small\item\em A method to glue the trackball to a moving body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a47be968f3625bcd3b2ecb427540103a7}\label{classsf_1_1_open_g_l_trackball_a47be968f3625bcd3b2ecb427540103a7}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a47be968f3625bcd3b2ecb427540103a7}{Update\+Center\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em A method saving the new centre for update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_acf85983b207c32027faaa799cddfcfdf}\label{classsf_1_1_open_g_l_trackball_acf85983b207c32027faaa799cddfcfdf}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_acf85983b207c32027faaa799cddfcfdf}{Update\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em A method used to update the trasformation of the trackball. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_af48db040fe092c346dfbc57541bb4a60}{Mouse\+Down}} (G\+Lfloat x, G\+Lfloat y, bool translate)
+\begin{DoxyCompactList}\small\item\em A method servicing the mouse down event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a9ceff100fd36bc88dc435576716a225f}{Mouse\+Move}} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em A method servicing the mouse move event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_aed6b79fd7705e29ae941f134301238e9}\label{classsf_1_1_open_g_l_trackball_aed6b79fd7705e29ae941f134301238e9}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_aed6b79fd7705e29ae941f134301238e9}{Mouse\+Up}} ()
+\begin{DoxyCompactList}\small\item\em A method servicing the mouse up event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a46829fcf7afe266a693e9d2a0e9727e6}{Mouse\+Scroll}} (G\+Lfloat s)
+\begin{DoxyCompactList}\small\item\em A method servicing the mouse scroll event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_aba95202f906ed434f9d0a747035690d7}{Draw\+Selection}} (const std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \&r, G\+Luint destination\+F\+BO)
+\begin{DoxyCompactList}\small\item\em A method drawing a selection outline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_aa2925f355f5ec64bf43f7d8e990c26a0}\label{classsf_1_1_open_g_l_trackball_aa2925f355f5ec64bf43f7d8e990c26a0}} 
+glm\+::mat4 \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_aa2925f355f5ec64bf43f7d8e990c26a0}{Get\+View\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the view matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a5ca0a97559abbf2b845075235ee15d44}\label{classsf_1_1_open_g_l_trackball_a5ca0a97559abbf2b845075235ee15d44}} 
+glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a5ca0a97559abbf2b845075235ee15d44}{Get\+Eye\+Position}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the eye position in the world frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a2ecb4488d7cb1dd67ff44b3e0e8c0b5e}\label{classsf_1_1_open_g_l_trackball_a2ecb4488d7cb1dd67ff44b3e0e8c0b5e}} 
+glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a2ecb4488d7cb1dd67ff44b3e0e8c0b5e}{Get\+Looking\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em A method returning a unit vector parallel to the optical axis of the camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a2b08d88f3e73343d7e9050022f420ef3}\label{classsf_1_1_open_g_l_trackball_a2b08d88f3e73343d7e9050022f420ef3}} 
+glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a2b08d88f3e73343d7e9050022f420ef3}{Get\+Up\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em A method returning a unit vector pointing to the top edge of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_ad2a8539cb4e5f44a88b4117917080ce3}\label{classsf_1_1_open_g_l_trackball_ad2a8539cb4e5f44a88b4117917080ce3}} 
+View\+Type \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_ad2a8539cb4e5f44a88b4117917080ce3}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a2c0893e10925b6f3356f95ff2cf0a5a1}\label{classsf_1_1_open_g_l_trackball_a2c0893e10925b6f3356f95ff2cf0a5a1}} 
+bool \mbox{\hyperlink{classsf_1_1_open_g_l_trackball_a2c0893e10925b6f3356f95ff2cf0a5a1}{needs\+Update}} ()
+\begin{DoxyCompactList}\small\item\em A method that informs if the camera needs update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a camera that can be rotated as a trackball, with mouse. 
+
+Definition at line 36 of file Open\+G\+L\+Trackball.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_af3f1f229b891b3629a91ae78390e6ea8}\label{classsf_1_1_open_g_l_trackball_af3f1f229b891b3629a91ae78390e6ea8}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!OpenGLTrackball@{OpenGLTrackball}}
+\index{OpenGLTrackball@{OpenGLTrackball}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{OpenGLTrackball()}{OpenGLTrackball()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+Trackball\+::\+Open\+G\+L\+Trackball (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{center\+Position,  }\item[{G\+Lfloat}]{orbit\+Radius,  }\item[{glm\+::vec3}]{up,  }\item[{G\+Lint}]{originX,  }\item[{G\+Lint}]{originY,  }\item[{G\+Lint}]{width,  }\item[{G\+Lint}]{height,  }\item[{G\+Lfloat}]{horizontal\+Fov\+Deg,  }\item[{glm\+::vec2}]{range }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Position} & the position of the camera orbit center in world space \mbox{[}m\mbox{]} \\
+\hline
+{\em orbit\+Radius} & the radius of the camera orbit \mbox{[}m\mbox{]} \\
+\hline
+{\em up} & a unit vector pointing to the top edge of the image \\
+\hline
+{\em originX} & the x coordinate of the view origin in the program window \mbox{[}px\mbox{]} \\
+\hline
+{\em originY} & the y coordinate of the view origin in the program window \mbox{[}px\mbox{]} \\
+\hline
+{\em width} & the width of the view \mbox{[}px\mbox{]} \\
+\hline
+{\em height} & the height of the view \mbox{[}px\mbox{]} \\
+\hline
+{\em horizontal\+Fov\+Deg} & the horizontal field of view of the camera \mbox{[}deg\mbox{]} \\
+\hline
+{\em range} & the minimum and maximum rendering distance of the camera \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Open\+G\+L\+Trackball.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_aba95202f906ed434f9d0a747035690d7}\label{classsf_1_1_open_g_l_trackball_aba95202f906ed434f9d0a747035690d7}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!DrawSelection@{DrawSelection}}
+\index{DrawSelection@{DrawSelection}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{DrawSelection()}{DrawSelection()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Draw\+Selection (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \&}]{r,  }\item[{G\+Luint}]{destination\+F\+BO }\end{DoxyParamCaption})}
+
+
+
+A method drawing a selection outline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & a reference to a vector of renderable objects \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 198 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_ad51a3270f00a48e37d08d35030e30dc6}\label{classsf_1_1_open_g_l_trackball_ad51a3270f00a48e37d08d35030e30dc6}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!GlueToMoving@{GlueToMoving}}
+\index{GlueToMoving@{GlueToMoving}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{GlueToMoving()}{GlueToMoving()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Glue\+To\+Moving (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_moving_entity}{Moving\+Entity}} $\ast$}]{ent }\end{DoxyParamCaption})}
+
+
+
+A method to glue the trackball to a moving body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent} & a pointer to a moving body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_af48db040fe092c346dfbc57541bb4a60}\label{classsf_1_1_open_g_l_trackball_af48db040fe092c346dfbc57541bb4a60}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!MouseDown@{MouseDown}}
+\index{MouseDown@{MouseDown}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{MouseDown()}{MouseDown()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Mouse\+Down (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y,  }\item[{bool}]{translate }\end{DoxyParamCaption})}
+
+
+
+A method servicing the mouse down event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse pointer \\
+\hline
+{\em y} & the y coordinate of the mouse pointer \\
+\hline
+{\em translate} & a flag to decide between translate and rotate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a9ceff100fd36bc88dc435576716a225f}\label{classsf_1_1_open_g_l_trackball_a9ceff100fd36bc88dc435576716a225f}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!MouseMove@{MouseMove}}
+\index{MouseMove@{MouseMove}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{MouseMove()}{MouseMove()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Mouse\+Move (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+A method servicing the mouse move event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse pointer \\
+\hline
+{\em y} & the y coordinate of the mouse pointer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 151 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a46829fcf7afe266a693e9d2a0e9727e6}\label{classsf_1_1_open_g_l_trackball_a46829fcf7afe266a693e9d2a0e9727e6}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!MouseScroll@{MouseScroll}}
+\index{MouseScroll@{MouseScroll}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{MouseScroll()}{MouseScroll()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Mouse\+Scroll (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{s }\end{DoxyParamCaption})}
+
+
+
+A method servicing the mouse scroll event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & amount of scrolling \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_ac4b2e09911b9b510bbd083d27f21bdeb}\label{classsf_1_1_open_g_l_trackball_ac4b2e09911b9b510bbd083d27f21bdeb}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!MoveCenter@{MoveCenter}}
+\index{MoveCenter@{MoveCenter}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{MoveCenter()}{MoveCenter()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Move\+Center (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{step }\end{DoxyParamCaption})}
+
+
+
+A method to move the center of the trackball orbit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & a position step \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 188 of file Open\+G\+L\+Trackball.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_trackball_a07b0416fa3db9ecd55253489488d05f3}\label{classsf_1_1_open_g_l_trackball_a07b0416fa3db9ecd55253489488d05f3}} 
+\index{sf::OpenGLTrackball@{sf::OpenGLTrackball}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!sf::OpenGLTrackball@{sf::OpenGLTrackball}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Trackball\+::\+Rotate (\begin{DoxyParamCaption}\item[{glm\+::quat}]{rot }\end{DoxyParamCaption})}
+
+
+
+A method to apply a rotation to the trackball. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rot} & a quaternion designating rotation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file Open\+G\+L\+Trackball.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Trackball.\+h\item 
+Library/src/graphics/Open\+G\+L\+Trackball.\+cpp\end{DoxyCompactItemize}

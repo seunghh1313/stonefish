@@ -1,0 +1,163 @@
+\hypertarget{classsf_1_1_thruster}{}\doxysection{sf\+::Thruster Class Reference}
+\label{classsf_1_1_thruster}\index{sf::Thruster@{sf::Thruster}}
+
+
+A class representing a thruster.  
+
+
+
+
+{\ttfamily \#include $<$Thruster.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Thruster\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classsf_1_1_thruster__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Thruster\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_thruster__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_thruster_a74c7d9590d3d9806f2154e6e75ce3989}{Thruster}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$propeller, Scalar diameter, std\+::pair$<$ Scalar, Scalar $>$ thrust\+Coeff, Scalar torque\+Coeff, Scalar max\+R\+PM, bool right\+Hand, bool inverted=false)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a2bd223ba954f0076f4bd89098f2550a7}\label{classsf_1_1_thruster_a2bd223ba954f0076f4bd89098f2550a7}} 
+\mbox{\hyperlink{classsf_1_1_thruster_a2bd223ba954f0076f4bd89098f2550a7}{$\sim$\+Thruster}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_thruster_a215f38c15cf6c3c599afde3728f6cfce}{Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method used to update the internal state of the thruster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a371974f894e6f10fcc6a97c047a16eb7}\label{classsf_1_1_thruster_a371974f894e6f10fcc6a97c047a16eb7}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_thruster_a371974f894e6f10fcc6a97c047a16eb7}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the thruster. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_thruster_a38ec2b0cc3a05c738667820cc9c8fb8d}{set\+Setpoint}} (Scalar s)
+\begin{DoxyCompactList}\small\item\em A method setting the new value of the thruster speed setpoint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_aafc1994cb50a228964f68d83529225c0}\label{classsf_1_1_thruster_aafc1994cb50a228964f68d83529225c0}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_aafc1994cb50a228964f68d83529225c0}{get\+Setpoint}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current setpoint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a7d9f37712e882dd6ca18d00c8a8cb579}\label{classsf_1_1_thruster_a7d9f37712e882dd6ca18d00c8a8cb579}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_a7d9f37712e882dd6ca18d00c8a8cb579}{get\+Thrust}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the generated thrust. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_aeb14bd362adbb511c40acab2a933db98}\label{classsf_1_1_thruster_aeb14bd362adbb511c40acab2a933db98}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_aeb14bd362adbb511c40acab2a933db98}{get\+Torque}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the induced torque. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a424f0e435c7b6f05a2eefdaf9f35daeb}\label{classsf_1_1_thruster_a424f0e435c7b6f05a2eefdaf9f35daeb}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_a424f0e435c7b6f05a2eefdaf9f35daeb}{get\+Angle}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the angular position of the propeller \mbox{[}rad\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a60928818bcddb6bf030bb77bd8f1a643}\label{classsf_1_1_thruster_a60928818bcddb6bf030bb77bd8f1a643}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_a60928818bcddb6bf030bb77bd8f1a643}{get\+Omega}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the angular velocity of the propeller \mbox{[}rad/s\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a153644b420505ce63c646447b94b5762}\label{classsf_1_1_thruster_a153644b420505ce63c646447b94b5762}} 
+Scalar \mbox{\hyperlink{classsf_1_1_thruster_a153644b420505ce63c646447b94b5762}{get\+Diameter}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the diameter of the thruster propeller \mbox{[}m\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_acd5be5ff5204def1aee6b808b4bf510f}\label{classsf_1_1_thruster_acd5be5ff5204def1aee6b808b4bf510f}} 
+bool \mbox{\hyperlink{classsf_1_1_thruster_acd5be5ff5204def1aee6b808b4bf510f}{is\+Propeller\+Right}} () const
+\begin{DoxyCompactList}\small\item\em A method informing if the propeller is right-\/handed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_thruster_a4fd5f75109e83b61333eb5c85da5b704}\label{classsf_1_1_thruster_a4fd5f75109e83b61333eb5c85da5b704}} 
+Actuator\+Type \mbox{\hyperlink{classsf_1_1_thruster_a4fd5f75109e83b61333eb5c85da5b704}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a thruster. 
+
+Definition at line 34 of file Thruster.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_thruster_a74c7d9590d3d9806f2154e6e75ce3989}\label{classsf_1_1_thruster_a74c7d9590d3d9806f2154e6e75ce3989}} 
+\index{sf::Thruster@{sf::Thruster}!Thruster@{Thruster}}
+\index{Thruster@{Thruster}!sf::Thruster@{sf::Thruster}}
+\doxysubsubsection{\texorpdfstring{Thruster()}{Thruster()}}
+{\footnotesize\ttfamily sf\+::\+Thruster\+::\+Thruster (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{propeller,  }\item[{Scalar}]{diameter,  }\item[{std\+::pair$<$ Scalar, Scalar $>$}]{thrust\+Coeff,  }\item[{Scalar}]{torque\+Coeff,  }\item[{Scalar}]{max\+R\+PM,  }\item[{bool}]{right\+Hand,  }\item[{bool}]{inverted = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the thruster \\
+\hline
+{\em propeller} & a pointer to a rigid body representing the propeller \\
+\hline
+{\em diameter} & the diameter of the propeller \mbox{[}m\mbox{]} \\
+\hline
+{\em thrust\+Coeff} & the thrust coefficient (forward and backward) \\
+\hline
+{\em torque\+Coeff} & the torque coefficient \\
+\hline
+{\em max\+R\+PM} & the maximum rotational speed of the thruster \mbox{[}rpm\mbox{]} \\
+\hline
+{\em right\+Hand} & a flag to indicate if the propeller is right hand (clockwise rotation) \\
+\hline
+{\em inverted} & a flag to indicate if the setpoint is inverted (positive value results in backward force) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Thruster.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_thruster_a38ec2b0cc3a05c738667820cc9c8fb8d}\label{classsf_1_1_thruster_a38ec2b0cc3a05c738667820cc9c8fb8d}} 
+\index{sf::Thruster@{sf::Thruster}!setSetpoint@{setSetpoint}}
+\index{setSetpoint@{setSetpoint}!sf::Thruster@{sf::Thruster}}
+\doxysubsubsection{\texorpdfstring{setSetpoint()}{setSetpoint()}}
+{\footnotesize\ttfamily void sf\+::\+Thruster\+::set\+Setpoint (\begin{DoxyParamCaption}\item[{Scalar}]{s }\end{DoxyParamCaption})}
+
+
+
+A method setting the new value of the thruster speed setpoint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the desired speed of the thruster as fraction $<$0,1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Thruster.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_thruster_a215f38c15cf6c3c599afde3728f6cfce}\label{classsf_1_1_thruster_a215f38c15cf6c3c599afde3728f6cfce}} 
+\index{sf::Thruster@{sf::Thruster}!Update@{Update}}
+\index{Update@{Update}!sf::Thruster@{sf::Thruster}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void sf\+::\+Thruster\+::\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to update the internal state of the thruster. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & a time step of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_actuator_a9220511396d118a2817da1fe069d79d6}{sf\+::\+Actuator}}.
+
+
+
+Definition at line 114 of file Thruster.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/actuators/Thruster.\+h\item 
+Library/src/actuators/Thruster.\+cpp\end{DoxyCompactItemize}

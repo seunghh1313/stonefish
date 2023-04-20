@@ -1,0 +1,286 @@
+\hypertarget{classsf_1_1_revolute_joint}{}\doxysection{sf\+::Revolute\+Joint Class Reference}
+\label{classsf_1_1_revolute_joint}\index{sf::RevoluteJoint@{sf::RevoluteJoint}}
+
+
+A class representing a revolute joint.  
+
+
+
+
+{\ttfamily \#include $<$Revolute\+Joint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Revolute\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classsf_1_1_revolute_joint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Revolute\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classsf_1_1_revolute_joint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_revolute_joint_a3ff31c4056f9e28b14e35b8af7621632}{Revolute\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidA, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidB, const Vector3 \&pivot, const Vector3 \&axis, bool collide\+Linked=true)
+\begin{DoxyCompactList}\small\item\em A constructor (a revolute joint between two solid bodies). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_revolute_joint_ab6fdfb7fc85a2c1bc07f4fcd2cfe1bbc}{Revolute\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid, const Vector3 \&pivot, const Vector3 \&axis)
+\begin{DoxyCompactList}\small\item\em A constructor (a revolute joint attaching a solid to the world). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_a8922a14fa1c46d18bcc9f3a2beca93c4}{Apply\+Torque}} (Scalar T)
+\begin{DoxyCompactList}\small\item\em A method used to apply torque to the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_aad95f2086f0c07884c99ef790b02a91c}\label{classsf_1_1_revolute_joint_aad95f2086f0c07884c99ef790b02a91c}} 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_aad95f2086f0c07884c99ef790b02a91c}{Apply\+Damping}} ()
+\begin{DoxyCompactList}\small\item\em A method applying damping to the joint. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsf_1_1_revolute_joint_ab1c9fcf9d504d533c4417bbac5bc1e45}{Solve\+Position\+IC}} (Scalar linear\+Tolerance, Scalar angular\+Tolerance)
+\begin{DoxyCompactList}\small\item\em A method that solves initial conditions problem for the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a04bde8740ae9a5784ebf47c88ee9e1bf}\label{classsf_1_1_revolute_joint_a04bde8740ae9a5784ebf47c88ee9e1bf}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_revolute_joint_a04bde8740ae9a5784ebf47c88ee9e1bf}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_a359bc59bbfa8eda57d87b2f34a800882}{Enable\+Motor}} (bool enable, Scalar max\+Torque)
+\begin{DoxyCompactList}\small\item\em A method to enable the built in joint motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_aa3459faf2c7843c5692b0727f7ae53d1}{set\+Motor\+Velocity}} (Scalar av)
+\begin{DoxyCompactList}\small\item\em A method to update the motor of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_a33a74a61011d527768aa355411be1500}{set\+Damping}} (Scalar constant\+Factor, Scalar viscous\+Factor)
+\begin{DoxyCompactList}\small\item\em A method to set the damping characteristics of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_afc075fa91bd1eb1fbd90a1b1ea3607d5}{set\+Limits}} (Scalar min, Scalar max)
+\begin{DoxyCompactList}\small\item\em A method to set the limits of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_revolute_joint_a4bb119acc53ef200b69e081eded1dabe}{set\+IC}} (Scalar angle)
+\begin{DoxyCompactList}\small\item\em A method to set the desired initial condition of the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a1be35247ca6eea66d849691271e2bdf1}\label{classsf_1_1_revolute_joint_a1be35247ca6eea66d849691271e2bdf1}} 
+Scalar \mbox{\hyperlink{classsf_1_1_revolute_joint_a1be35247ca6eea66d849691271e2bdf1}{get\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the anglular position of the joint \mbox{[}rad\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a86bfff185781eb1d883938ca68a8a037}\label{classsf_1_1_revolute_joint_a86bfff185781eb1d883938ca68a8a037}} 
+Scalar \mbox{\hyperlink{classsf_1_1_revolute_joint_a86bfff185781eb1d883938ca68a8a037}{get\+Angular\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the angular velocity of the joint \mbox{[}rad$\ast$s$^\wedge$-\/1\mbox{]}/. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_af512d2595809808d29fdd4082775278a}\label{classsf_1_1_revolute_joint_af512d2595809808d29fdd4082775278a}} 
+Joint\+Type \mbox{\hyperlink{classsf_1_1_revolute_joint_af512d2595809808d29fdd4082775278a}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a revolute joint. 
+
+Definition at line 36 of file Revolute\+Joint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a3ff31c4056f9e28b14e35b8af7621632}\label{classsf_1_1_revolute_joint_a3ff31c4056f9e28b14e35b8af7621632}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!RevoluteJoint@{RevoluteJoint}}
+\index{RevoluteJoint@{RevoluteJoint}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{RevoluteJoint()}{RevoluteJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sf\+::\+Revolute\+Joint\+::\+Revolute\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidA,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidB,  }\item[{const Vector3 \&}]{pivot,  }\item[{const Vector3 \&}]{axis,  }\item[{bool}]{collide\+Linked = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+A constructor (a revolute joint between two solid bodies). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the revolute joint \\
+\hline
+{\em solidA} & pointer to the first solid body \\
+\hline
+{\em solidB} & pointer to the second solid body \\
+\hline
+{\em pivot} & a point where the axis of joint is located \\
+\hline
+{\em axis} & a vector parallel to the joint axis \\
+\hline
+{\em collide\+Linked} & a flag that sets if the bodies connected by the joint should coliide \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_ab6fdfb7fc85a2c1bc07f4fcd2cfe1bbc}\label{classsf_1_1_revolute_joint_ab6fdfb7fc85a2c1bc07f4fcd2cfe1bbc}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!RevoluteJoint@{RevoluteJoint}}
+\index{RevoluteJoint@{RevoluteJoint}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{RevoluteJoint()}{RevoluteJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sf\+::\+Revolute\+Joint\+::\+Revolute\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid,  }\item[{const Vector3 \&}]{pivot,  }\item[{const Vector3 \&}]{axis }\end{DoxyParamCaption})}
+
+
+
+A constructor (a revolute joint attaching a solid to the world). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the revolute joint \\
+\hline
+{\em solid} & pointer to the solid body \\
+\hline
+{\em pivot} & a point where the axis of joint is located \\
+\hline
+{\em axis} & a vector parallel to the joint axis \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Revolute\+Joint.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a8922a14fa1c46d18bcc9f3a2beca93c4}\label{classsf_1_1_revolute_joint_a8922a14fa1c46d18bcc9f3a2beca93c4}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!ApplyTorque@{ApplyTorque}}
+\index{ApplyTorque@{ApplyTorque}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{ApplyTorque()}{ApplyTorque()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::\+Apply\+Torque (\begin{DoxyParamCaption}\item[{Scalar}]{T }\end{DoxyParamCaption})}
+
+
+
+A method used to apply torque to the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & torque to be applied to the joint \mbox{[}Nm\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a359bc59bbfa8eda57d87b2f34a800882}\label{classsf_1_1_revolute_joint_a359bc59bbfa8eda57d87b2f34a800882}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!EnableMotor@{EnableMotor}}
+\index{EnableMotor@{EnableMotor}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{EnableMotor()}{EnableMotor()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::\+Enable\+Motor (\begin{DoxyParamCaption}\item[{bool}]{enable,  }\item[{Scalar}]{max\+Torque }\end{DoxyParamCaption})}
+
+
+
+A method to enable the built in joint motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a flag defining if the motor should be enabled or disabled \\
+\hline
+{\em max\+Torque} & maximum torque used to drive the joint \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a33a74a61011d527768aa355411be1500}\label{classsf_1_1_revolute_joint_a33a74a61011d527768aa355411be1500}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!setDamping@{setDamping}}
+\index{setDamping@{setDamping}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{setDamping()}{setDamping()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::set\+Damping (\begin{DoxyParamCaption}\item[{Scalar}]{constant\+Factor,  }\item[{Scalar}]{viscous\+Factor }\end{DoxyParamCaption})}
+
+
+
+A method to set the damping characteristics of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em constant\+Factor} & a constant damping torque \mbox{[}Nm\mbox{]} \\
+\hline
+{\em viscous\+Factor} & a coefficient of viscous damping \mbox{[}Nm$\ast$s$\ast$rad$^\wedge$-\/1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_a4bb119acc53ef200b69e081eded1dabe}\label{classsf_1_1_revolute_joint_a4bb119acc53ef200b69e081eded1dabe}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!setIC@{setIC}}
+\index{setIC@{setIC}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{setIC()}{setIC()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::set\+IC (\begin{DoxyParamCaption}\item[{Scalar}]{angle }\end{DoxyParamCaption})}
+
+
+
+A method to set the desired initial condition of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the initial angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_afc075fa91bd1eb1fbd90a1b1ea3607d5}\label{classsf_1_1_revolute_joint_afc075fa91bd1eb1fbd90a1b1ea3607d5}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!setLimits@{setLimits}}
+\index{setLimits@{setLimits}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{setLimits()}{setLimits()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::set\+Limits (\begin{DoxyParamCaption}\item[{Scalar}]{min,  }\item[{Scalar}]{max }\end{DoxyParamCaption})}
+
+
+
+A method to set the limits of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & the minimum rotation angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+{\em max} & the maximum rotation angle of the joint \mbox{[}rad\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_aa3459faf2c7843c5692b0727f7ae53d1}\label{classsf_1_1_revolute_joint_aa3459faf2c7843c5692b0727f7ae53d1}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!setMotorVelocity@{setMotorVelocity}}
+\index{setMotorVelocity@{setMotorVelocity}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{setMotorVelocity()}{setMotorVelocity()}}
+{\footnotesize\ttfamily void sf\+::\+Revolute\+Joint\+::set\+Motor\+Velocity (\begin{DoxyParamCaption}\item[{Scalar}]{av }\end{DoxyParamCaption})}
+
+
+
+A method to update the motor of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & setpoint of angular velocity \mbox{[}rad/s\mbox{]} \\
+\hline
+{\em dt} & time step of the simulation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file Revolute\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_revolute_joint_ab1c9fcf9d504d533c4417bbac5bc1e45}\label{classsf_1_1_revolute_joint_ab1c9fcf9d504d533c4417bbac5bc1e45}} 
+\index{sf::RevoluteJoint@{sf::RevoluteJoint}!SolvePositionIC@{SolvePositionIC}}
+\index{SolvePositionIC@{SolvePositionIC}!sf::RevoluteJoint@{sf::RevoluteJoint}}
+\doxysubsubsection{\texorpdfstring{SolvePositionIC()}{SolvePositionIC()}}
+{\footnotesize\ttfamily bool sf\+::\+Revolute\+Joint\+::\+Solve\+Position\+IC (\begin{DoxyParamCaption}\item[{Scalar}]{linear\+Tolerance,  }\item[{Scalar}]{angular\+Tolerance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that solves initial conditions problem for the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Tolerance} & a value of the tolerance in position (termination condition) \\
+\hline
+{\em angular\+Tolerance} & a value of the tolerance in rotation (termination condition) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_joint_a3f1218dbb6485f7e777b5d1cfd5bce42}{sf\+::\+Joint}}.
+
+
+
+Definition at line 166 of file Revolute\+Joint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/joints/Revolute\+Joint.\+h\item 
+Library/src/joints/Revolute\+Joint.\+cpp\end{DoxyCompactItemize}

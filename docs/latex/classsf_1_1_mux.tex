@@ -1,0 +1,92 @@
+\hypertarget{classsf_1_1_mux}{}\doxysection{sf\+::Mux Class Reference}
+\label{classsf_1_1_mux}\index{sf::Mux@{sf::Mux}}
+
+
+A class implementing a multiplexer.  
+
+
+
+
+{\ttfamily \#include $<$Mux.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_mux_a1967287db36ade26dcdf37b79e28a172}\label{classsf_1_1_mux_a1967287db36ade26dcdf37b79e28a172}} 
+\mbox{\hyperlink{classsf_1_1_mux_a1967287db36ade26dcdf37b79e28a172}{Mux}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_mux_a1752ed2d441038e7039580b963ed9cdb}\label{classsf_1_1_mux_a1752ed2d441038e7039580b963ed9cdb}} 
+\mbox{\hyperlink{classsf_1_1_mux_a1752ed2d441038e7039580b963ed9cdb}{$\sim$\+Mux}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsf_1_1_mux_a1c868e6160a98325305270c0834ed32f}{Add\+Component}} (\mbox{\hyperlink{classsf_1_1_scalar_sensor}{Scalar\+Sensor}} $\ast$s, unsigned short channel)
+\begin{DoxyCompactList}\small\item\em A method to add a sensor channel to the mux. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsf_1_1_mux_component}{Mux\+Component}} $\ast$ \mbox{\hyperlink{classsf_1_1_mux_ad4caee546e1cfeb9b02d183689c1f83f}{get\+Component}} (unsigned int index)
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to a mux channel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_mux_a4d8bb42c553ed4cf9cf8c61d799641aa}\label{classsf_1_1_mux_a4d8bb42c553ed4cf9cf8c61d799641aa}} 
+Scalar $\ast$ \mbox{\hyperlink{classsf_1_1_mux_a4d8bb42c553ed4cf9cf8c61d799641aa}{get\+Last\+Sample}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the last sample. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_mux_a0188a7ad7ef89de228b5bf30cf18e2bc}\label{classsf_1_1_mux_a0188a7ad7ef89de228b5bf30cf18e2bc}} 
+unsigned int \mbox{\hyperlink{classsf_1_1_mux_a0188a7ad7ef89de228b5bf30cf18e2bc}{get\+Num\+Of\+Components}} ()
+\begin{DoxyCompactList}\small\item\em A method returning a number of channels of the mux. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a multiplexer. 
+
+Definition at line 43 of file Mux.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_mux_a1c868e6160a98325305270c0834ed32f}\label{classsf_1_1_mux_a1c868e6160a98325305270c0834ed32f}} 
+\index{sf::Mux@{sf::Mux}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!sf::Mux@{sf::Mux}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily bool sf\+::\+Mux\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_scalar_sensor}{Scalar\+Sensor}} $\ast$}]{s,  }\item[{unsigned short}]{channel }\end{DoxyParamCaption})}
+
+
+
+A method to add a sensor channel to the mux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a pointer to a scalar sensor \\
+\hline
+{\em channel} & an index of the sensor channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if channel successfully added 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Mux.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_mux_ad4caee546e1cfeb9b02d183689c1f83f}\label{classsf_1_1_mux_ad4caee546e1cfeb9b02d183689c1f83f}} 
+\index{sf::Mux@{sf::Mux}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!sf::Mux@{sf::Mux}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsf_1_1_mux_component}{Mux\+Component}} $\ast$ sf\+::\+Mux\+::get\+Component (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})}
+
+
+
+A method returning a pointer to a mux channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & an index of the mux channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a mux component 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Mux.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/scalar/Mux.\+h\item 
+Library/src/sensors/scalar/Mux.\+cpp\end{DoxyCompactItemize}

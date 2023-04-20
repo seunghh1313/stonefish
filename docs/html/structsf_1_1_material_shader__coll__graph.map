@@ -1,0 +1,4 @@
+<map id="sf::MaterialShader" name="sf::MaterialShader">
+<area shape="rect" id="node1" title="A structure representing a material shader collection." alt="" coords="5,95,145,121"/>
+<area shape="rect" id="node2" href="$classsf_1_1_g_l_s_l_shader.html" title="A class representing a single GLSL shader." alt="" coords="16,5,135,32"/>
+</map>

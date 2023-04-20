@@ -1,0 +1,88 @@
+\hypertarget{classsf_1_1_sphere}{}\doxysection{sf\+::Sphere Class Reference}
+\label{classsf_1_1_sphere}\index{sf::Sphere@{sf::Sphere}}
+
+
+A class representing a sphere-\/shaped rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Sphere.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_sphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_sphere__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_sphere_ab787c0824ac7a8df37016b96310db415}{Sphere}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, Scalar radius, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sphere_aa44aba8f5967ede114a4c1ed767734f1}\label{classsf_1_1_sphere_aa44aba8f5967ede114a4c1ed767734f1}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_sphere_aa44aba8f5967ede114a4c1ed767734f1}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sphere_a54dda65202fa99f34f25dc6dfde229e9}\label{classsf_1_1_sphere_a54dda65202fa99f34f25dc6dfde229e9}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_sphere_a54dda65202fa99f34f25dc6dfde229e9}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape for the sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a sphere-\/shaped rigid body. 
+
+Definition at line 34 of file Sphere.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_sphere_ab787c0824ac7a8df37016b96310db415}\label{classsf_1_1_sphere_ab787c0824ac7a8df37016b96310db415}} 
+\index{sf::Sphere@{sf::Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!sf::Sphere@{sf::Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily sf\+::\+Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{Scalar}]{radius,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sphere \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em radius} & a radius of the sphere \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for sphere) \\
+\hline
+{\em material} & the name of the material the sphere is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the sphere walls, if positive the sphere is treated as shell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Sphere.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Sphere.\+h\item 
+Library/src/entities/solids/Sphere.\+cpp\end{DoxyCompactItemize}

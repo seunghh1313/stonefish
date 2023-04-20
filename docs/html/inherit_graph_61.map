@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsf_1_1_open_g_l_light.html" title="An abstract class implementing an OpenGL light." alt="" coords="5,31,129,57"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_point_light.html" title="A class implementing an OpenGL point light (shadow not supported)." alt="" coords="177,5,335,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_open_g_l_spot_light.html" title="A class implementing an OpenGL spot light with shadow." alt="" coords="179,56,333,83"/>
+</map>

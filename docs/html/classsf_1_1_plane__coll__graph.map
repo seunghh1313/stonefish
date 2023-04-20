@@ -1,0 +1,7 @@
+<map id="sf::Plane" name="sf::Plane">
+<area shape="rect" id="node1" title="A class representing an infinite static plane." alt="" coords="117,171,194,197"/>
+<area shape="rect" id="node2" href="$classsf_1_1_static_entity.html" title="An abstract class defining a static simulation entity." alt="" coords="97,95,213,121"/>
+<area shape="rect" id="node3" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node4" href="$structsf_1_1_material.html" title="A structure holding material properties." alt="" coords="108,5,203,32"/>
+<area shape="rect" id="node5" href="$structsf_1_1_mesh.html" title="A structure containing mesh data." alt="" coords="227,5,303,32"/>
+</map>

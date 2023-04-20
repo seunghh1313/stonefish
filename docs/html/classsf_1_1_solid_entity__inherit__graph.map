@@ -1,0 +1,12 @@
+<map id="sf::SolidEntity" name="sf::SolidEntity">
+<area shape="rect" id="node1" title="An abstract class representing a rigid body." alt="" coords="353,155,463,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_box.html" title="A class representing a box&#45;shaped rigid body." alt="" coords="5,229,72,256"/>
+<area shape="rect" id="node5" href="$classsf_1_1_compound.html" title="A class representing a rigid body built of multiple other rigid bodies." alt="" coords="97,229,207,256"/>
+<area shape="rect" id="node6" href="$classsf_1_1_cylinder.html" title="A class representing a cylinder&#45;shaped (cylinder axis parallel to z axis) rigid body." alt="" coords="231,229,326,256"/>
+<area shape="rect" id="node7" href="$classsf_1_1_polyhedron.html" title="A class representing a rigid body of any shape described by a polyhedron (mesh with triangle faces)." alt="" coords="351,229,465,256"/>
+<area shape="rect" id="node8" href="$classsf_1_1_sphere.html" title="A class representing a sphere&#45;shaped rigid body." alt="" coords="490,229,577,256"/>
+<area shape="rect" id="node9" href="$classsf_1_1_torus.html" title="A class representing a torus&#45;shaped rigid body." alt="" coords="601,229,676,256"/>
+<area shape="rect" id="node10" href="$classsf_1_1_wing.html" title="A class representing a wing&#45;shaped rigid body. The profile of the wing is generated based on 4&#45;digit ..." alt="" coords="700,229,775,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_moving_entity.html" title="An abstract class representing a moving rigid body." alt="" coords="345,80,471,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="369,5,447,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="sf::ForceTorque" name="sf::ForceTorque">
+<area shape="rect" id="node1" title="A class representing a 6&#45;axis force/torque sensor." alt="" coords="131,247,250,273"/>
+<area shape="rect" id="node2" href="$classsf_1_1_joint_sensor.html" title="An abstract class representing a sensor attached to a joint." alt="" coords="133,171,248,197"/>
+<area shape="rect" id="node3" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="5,81,131,108"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="25,5,111,32"/>
+<area shape="rect" id="node5" href="$classsf_1_1_joint.html" title="An abstract class implementing a general joint." alt="" coords="155,81,226,108"/>
+<area shape="rect" id="node6" href="$classsf_1_1_featherstone_entity.html" title="A class that implements simplified creation of multi&#45;body trees, using Roy Featherstone&#39;s algorithm." alt="" coords="250,81,414,108"/>
+<area shape="rect" id="node7" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="293,5,371,32"/>
+</map>

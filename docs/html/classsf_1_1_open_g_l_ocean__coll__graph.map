@@ -1,0 +1,6 @@
+<map id="sf::OpenGLOcean" name="sf::OpenGLOcean">
+<area shape="rect" id="node1" title="A class implementing ocean simulation in OpenGL." alt="" coords="117,184,250,211"/>
+<area shape="rect" id="node2" href="$structsf_1_1_ocean_currents_u_b_o.html" title="A structure representing the ocean currents UBO." alt="" coords="5,95,172,121"/>
+<area shape="rect" id="node3" href="$structsf_1_1_velocity_field_u_b_o.html" title="A structure representing a velocity field UBO (std140 aligned)." alt="" coords="12,5,165,32"/>
+<area shape="rect" id="node4" href="$structsf_1_1_ocean_params.html" title="A structure holding parameters of ocean generation and rendering." alt="" coords="213,95,343,121"/>
+</map>

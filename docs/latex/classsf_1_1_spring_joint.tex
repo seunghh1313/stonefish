@@ -1,0 +1,123 @@
+\hypertarget{classsf_1_1_spring_joint}{}\doxysection{sf\+::Spring\+Joint Class Reference}
+\label{classsf_1_1_spring_joint}\index{sf::SpringJoint@{sf::SpringJoint}}
+
+
+A class representing a spring.  
+
+
+
+
+{\ttfamily \#include $<$Spring\+Joint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Spring\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classsf_1_1_spring_joint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Spring\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classsf_1_1_spring_joint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_spring_joint_a119644ee6dd279d307d87be0f6df901c}{Spring\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solid, const Transform \&attachment, const Vector3 \&linear\+Stiffness, const Vector3 \&angular\+Stiffness, const Vector3 \&linear\+Damping, const Vector3 \&angular\+Damping)
+\begin{DoxyCompactList}\small\item\em A constructor to create a spring between solid and world. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_spring_joint_af4516028fd5520a0b084b9fbb0a6ca17}{Spring\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidA, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidB, const Transform \&attachment, const Vector3 \&linear\+Stiffness, const Vector3 \&angular\+Stiffness, const Vector3 \&linear\+Damping, const Vector3 \&angular\+Damping)
+\begin{DoxyCompactList}\small\item\em A constructor to create fixed joint between two solid bodies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_spring_joint_a0c6818190057168f7068a294c9a91c5a}\label{classsf_1_1_spring_joint_a0c6818190057168f7068a294c9a91c5a}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_spring_joint_a0c6818190057168f7068a294c9a91c5a}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_spring_joint_a70ee4b21cd11417504241fb261e908da}\label{classsf_1_1_spring_joint_a70ee4b21cd11417504241fb261e908da}} 
+Joint\+Type \mbox{\hyperlink{classsf_1_1_spring_joint_a70ee4b21cd11417504241fb261e908da}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a spring. 
+
+Definition at line 36 of file Spring\+Joint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_spring_joint_a119644ee6dd279d307d87be0f6df901c}\label{classsf_1_1_spring_joint_a119644ee6dd279d307d87be0f6df901c}} 
+\index{sf::SpringJoint@{sf::SpringJoint}!SpringJoint@{SpringJoint}}
+\index{SpringJoint@{SpringJoint}!sf::SpringJoint@{sf::SpringJoint}}
+\doxysubsubsection{\texorpdfstring{SpringJoint()}{SpringJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sf\+::\+Spring\+Joint\+::\+Spring\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solid,  }\item[{const Transform \&}]{attachment,  }\item[{const Vector3 \&}]{linear\+Stiffness,  }\item[{const Vector3 \&}]{angular\+Stiffness,  }\item[{const Vector3 \&}]{linear\+Damping,  }\item[{const Vector3 \&}]{angular\+Damping }\end{DoxyParamCaption})}
+
+
+
+A constructor to create a spring between solid and world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em solid} & a pointer to the solid body \\
+\hline
+{\em attachment} & the frame to which the spring is attached \\
+\hline
+{\em linear\+Stiffness} & stiffness of the spring for the linear D\+O\+Fs \\
+\hline
+{\em angular\+Stiffness} & stiffness of the spring for the angular D\+O\+Fs \\
+\hline
+{\em linear\+Damping} & damping for the linear D\+O\+Fs \\
+\hline
+{\em angular\+Damping} & damping for the angular D\+O\+Fs \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Spring\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_spring_joint_af4516028fd5520a0b084b9fbb0a6ca17}\label{classsf_1_1_spring_joint_af4516028fd5520a0b084b9fbb0a6ca17}} 
+\index{sf::SpringJoint@{sf::SpringJoint}!SpringJoint@{SpringJoint}}
+\index{SpringJoint@{SpringJoint}!sf::SpringJoint@{sf::SpringJoint}}
+\doxysubsubsection{\texorpdfstring{SpringJoint()}{SpringJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sf\+::\+Spring\+Joint\+::\+Spring\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidA,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidB,  }\item[{const Transform \&}]{attachment,  }\item[{const Vector3 \&}]{linear\+Stiffness,  }\item[{const Vector3 \&}]{angular\+Stiffness,  }\item[{const Vector3 \&}]{linear\+Damping,  }\item[{const Vector3 \&}]{angular\+Damping }\end{DoxyParamCaption})}
+
+
+
+A constructor to create fixed joint between two solid bodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the joint \\
+\hline
+{\em solidA} & a pointer to the first solid body \\
+\hline
+{\em solidB} & a pointer to the second solid body \\
+\hline
+{\em attachment} & the frame to which the spring is attached \\
+\hline
+{\em linear\+Stiffness} & stiffness of the spring for the linear D\+O\+Fs \\
+\hline
+{\em angular\+Stiffness} & stiffness of the spring for the angular D\+O\+Fs \\
+\hline
+{\em linear\+Damping} & damping for the linear D\+O\+Fs \\
+\hline
+{\em angular\+Damping} & damping for the angular D\+O\+Fs \textbackslash{} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Spring\+Joint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/joints/Spring\+Joint.\+h\item 
+Library/src/joints/Spring\+Joint.\+cpp\end{DoxyCompactItemize}

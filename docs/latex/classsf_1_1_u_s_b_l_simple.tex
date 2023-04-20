@@ -1,0 +1,135 @@
+\hypertarget{classsf_1_1_u_s_b_l_simple}{}\doxysection{sf\+::U\+S\+B\+L\+Simple Class Reference}
+\label{classsf_1_1_u_s_b_l_simple}\index{sf::USBLSimple@{sf::USBLSimple}}
+
+
+A class representing a simplified \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}} model.  
+
+
+
+
+{\ttfamily \#include $<$U\+S\+B\+L\+Simple.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::U\+S\+B\+L\+Simple\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classsf_1_1_u_s_b_l_simple__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::U\+S\+B\+L\+Simple\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classsf_1_1_u_s_b_l_simple__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_u_s_b_l_simple_a1c2754b419bf600356e445a6f5479974}{U\+S\+B\+L\+Simple}} (std\+::string unique\+Name, uint64\+\_\+t device\+Id, Scalar min\+Vertical\+F\+O\+V\+Deg, Scalar max\+Vertical\+F\+O\+V\+Deg, Scalar operating\+Range)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_simple_a1f35100f1d2f607acccedb93997f791b}{set\+Resolution}} (Scalar range, Scalar angle\+Deg)
+\begin{DoxyCompactList}\small\item\em A method used to set the resolution of the measurements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_simple_af7fe6b9e865ba083e7d142a129636d7a}{set\+Noise}} (Scalar range\+Dev, Scalar horizontal\+Angle\+Dev\+Deg, Scalar vertical\+Angle\+Dev\+Deg)
+\begin{DoxyCompactList}\small\item\em A method used to set the noise characteristics of the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_simple_a6487a21730d14fa25f21951d0eef9c1c}\label{classsf_1_1_u_s_b_l_simple_a6487a21730d14fa25f21951d0eef9c1c}} 
+void \mbox{\hyperlink{classsf_1_1_u_s_b_l_simple_a6487a21730d14fa25f21951d0eef9c1c}{Process\+Messages}} ()
+\begin{DoxyCompactList}\small\item\em A method to proccess received messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a simplified \mbox{\hyperlink{classsf_1_1_u_s_b_l}{U\+S\+BL}} model. 
+
+Definition at line 34 of file U\+S\+B\+L\+Simple.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_simple_a1c2754b419bf600356e445a6f5479974}\label{classsf_1_1_u_s_b_l_simple_a1c2754b419bf600356e445a6f5479974}} 
+\index{sf::USBLSimple@{sf::USBLSimple}!USBLSimple@{USBLSimple}}
+\index{USBLSimple@{USBLSimple}!sf::USBLSimple@{sf::USBLSimple}}
+\doxysubsubsection{\texorpdfstring{USBLSimple()}{USBLSimple()}}
+{\footnotesize\ttfamily sf\+::\+U\+S\+B\+L\+Simple\+::\+U\+S\+B\+L\+Simple (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{uint64\+\_\+t}]{device\+Id,  }\item[{Scalar}]{min\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{max\+Vertical\+F\+O\+V\+Deg,  }\item[{Scalar}]{operating\+Range }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the comm device \\
+\hline
+{\em device\+Id} & an identification code of the device \\
+\hline
+{\em min\+Vertical\+F\+O\+V\+Deg} & the minimum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em max\+Vertical\+F\+O\+V\+Deg} & the maximum vertical angle of radiation pattern \mbox{[}deg\mbox{]} \\
+\hline
+{\em operating\+Range} & the operating range \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file U\+S\+B\+L\+Simple.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_simple_af7fe6b9e865ba083e7d142a129636d7a}\label{classsf_1_1_u_s_b_l_simple_af7fe6b9e865ba083e7d142a129636d7a}} 
+\index{sf::USBLSimple@{sf::USBLSimple}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::USBLSimple@{sf::USBLSimple}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+U\+S\+B\+L\+Simple\+::set\+Noise (\begin{DoxyParamCaption}\item[{Scalar}]{range\+Dev,  }\item[{Scalar}]{horizontal\+Angle\+Dev\+Deg,  }\item[{Scalar}]{vertical\+Angle\+Dev\+Deg }\end{DoxyParamCaption})}
+
+
+
+A method used to set the noise characteristics of the device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range\+Dev} & standard deviation of the range measurement noise \mbox{[}m\mbox{]} \\
+\hline
+{\em horizontal\+Angle\+Dev\+Deg} & standard deviation of the angle measurement noise \mbox{[}deg\mbox{]} \\
+\hline
+{\em vertical\+Angle\+Dev\+Deg} & standard deviation of the angle measurement noise \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file U\+S\+B\+L\+Simple.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_u_s_b_l_simple_a1f35100f1d2f607acccedb93997f791b}\label{classsf_1_1_u_s_b_l_simple_a1f35100f1d2f607acccedb93997f791b}} 
+\index{sf::USBLSimple@{sf::USBLSimple}!setResolution@{setResolution}}
+\index{setResolution@{setResolution}!sf::USBLSimple@{sf::USBLSimple}}
+\doxysubsubsection{\texorpdfstring{setResolution()}{setResolution()}}
+{\footnotesize\ttfamily void sf\+::\+U\+S\+B\+L\+Simple\+::set\+Resolution (\begin{DoxyParamCaption}\item[{Scalar}]{range,  }\item[{Scalar}]{angle\+Deg }\end{DoxyParamCaption})}
+
+
+
+A method used to set the resolution of the measurements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & the range measurement resolution \mbox{[}m\mbox{]} \\
+\hline
+{\em angle\+Deg} & the angle measurement resolution \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file U\+S\+B\+L\+Simple.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/comms/U\+S\+B\+L\+Simple.\+h\item 
+Library/src/comms/U\+S\+B\+L\+Simple.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="sf::OpenGLRealCamera" name="sf::OpenGLRealCamera">
+<area shape="rect" id="node1" title="A class implementing a real camera in OpenGL." alt="" coords="126,407,298,433"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_camera.html" title="An abstract class implementing a camera view." alt="" coords="141,331,283,357"/>
+<area shape="rect" id="node3" href="$classsf_1_1_open_g_l_view.html" title="An abstract class representing an OpenGL view." alt="" coords="5,95,128,121"/>
+<area shape="rect" id="node4" href="$structsf_1_1_view_u_b_o.html" title=" " alt="" coords="15,5,118,32"/>
+<area shape="rect" id="node5" href="$classsf_1_1_g_l_s_l_shader.html" title="A class representing a single GLSL shader." alt="" coords="153,95,271,121"/>
+<area shape="rect" id="node6" href="$structsf_1_1_a_o_data.html" title="A structure holding data for HBAO algorithm." alt="" coords="343,95,433,121"/>
+</map>

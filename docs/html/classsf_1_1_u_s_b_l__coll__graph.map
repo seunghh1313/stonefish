@@ -1,0 +1,5 @@
+<map id="sf::USBL" name="sf::USBL">
+<area shape="rect" id="node1" title="An abstract class representing a USBL." alt="" coords="41,155,115,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_acoustic_modem.html" title="An abstract class representing an acoustic modem." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_comm.html" title="An abstract class representing a communication device." alt="" coords="36,5,120,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="sf::JointSensor" name="sf::JointSensor">
+<area shape="rect" id="node1" title="An abstract class representing a sensor attached to a joint." alt="" coords="158,155,273,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_force_torque.html" title="A class representing a 6&#45;axis force/torque sensor." alt="" coords="5,229,124,256"/>
+<area shape="rect" id="node5" href="$classsf_1_1_rotary_encoder.html" title="A class representing a rotary encoder with &quot;infinite&quot; resolution." alt="" coords="147,229,283,256"/>
+<area shape="rect" id="node7" href="$classsf_1_1_torque.html" title="A class representing a torque sensor." alt="" coords="308,229,392,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="153,80,278,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="173,5,258,32"/>
+<area shape="rect" id="node6" href="$classsf_1_1_real_rotary_encoder.html" title="A class representing a rotary encoder with a specified resolution." alt="" coords="133,304,298,331"/>
+</map>

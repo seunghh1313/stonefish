@@ -1,0 +1,147 @@
+\hypertarget{classsf_1_1_terrain}{}\doxysection{sf\+::Terrain Class Reference}
+\label{classsf_1_1_terrain}\index{sf::Terrain@{sf::Terrain}}
+
+
+A class representing a heightfield terrain.  
+
+
+
+
+{\ttfamily \#include $<$Terrain.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Terrain\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classsf_1_1_terrain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Terrain\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classsf_1_1_terrain__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_terrain_aa30fb77e79c422d1dc5899f2ffce7ed4}{Terrain}} (std\+::string unique\+Name, std\+::string path\+To\+Heightmap, Scalar scaleX, Scalar scaleY, Scalar height, std\+::string material, std\+::string look=\char`\"{}\char`\"{}, float uv\+Scale=1.f)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_terrain_a4cd126bd715c88f445f0857e9210f499}\label{classsf_1_1_terrain_a4cd126bd715c88f445f0857e9210f499}} 
+\mbox{\hyperlink{classsf_1_1_terrain_a4cd126bd715c88f445f0857e9210f499}{$\sim$\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_terrain_a605d8f214d62fbb45354537142768b6d}{Add\+To\+Simulation}} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm, const Transform \&origin)
+\begin{DoxyCompactList}\small\item\em A method used to add the terrain to the simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_terrain_aa788c9f5a0ff74520fd12fd0e53357d3}{get\+A\+A\+BB}} (Vector3 \&min, Vector3 \&max)
+\begin{DoxyCompactList}\small\item\em A method returning the extents of the terrain axis alligned bounding box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_terrain_acf044c09fe458c017180c70ebbf682c8}\label{classsf_1_1_terrain_acf044c09fe458c017180c70ebbf682c8}} 
+Static\+Entity\+Type \mbox{\hyperlink{classsf_1_1_terrain_acf044c09fe458c017180c70ebbf682c8}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of static entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a heightfield terrain. 
+
+Definition at line 35 of file Terrain.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_terrain_aa30fb77e79c422d1dc5899f2ffce7ed4}\label{classsf_1_1_terrain_aa30fb77e79c422d1dc5899f2ffce7ed4}} 
+\index{sf::Terrain@{sf::Terrain}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!sf::Terrain@{sf::Terrain}}
+\doxysubsubsection{\texorpdfstring{Terrain()}{Terrain()}}
+{\footnotesize\ttfamily sf\+::\+Terrain\+::\+Terrain (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{std\+::string}]{path\+To\+Heightmap,  }\item[{Scalar}]{scaleX,  }\item[{Scalar}]{scaleY,  }\item[{Scalar}]{height,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look = {\ttfamily \char`\"{}\char`\"{}},  }\item[{float}]{uv\+Scale = {\ttfamily 1.f} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the terrain \\
+\hline
+{\em path\+To\+Heightmap} & a path to the file containing the heightmap \\
+\hline
+{\em scaleX} & the scale in the X direction \mbox{[}m/pix\mbox{]} \\
+\hline
+{\em scaleY} & the scale in the Y direction \mbox{[}m/pix\mbox{]} \\
+\hline
+{\em height} & the height at the maximum possible heightmap value \mbox{[}m\mbox{]} \\
+\hline
+{\em material} & the name of the material the terrain is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em uv\+Scale} & scaling of texture coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Terrain.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_terrain_a605d8f214d62fbb45354537142768b6d}\label{classsf_1_1_terrain_a605d8f214d62fbb45354537142768b6d}} 
+\index{sf::Terrain@{sf::Terrain}!AddToSimulation@{AddToSimulation}}
+\index{AddToSimulation@{AddToSimulation}!sf::Terrain@{sf::Terrain}}
+\doxysubsubsection{\texorpdfstring{AddToSimulation()}{AddToSimulation()}}
+{\footnotesize\ttfamily void sf\+::\+Terrain\+::\+Add\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$}]{sm,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to add the terrain to the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & a pointer to the simulation manager \\
+\hline
+{\em origin} & the origin of the terrain in the world frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_static_entity_a7f68bf68ad0723ea12831306f21f82dd}{sf\+::\+Static\+Entity}}.
+
+
+
+Definition at line 103 of file Terrain.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_terrain_aa788c9f5a0ff74520fd12fd0e53357d3}\label{classsf_1_1_terrain_aa788c9f5a0ff74520fd12fd0e53357d3}} 
+\index{sf::Terrain@{sf::Terrain}!getAABB@{getAABB}}
+\index{getAABB@{getAABB}!sf::Terrain@{sf::Terrain}}
+\doxysubsubsection{\texorpdfstring{getAABB()}{getAABB()}}
+{\footnotesize\ttfamily void sf\+::\+Terrain\+::get\+A\+A\+BB (\begin{DoxyParamCaption}\item[{Vector3 \&}]{min,  }\item[{Vector3 \&}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method returning the extents of the terrain axis alligned bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & a point located at the minimum coordinate corner \\
+\hline
+{\em max} & a point located at the maximum coordinate corner \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classsf_1_1_static_entity_aa91923eceb798f551aa86b94d009c8a9}{sf\+::\+Static\+Entity}}.
+
+
+
+Definition at line 96 of file Terrain.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/statics/Terrain.\+h\item 
+Library/src/entities/statics/Terrain.\+cpp\end{DoxyCompactItemize}

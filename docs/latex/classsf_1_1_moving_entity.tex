@@ -1,0 +1,304 @@
+\hypertarget{classsf_1_1_moving_entity}{}\doxysection{sf\+::Moving\+Entity Class Reference}
+\label{classsf_1_1_moving_entity}\index{sf::MovingEntity@{sf::MovingEntity}}
+
+
+An abstract class representing a moving rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Moving\+Entity.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Moving\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_moving_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Moving\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classsf_1_1_moving_entity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_moving_entity_a80c53bd5bbe4a89ceaa5dc0b938cba1b}{Moving\+Entity}} (std\+::string unique\+Name, std\+::string material, std\+::string look)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a949e6bd7fe43e55624aa90e96dbe2cd2}\label{classsf_1_1_moving_entity_a949e6bd7fe43e55624aa90e96dbe2cd2}} 
+virtual \mbox{\hyperlink{classsf_1_1_moving_entity_a949e6bd7fe43e55624aa90e96dbe2cd2}{$\sim$\+Moving\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_moving_entity_a0bd0b8d0d91615b85fe524521b79cea1}{Add\+To\+Simulation}} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm)=0
+\begin{DoxyCompactList}\small\item\em A method adding the body to the simulation manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_moving_entity_a638aaacbaf9282ef9b48071e4674e420}{Add\+To\+Simulation}} (\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$sm, const Transform \&origin)=0
+\begin{DoxyCompactList}\small\item\em A method adding the body to the simulation manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ab8638d43a2052502592e063bc5f1d3b6}\label{classsf_1_1_moving_entity_ab8638d43a2052502592e063bc5f1d3b6}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_moving_entity_ab8638d43a2052502592e063bc5f1d3b6}{Render}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the elements that should be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ae90a15eb797b07c8e485dd0fff5ab0f3}\label{classsf_1_1_moving_entity_ae90a15eb797b07c8e485dd0fff5ab0f3}} 
+virtual Entity\+Type \mbox{\hyperlink{classsf_1_1_moving_entity_ae90a15eb797b07c8e485dd0fff5ab0f3}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the type of the entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a8173b40ef8fd934fa8c6cf254d161fe9}\label{classsf_1_1_moving_entity_a8173b40ef8fd934fa8c6cf254d161fe9}} 
+virtual Transform \mbox{\hyperlink{classsf_1_1_moving_entity_a8173b40ef8fd934fa8c6cf254d161fe9}{get\+O\+Transform}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the pose of the body origin in the world frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a37e1fa92db298276d1352738ded92526}\label{classsf_1_1_moving_entity_a37e1fa92db298276d1352738ded92526}} 
+virtual Transform \mbox{\hyperlink{classsf_1_1_moving_entity_a37e1fa92db298276d1352738ded92526}{get\+C\+G\+Transform}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the pose of the body in the world frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a74231ee60c575fdf02ef4092f234e313}\label{classsf_1_1_moving_entity_a74231ee60c575fdf02ef4092f234e313}} 
+virtual Vector3 \mbox{\hyperlink{classsf_1_1_moving_entity_a74231ee60c575fdf02ef4092f234e313}{get\+Linear\+Velocity}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the linear velocity of the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a0dc124820db4fb83d5355cc49304a4bf}\label{classsf_1_1_moving_entity_a0dc124820db4fb83d5355cc49304a4bf}} 
+virtual Vector3 \mbox{\hyperlink{classsf_1_1_moving_entity_a0dc124820db4fb83d5355cc49304a4bf}{get\+Linear\+Velocity\+In\+Local\+Point}} (const Vector3 \&rel\+Pos) const =0
+\begin{DoxyCompactList}\small\item\em A method returning the linear velocity of the body at the given point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a9e20568f444667a60a706f3b0ab4edf5}\label{classsf_1_1_moving_entity_a9e20568f444667a60a706f3b0ab4edf5}} 
+virtual Vector3 \mbox{\hyperlink{classsf_1_1_moving_entity_a9e20568f444667a60a706f3b0ab4edf5}{get\+Angular\+Velocity}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the angular velocity of the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a9724a62bd3a79ef4205b6d4ae4c32e56}\label{classsf_1_1_moving_entity_a9724a62bd3a79ef4205b6d4ae4c32e56}} 
+virtual Vector3 \mbox{\hyperlink{classsf_1_1_moving_entity_a9724a62bd3a79ef4205b6d4ae4c32e56}{get\+Linear\+Acceleration}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the linear acceleration of the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ac00ef4984c0022a22e1f9282502257a5}\label{classsf_1_1_moving_entity_ac00ef4984c0022a22e1f9282502257a5}} 
+virtual Vector3 \mbox{\hyperlink{classsf_1_1_moving_entity_ac00ef4984c0022a22e1f9282502257a5}{get\+Angular\+Acceleration}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the angular acceleration of the body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_moving_entity_a7aa67e40eb5e529e567c8872bc097957}{set\+Linear\+Acceleration}} (Vector3 a)
+\begin{DoxyCompactList}\small\item\em A method setting the linear acceleration of the body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_moving_entity_a87a42db1a87153199549afbffc0af11a}{set\+Angular\+Acceleration}} (Vector3 epsilon)
+\begin{DoxyCompactList}\small\item\em A method setting the angular acceleration of the body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_moving_entity_a2697a375a517b99b36a98790858e8ce6}{get\+A\+A\+BB}} (Vector3 \&min, Vector3 \&max)=0
+\begin{DoxyCompactList}\small\item\em A method returning the extents of the body axis alligned bounding box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ae740632e74b4344722f6a54728799da6}\label{classsf_1_1_moving_entity_ae740632e74b4344722f6a54728799da6}} 
+\mbox{\hyperlink{structsf_1_1_material}{Material}} \mbox{\hyperlink{classsf_1_1_moving_entity_ae740632e74b4344722f6a54728799da6}{get\+Material}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the material of the body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_moving_entity_a75e4a8007e64bad5ee62aa67323b641d}{set\+Look}} (int new\+Look\+Id)
+\begin{DoxyCompactList}\small\item\em A method used to change the rendering style of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_moving_entity_a58490e56a4b5a76dffe60dc0a1652b1f}{set\+Display\+Mode}} (Display\+Mode m)
+\begin{DoxyCompactList}\small\item\em A method used to set display mode used for the body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ad0eb58e51012d214c1d26e2b856c91b3}\label{classsf_1_1_moving_entity_ad0eb58e51012d214c1d26e2b856c91b3}} 
+int \mbox{\hyperlink{classsf_1_1_moving_entity_ad0eb58e51012d214c1d26e2b856c91b3}{get\+Look}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the index of the graphical material used in rendering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_aaa6513c61615456722d9c3cc5df5c071}\label{classsf_1_1_moving_entity_aaa6513c61615456722d9c3cc5df5c071}} 
+int \mbox{\hyperlink{classsf_1_1_moving_entity_aaa6513c61615456722d9c3cc5df5c071}{get\+Graphical\+Object}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the index of the graphical object used in rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a92b58fa011479b71e707562c44c256a7}\label{classsf_1_1_moving_entity_a92b58fa011479b71e707562c44c256a7}} 
+bt\+Rigid\+Body $\ast$ {\bfseries rigid\+Body}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a8d3fd64d6165882f9420eb9fb5a1bac9}\label{classsf_1_1_moving_entity_a8d3fd64d6165882f9420eb9fb5a1bac9}} 
+\mbox{\hyperlink{structsf_1_1_material}{Material}} {\bfseries mat}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_af6f60933e1e7c06a8f57a26f2a6ffaf5}\label{classsf_1_1_moving_entity_af6f60933e1e7c06a8f57a26f2a6ffaf5}} 
+Vector3 {\bfseries filtered\+Linear\+Vel}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a5bb27693b8a9a598d2d8ff5128dbc570}\label{classsf_1_1_moving_entity_a5bb27693b8a9a598d2d8ff5128dbc570}} 
+Vector3 {\bfseries filtered\+Angular\+Vel}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a67ef5b239f59223f80b000d8c331525e}\label{classsf_1_1_moving_entity_a67ef5b239f59223f80b000d8c331525e}} 
+Vector3 {\bfseries linear\+Acc}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ae05edc5a0bbfa08af31c2493769e475e}\label{classsf_1_1_moving_entity_ae05edc5a0bbfa08af31c2493769e475e}} 
+Vector3 {\bfseries angular\+Acc}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_abac29a84df7b9d5939a6fb184b52d672}\label{classsf_1_1_moving_entity_abac29a84df7b9d5939a6fb184b52d672}} 
+int {\bfseries look\+Id}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_aa7aace2031463b07c550b37ce62efd4b}\label{classsf_1_1_moving_entity_aa7aace2031463b07c550b37ce62efd4b}} 
+int {\bfseries gra\+Object\+Id}
+\item 
+\mbox{\Hypertarget{classsf_1_1_moving_entity_ae7144ee8ed3dc800513b542c7444fed6}\label{classsf_1_1_moving_entity_ae7144ee8ed3dc800513b542c7444fed6}} 
+Display\+Mode {\bfseries dm}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a moving rigid body. 
+
+Definition at line 36 of file Moving\+Entity.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a80c53bd5bbe4a89ceaa5dc0b938cba1b}\label{classsf_1_1_moving_entity_a80c53bd5bbe4a89ceaa5dc0b938cba1b}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!MovingEntity@{MovingEntity}}
+\index{MovingEntity@{MovingEntity}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{MovingEntity()}{MovingEntity()}}
+{\footnotesize\ttfamily sf\+::\+Moving\+Entity\+::\+Moving\+Entity (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Moving\+Entity.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a0bd0b8d0d91615b85fe524521b79cea1}\label{classsf_1_1_moving_entity_a0bd0b8d0d91615b85fe524521b79cea1}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!AddToSimulation@{AddToSimulation}}
+\index{AddToSimulation@{AddToSimulation}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{AddToSimulation()}{AddToSimulation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void sf\+::\+Moving\+Entity\+::\+Add\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$}]{sm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method adding the body to the simulation manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & a pointer to the simulation manager \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_entity_a2f625f494d182ad8418104accceabd93}{sf\+::\+Entity}}.
+
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_animated_entity_a5d3b531893a522ecc77cf6c4a9c36314}{sf\+::\+Animated\+Entity}}, and \mbox{\hyperlink{classsf_1_1_solid_entity_a547c4a5cbc391fbf255c82d0d4a9c1ab}{sf\+::\+Solid\+Entity}}.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a638aaacbaf9282ef9b48071e4674e420}\label{classsf_1_1_moving_entity_a638aaacbaf9282ef9b48071e4674e420}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!AddToSimulation@{AddToSimulation}}
+\index{AddToSimulation@{AddToSimulation}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{AddToSimulation()}{AddToSimulation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void sf\+::\+Moving\+Entity\+::\+Add\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_simulation_manager}{Simulation\+Manager}} $\ast$}]{sm,  }\item[{const Transform \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method adding the body to the simulation manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & a pointer to the simulation manager \\
+\hline
+{\em origin} & a pose of the body CG in the world frame \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_animated_entity_abaa88a59afe2a7700b5f8261da5b2036}{sf\+::\+Animated\+Entity}}, and \mbox{\hyperlink{classsf_1_1_solid_entity_afcc70274ed3e0457fdbd6c0c3d47ef48}{sf\+::\+Solid\+Entity}}.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a2697a375a517b99b36a98790858e8ce6}\label{classsf_1_1_moving_entity_a2697a375a517b99b36a98790858e8ce6}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!getAABB@{getAABB}}
+\index{getAABB@{getAABB}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{getAABB()}{getAABB()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Moving\+Entity\+::get\+A\+A\+BB (\begin{DoxyParamCaption}\item[{Vector3 \&}]{min,  }\item[{Vector3 \&}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method returning the extents of the body axis alligned bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & a point located at the minimum coordinate corner \\
+\hline
+{\em max} & a point located at the maximum coordinate corner \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_entity_a989d883e8c21f924558d7ab5da044931}{sf\+::\+Entity}}.
+
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_solid_entity_ac8b39b6a3289609bf981edeb6ce54dc1}{sf\+::\+Solid\+Entity}}, and \mbox{\hyperlink{classsf_1_1_animated_entity_ad67962566b534b06dc46cc463900659d}{sf\+::\+Animated\+Entity}}.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a87a42db1a87153199549afbffc0af11a}\label{classsf_1_1_moving_entity_a87a42db1a87153199549afbffc0af11a}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!setAngularAcceleration@{setAngularAcceleration}}
+\index{setAngularAcceleration@{setAngularAcceleration}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{setAngularAcceleration()}{setAngularAcceleration()}}
+{\footnotesize\ttfamily void sf\+::\+Moving\+Entity\+::set\+Angular\+Acceleration (\begin{DoxyParamCaption}\item[{Vector3}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+A method setting the angular acceleration of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em epsilon} & angular acceleration \mbox{[}rad s$^\wedge$-\/2\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Moving\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a58490e56a4b5a76dffe60dc0a1652b1f}\label{classsf_1_1_moving_entity_a58490e56a4b5a76dffe60dc0a1652b1f}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!setDisplayMode@{setDisplayMode}}
+\index{setDisplayMode@{setDisplayMode}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{setDisplayMode()}{setDisplayMode()}}
+{\footnotesize\ttfamily void sf\+::\+Moving\+Entity\+::set\+Display\+Mode (\begin{DoxyParamCaption}\item[{Display\+Mode}]{m }\end{DoxyParamCaption})}
+
+
+
+A method used to set display mode used for the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & flag defining the display mode \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file Moving\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a7aa67e40eb5e529e567c8872bc097957}\label{classsf_1_1_moving_entity_a7aa67e40eb5e529e567c8872bc097957}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!setLinearAcceleration@{setLinearAcceleration}}
+\index{setLinearAcceleration@{setLinearAcceleration}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{setLinearAcceleration()}{setLinearAcceleration()}}
+{\footnotesize\ttfamily void sf\+::\+Moving\+Entity\+::set\+Linear\+Acceleration (\begin{DoxyParamCaption}\item[{Vector3}]{a }\end{DoxyParamCaption})}
+
+
+
+A method setting the linear acceleration of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & linear acceleration \mbox{[}m s$^\wedge$-\/2\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Moving\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_moving_entity_a75e4a8007e64bad5ee62aa67323b641d}\label{classsf_1_1_moving_entity_a75e4a8007e64bad5ee62aa67323b641d}} 
+\index{sf::MovingEntity@{sf::MovingEntity}!setLook@{setLook}}
+\index{setLook@{setLook}!sf::MovingEntity@{sf::MovingEntity}}
+\doxysubsubsection{\texorpdfstring{setLook()}{setLook()}}
+{\footnotesize\ttfamily void sf\+::\+Moving\+Entity\+::set\+Look (\begin{DoxyParamCaption}\item[{int}]{new\+Look\+Id }\end{DoxyParamCaption})}
+
+
+
+A method used to change the rendering style of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Look\+Id} & an index of the graphical material that should be used to render the body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Moving\+Entity.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/Moving\+Entity.\+h\item 
+Library/src/entities/Moving\+Entity.\+cpp\end{DoxyCompactItemize}

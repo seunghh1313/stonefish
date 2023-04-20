@@ -1,0 +1,90 @@
+\hypertarget{classsf_1_1_cylinder}{}\doxysection{sf\+::Cylinder Class Reference}
+\label{classsf_1_1_cylinder}\index{sf::Cylinder@{sf::Cylinder}}
+
+
+A class representing a cylinder-\/shaped (cylinder axis parallel to z axis) rigid body.  
+
+
+
+
+{\ttfamily \#include $<$Cylinder.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Cylinder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_cylinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Cylinder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_cylinder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_cylinder_a083243118d0a639cf99a5b56feb412a6}{Cylinder}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, Scalar radius, Scalar height, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_cylinder_ab3a226bacf141e1456c0afa11ea87772}\label{classsf_1_1_cylinder_ab3a226bacf141e1456c0afa11ea87772}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_cylinder_ab3a226bacf141e1456c0afa11ea87772}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_cylinder_a592c2b06f51a774eb4bfe83c1c3cf0c5}\label{classsf_1_1_cylinder_a592c2b06f51a774eb4bfe83c1c3cf0c5}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_cylinder_a592c2b06f51a774eb4bfe83c1c3cf0c5}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape for the cylinder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a cylinder-\/shaped (cylinder axis parallel to z axis) rigid body. 
+
+Definition at line 34 of file Cylinder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_cylinder_a083243118d0a639cf99a5b56feb412a6}\label{classsf_1_1_cylinder_a083243118d0a639cf99a5b56feb412a6}} 
+\index{sf::Cylinder@{sf::Cylinder}!Cylinder@{Cylinder}}
+\index{Cylinder@{Cylinder}!sf::Cylinder@{sf::Cylinder}}
+\doxysubsubsection{\texorpdfstring{Cylinder()}{Cylinder()}}
+{\footnotesize\ttfamily sf\+::\+Cylinder\+::\+Cylinder (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{Scalar}]{radius,  }\item[{Scalar}]{height,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the cylinder \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em radius} & a radius of the cylinder \\
+\hline
+{\em height} & a height of the cylinder \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for cylinder) \\
+\hline
+{\em material} & the name of the material the cylinder is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the cylinder walls, if positive the cylinder is treated as shell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Cylinder.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Cylinder.\+h\item 
+Library/src/entities/solids/Cylinder.\+cpp\end{DoxyCompactItemize}

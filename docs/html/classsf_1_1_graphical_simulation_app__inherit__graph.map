@@ -1,0 +1,4 @@
+<map id="sf::GraphicalSimulationApp" name="sf::GraphicalSimulationApp">
+<area shape="rect" id="node1" title="A class that implements an interface of a graphical application." alt="" coords="5,80,204,107"/>
+<area shape="rect" id="node2" href="$classsf_1_1_simulation_app.html" title="An abstract class that defines an application interface hosting a simulation manager." alt="" coords="37,5,173,32"/>
+</map>

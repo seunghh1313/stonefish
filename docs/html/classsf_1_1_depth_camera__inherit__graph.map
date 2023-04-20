@@ -1,0 +1,6 @@
+<map id="sf::DepthCamera" name="sf::DepthCamera">
+<area shape="rect" id="node1" title="A class representing a depth camera." alt="" coords="5,229,136,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_camera.html" title="An abstract class representing a camera type sensor." alt="" coords="25,155,117,181"/>
+<area shape="rect" id="node3" href="$classsf_1_1_vision_sensor.html" title="An abstract class representing a vision sensor." alt="" coords="8,80,133,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="28,5,113,32"/>
+</map>

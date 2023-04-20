@@ -1,0 +1,330 @@
+\hypertarget{classsf_1_1_ocean}{}\doxysection{sf\+::Ocean Class Reference}
+\label{classsf_1_1_ocean}\index{sf::Ocean@{sf::Ocean}}
+
+
+A class implementing an ocean.  
+
+
+
+
+{\ttfamily \#include $<$Ocean.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Ocean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classsf_1_1_ocean__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Ocean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classsf_1_1_ocean__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_ocean_a4dabd6ebdd0f58936f79f2fdaafcc968}{Ocean}} (std\+::string unique\+Name, Scalar waves, \mbox{\hyperlink{structsf_1_1_fluid}{Fluid}} l)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a0e7a4b450c1b4866bf040cb8dfb11cb5}\label{classsf_1_1_ocean_a0e7a4b450c1b4866bf040cb8dfb11cb5}} 
+\mbox{\hyperlink{classsf_1_1_ocean_a0e7a4b450c1b4866bf040cb8dfb11cb5}{$\sim$\+Ocean}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_ocean_a89983491ffaa6ef870f3ae3651c4ab0d}{Add\+Velocity\+Field}} (\mbox{\hyperlink{classsf_1_1_velocity_field}{Velocity\+Field}} $\ast$field)
+\begin{DoxyCompactList}\small\item\em A method used to add a velocity field to the ocean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_ocean_a2a98ca79f1089dd7d6ff522260145435}{Apply\+Fluid\+Forces}} (bt\+Dynamics\+World $\ast$world, bt\+Collision\+Object $\ast$co, bool recompute)
+\begin{DoxyCompactList}\small\item\em A method running the hydrodynamics computation. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{classsf_1_1_ocean_a387dc4923d2088b0e4b0c266eeb0b8e3}{Get\+Fluid\+Velocity}} (const Vector3 \&point) const
+\begin{DoxyCompactList}\small\item\em A method returning the water velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a8ab4f4725e0e4361092cbb155a5cafb8}\label{classsf_1_1_ocean_a8ab4f4725e0e4361092cbb155a5cafb8}} 
+glm\+::vec3 {\bfseries Get\+Fluid\+Velocity} (const glm\+::vec3 \&point) const
+\item 
+bool \mbox{\hyperlink{classsf_1_1_ocean_ae4d0c2faafb69bed99908e818027c027}{Is\+Inside\+Fluid}} (const Vector3 \&point)
+\begin{DoxyCompactList}\small\item\em A method checking if a point is inside fluid. \end{DoxyCompactList}\item 
+Scalar \mbox{\hyperlink{classsf_1_1_ocean_a0fd753dfa5f3fa1fb98bf449b194d2b1}{Get\+Pressure}} (const Vector3 \&point)
+\begin{DoxyCompactList}\small\item\em A method returning the hydrostatic pressure of the fluid at the specified point. \end{DoxyCompactList}\item 
+Scalar \mbox{\hyperlink{classsf_1_1_ocean_a9b7cbe2dadd41356c5d771cfec8f038a}{Get\+Depth}} (const Vector3 \&point)
+\begin{DoxyCompactList}\small\item\em A method returning the depth of the ocean at the specified point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a58222d8d28ac634bee63754ff91ab42d}\label{classsf_1_1_ocean_a58222d8d28ac634bee63754ff91ab42d}} 
+G\+Lfloat {\bfseries Get\+Depth} (const glm\+::vec3 \&point)
+\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_ae12159f3b3ffd327b6cb69d94b9c7ae8}\label{classsf_1_1_ocean_ae12159f3b3ffd327b6cb69d94b9c7ae8}} 
+void \mbox{\hyperlink{classsf_1_1_ocean_ae12159f3b3ffd327b6cb69d94b9c7ae8}{Enable\+Currents}} ()
+\begin{DoxyCompactList}\small\item\em A method to enable all defined currents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a9696aec8eab7f9a31fee3728eb5fc561}\label{classsf_1_1_ocean_a9696aec8eab7f9a31fee3728eb5fc561}} 
+void \mbox{\hyperlink{classsf_1_1_ocean_a9696aec8eab7f9a31fee3728eb5fc561}{Disable\+Currents}} ()
+\begin{DoxyCompactList}\small\item\em A method to disable all defined currents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_aee04f6c24dc52bad6838f0780ed23b70}\label{classsf_1_1_ocean_aee04f6c24dc52bad6838f0780ed23b70}} 
+void \mbox{\hyperlink{classsf_1_1_ocean_aee04f6c24dc52bad6838f0780ed23b70}{Update\+Currents\+Data}} ()
+\begin{DoxyCompactList}\small\item\em A method updating the currents data in the Open\+GL ocean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_ocean_a3748e8d2de6d43f6942af8763c0b8d28}{set\+Water\+Type}} (Scalar jerlov)
+\begin{DoxyCompactList}\small\item\em A method used to setup the properties of the water. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a7479fd4cb922809c626f613b81c26e46}\label{classsf_1_1_ocean_a7479fd4cb922809c626f613b81c26e46}} 
+void \mbox{\hyperlink{classsf_1_1_ocean_a7479fd4cb922809c626f613b81c26e46}{set\+Particles}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em A method to enable rendering of suspended particles (underwater snow). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_ab932be505daa61a0bfdaa36fea4b6039}\label{classsf_1_1_ocean_ab932be505daa61a0bfdaa36fea4b6039}} 
+bool \mbox{\hyperlink{classsf_1_1_ocean_ab932be505daa61a0bfdaa36fea4b6039}{has\+Particles}} () const
+\begin{DoxyCompactList}\small\item\em A method informing if the particles are enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_aa2d7b0f6d9c7fd8e850050c118dbc598}\label{classsf_1_1_ocean_aa2d7b0f6d9c7fd8e850050c118dbc598}} 
+Scalar \mbox{\hyperlink{classsf_1_1_ocean_aa2d7b0f6d9c7fd8e850050c118dbc598}{get\+Water\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the water. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_ac454b2fea353e02915d30b6237576997}\label{classsf_1_1_ocean_ac454b2fea353e02915d30b6237576997}} 
+bool \mbox{\hyperlink{classsf_1_1_ocean_ac454b2fea353e02915d30b6237576997}{has\+Waves}} () const
+\begin{DoxyCompactList}\small\item\em A method informing if the ocean waves are simulated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_ae772c575770d953e61e6dbff56c623cf}\label{classsf_1_1_ocean_ae772c575770d953e61e6dbff56c623cf}} 
+\mbox{\hyperlink{structsf_1_1_fluid}{Fluid}} \mbox{\hyperlink{classsf_1_1_ocean_ae772c575770d953e61e6dbff56c623cf}{get\+Liquid}} () const
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to the fluid filling the ocean. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a049d6aa6b46ac32ac4d4e961729ba970}\label{classsf_1_1_ocean_a049d6aa6b46ac32ac4d4e961729ba970}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_ocean}{Open\+G\+L\+Ocean}} $\ast$ \mbox{\hyperlink{classsf_1_1_ocean_a049d6aa6b46ac32ac4d4e961729ba970}{get\+Open\+G\+L\+Ocean}} ()
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to the Open\+GL object implementing the ocean. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_velocity_field}{Velocity\+Field}} $\ast$ \mbox{\hyperlink{classsf_1_1_ocean_abbfeefb09c9f525756398a0b1ead6fee}{get\+Current}} (unsigned int index)
+\begin{DoxyCompactList}\small\item\em A method giving direct access to the currents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a48e25ebce631f7ed4a3bf77b48d24df0}\label{classsf_1_1_ocean_a48e25ebce631f7ed4a3bf77b48d24df0}} 
+Forcefield\+Type \mbox{\hyperlink{classsf_1_1_ocean_a48e25ebce631f7ed4a3bf77b48d24df0}{get\+Forcefield\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the force field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_ocean_a968236ba6cd6142fd2b13005f31eb79e}{Init\+Graphics}} (S\+D\+L\+\_\+mutex $\ast$hydrodynamics)
+\begin{DoxyCompactList}\small\item\em A method initializing the rendering of the ocean. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a8621922710bfaf692c1476506dd9d650}\label{classsf_1_1_ocean_a8621922710bfaf692c1476506dd9d650}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_ocean_a8621922710bfaf692c1476506dd9d650}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the force field. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_ocean_a12394fe73eddd30bae047b4662892fea}\label{classsf_1_1_ocean_a12394fe73eddd30bae047b4662892fea}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_ocean_a12394fe73eddd30bae047b4662892fea}{Render}} (const std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_actuator}{Actuator}} $\ast$ $>$ \&act)
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the ocean force field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing an ocean. 
+
+Definition at line 47 of file Ocean.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_ocean_a4dabd6ebdd0f58936f79f2fdaafcc968}\label{classsf_1_1_ocean_a4dabd6ebdd0f58936f79f2fdaafcc968}} 
+\index{sf::Ocean@{sf::Ocean}!Ocean@{Ocean}}
+\index{Ocean@{Ocean}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{Ocean()}{Ocean()}}
+{\footnotesize\ttfamily sf\+::\+Ocean\+::\+Ocean (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{waves,  }\item[{\mbox{\hyperlink{structsf_1_1_fluid}{Fluid}}}]{l }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the ocean \\
+\hline
+{\em waves} & the state of the ocean (waves enabled when $>$0) \\
+\hline
+{\em l} & a pointer to the liquid that is filling the ocean (normally water) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Ocean.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_ocean_a89983491ffaa6ef870f3ae3651c4ab0d}\label{classsf_1_1_ocean_a89983491ffaa6ef870f3ae3651c4ab0d}} 
+\index{sf::Ocean@{sf::Ocean}!AddVelocityField@{AddVelocityField}}
+\index{AddVelocityField@{AddVelocityField}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{AddVelocityField()}{AddVelocityField()}}
+{\footnotesize\ttfamily void sf\+::\+Ocean\+::\+Add\+Velocity\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_velocity_field}{Velocity\+Field}} $\ast$}]{field }\end{DoxyParamCaption})}
+
+
+
+A method used to add a velocity field to the ocean. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & a pointer to a velocity field object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a2a98ca79f1089dd7d6ff522260145435}\label{classsf_1_1_ocean_a2a98ca79f1089dd7d6ff522260145435}} 
+\index{sf::Ocean@{sf::Ocean}!ApplyFluidForces@{ApplyFluidForces}}
+\index{ApplyFluidForces@{ApplyFluidForces}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{ApplyFluidForces()}{ApplyFluidForces()}}
+{\footnotesize\ttfamily void sf\+::\+Ocean\+::\+Apply\+Fluid\+Forces (\begin{DoxyParamCaption}\item[{bt\+Dynamics\+World $\ast$}]{world,  }\item[{bt\+Collision\+Object $\ast$}]{co,  }\item[{bool}]{recompute }\end{DoxyParamCaption})}
+
+
+
+A method running the hydrodynamics computation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a pointer to the dynamics world \\
+\hline
+{\em co} & a pointer to the collision object \\
+\hline
+{\em recompute} & a flag deciding if hydrodynamic forces need to be recomputed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 211 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_abbfeefb09c9f525756398a0b1ead6fee}\label{classsf_1_1_ocean_abbfeefb09c9f525756398a0b1ead6fee}} 
+\index{sf::Ocean@{sf::Ocean}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_velocity_field}{Velocity\+Field}} $\ast$ sf\+::\+Ocean\+::get\+Current (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})}
+
+
+
+A method giving direct access to the currents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & an id of the current \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the current object 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a9b7cbe2dadd41356c5d771cfec8f038a}\label{classsf_1_1_ocean_a9b7cbe2dadd41356c5d771cfec8f038a}} 
+\index{sf::Ocean@{sf::Ocean}!GetDepth@{GetDepth}}
+\index{GetDepth@{GetDepth}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{GetDepth()}{GetDepth()}}
+{\footnotesize\ttfamily Scalar sf\+::\+Ocean\+::\+Get\+Depth (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{point }\end{DoxyParamCaption})}
+
+
+
+A method returning the depth of the ocean at the specified point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the position of the measurement point \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance from the point to the surfacer of fluid \mbox{[}m\mbox{]} 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a387dc4923d2088b0e4b0c266eeb0b8e3}\label{classsf_1_1_ocean_a387dc4923d2088b0e4b0c266eeb0b8e3}} 
+\index{sf::Ocean@{sf::Ocean}!GetFluidVelocity@{GetFluidVelocity}}
+\index{GetFluidVelocity@{GetFluidVelocity}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{GetFluidVelocity()}{GetFluidVelocity()}}
+{\footnotesize\ttfamily Vector3 sf\+::\+Ocean\+::\+Get\+Fluid\+Velocity (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{point }\end{DoxyParamCaption}) const}
+
+
+
+A method returning the water velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point in the ocean where the velocity should be measured \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fluid velocity at specified point \mbox{[}m/s\mbox{]} 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a0fd753dfa5f3fa1fb98bf449b194d2b1}\label{classsf_1_1_ocean_a0fd753dfa5f3fa1fb98bf449b194d2b1}} 
+\index{sf::Ocean@{sf::Ocean}!GetPressure@{GetPressure}}
+\index{GetPressure@{GetPressure}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{GetPressure()}{GetPressure()}}
+{\footnotesize\ttfamily Scalar sf\+::\+Ocean\+::\+Get\+Pressure (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{point }\end{DoxyParamCaption})}
+
+
+
+A method returning the hydrostatic pressure of the fluid at the specified point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the position of the measurement point \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hydrostatic pressure \mbox{[}Pa\mbox{]} 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a968236ba6cd6142fd2b13005f31eb79e}\label{classsf_1_1_ocean_a968236ba6cd6142fd2b13005f31eb79e}} 
+\index{sf::Ocean@{sf::Ocean}!InitGraphics@{InitGraphics}}
+\index{InitGraphics@{InitGraphics}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{InitGraphics()}{InitGraphics()}}
+{\footnotesize\ttfamily void sf\+::\+Ocean\+::\+Init\+Graphics (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+mutex $\ast$}]{hydrodynamics }\end{DoxyParamCaption})}
+
+
+
+A method initializing the rendering of the ocean. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hydrodynamics} & a pointer to a mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 249 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_ae4d0c2faafb69bed99908e818027c027}\label{classsf_1_1_ocean_ae4d0c2faafb69bed99908e818027c027}} 
+\index{sf::Ocean@{sf::Ocean}!IsInsideFluid@{IsInsideFluid}}
+\index{IsInsideFluid@{IsInsideFluid}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{IsInsideFluid()}{IsInsideFluid()}}
+{\footnotesize\ttfamily bool sf\+::\+Ocean\+::\+Is\+Inside\+Fluid (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{point }\end{DoxyParamCaption})}
+
+
+
+A method checking if a point is inside fluid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the position of a point to be checked \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the point inside fluid? 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file Ocean.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_ocean_a3748e8d2de6d43f6942af8763c0b8d28}\label{classsf_1_1_ocean_a3748e8d2de6d43f6942af8763c0b8d28}} 
+\index{sf::Ocean@{sf::Ocean}!setWaterType@{setWaterType}}
+\index{setWaterType@{setWaterType}!sf::Ocean@{sf::Ocean}}
+\doxysubsubsection{\texorpdfstring{setWaterType()}{setWaterType()}}
+{\footnotesize\ttfamily void sf\+::\+Ocean\+::set\+Water\+Type (\begin{DoxyParamCaption}\item[{Scalar}]{jerlov }\end{DoxyParamCaption})}
+
+
+
+A method used to setup the properties of the water. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jerlov} & the type of water according to Jerlov (I-\/9C) $<$0,1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 116 of file Ocean.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/forcefields/Ocean.\+h\item 
+Library/src/entities/forcefields/Ocean.\+cpp\end{DoxyCompactItemize}

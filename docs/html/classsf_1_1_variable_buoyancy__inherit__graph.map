@@ -1,0 +1,5 @@
+<map id="sf::VariableBuoyancy" name="sf::VariableBuoyancy">
+<area shape="rect" id="node1" title="A class implementing a variable buoyancy system (VBS)." alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_link_actuator.html" title="An abstract class representing an actuator that can be attached to a rigid body." alt="" coords="23,80,146,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_actuator.html" title="An abstract class representing any actuator." alt="" coords="37,5,133,32"/>
+</map>

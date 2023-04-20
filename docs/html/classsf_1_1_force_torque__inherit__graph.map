@@ -1,0 +1,6 @@
+<map id="sf::ForceTorque" name="sf::ForceTorque">
+<area shape="rect" id="node1" title="A class representing a 6&#45;axis force/torque sensor." alt="" coords="9,229,127,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_joint_sensor.html" title="An abstract class representing a sensor attached to a joint." alt="" coords="11,155,125,181"/>
+<area shape="rect" id="node3" href="$classsf_1_1_scalar_sensor.html" title="An abstract class representing a scalar sensor." alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="25,5,111,32"/>
+</map>

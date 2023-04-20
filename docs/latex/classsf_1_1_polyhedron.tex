@@ -1,0 +1,141 @@
+\hypertarget{classsf_1_1_polyhedron}{}\doxysection{sf\+::Polyhedron Class Reference}
+\label{classsf_1_1_polyhedron}\index{sf::Polyhedron@{sf::Polyhedron}}
+
+
+A class representing a rigid body of any shape described by a polyhedron (mesh with triangle faces).  
+
+
+
+
+{\ttfamily \#include $<$Polyhedron.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Polyhedron\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_polyhedron__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Polyhedron\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_polyhedron__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_polyhedron_ac9306951bb82a29e8f78c45b52cd26fb}{Polyhedron}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, std\+::string graphics\+Filename, Scalar graphics\+Scale, const Transform \&graphics\+Origin, std\+::string physics\+Filename, Scalar physics\+Scale, const Transform \&physics\+Origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1), Geometry\+Approx\+Type approx=Geometry\+Approx\+Type\+::\+A\+U\+TO)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_polyhedron_a2532d0e990daffcf8af763091db43456}{Polyhedron}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, std\+::string model\+Filename, Scalar scale, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1), Geometry\+Approx\+Type approx=Geometry\+Approx\+Type\+::\+A\+U\+TO)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_polyhedron_ad7dcdb5e94b1bbeb48a0211f2eabb267}\label{classsf_1_1_polyhedron_ad7dcdb5e94b1bbeb48a0211f2eabb267}} 
+\mbox{\hyperlink{classsf_1_1_polyhedron_ad7dcdb5e94b1bbeb48a0211f2eabb267}{$\sim$\+Polyhedron}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_polyhedron_a4737fa19b2c8f27740d2be8319616a62}\label{classsf_1_1_polyhedron_a4737fa19b2c8f27740d2be8319616a62}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_polyhedron_a4737fa19b2c8f27740d2be8319616a62}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of solid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_polyhedron_adc4158429f62074d6b2135744c3a0326}\label{classsf_1_1_polyhedron_adc4158429f62074d6b2135744c3a0326}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_polyhedron_adc4158429f62074d6b2135744c3a0326}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_polyhedron_a65973ca7123c1ff9e196945faa43c209}\label{classsf_1_1_polyhedron_a65973ca7123c1ff9e196945faa43c209}} 
+void \mbox{\hyperlink{classsf_1_1_polyhedron_a65973ca7123c1ff9e196945faa43c209}{Build\+Graphical\+Object}} ()
+\begin{DoxyCompactList}\small\item\em A method used to build the graphical representation of the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a rigid body of any shape described by a polyhedron (mesh with triangle faces). 
+
+Definition at line 34 of file Polyhedron.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_polyhedron_ac9306951bb82a29e8f78c45b52cd26fb}\label{classsf_1_1_polyhedron_ac9306951bb82a29e8f78c45b52cd26fb}} 
+\index{sf::Polyhedron@{sf::Polyhedron}!Polyhedron@{Polyhedron}}
+\index{Polyhedron@{Polyhedron}!sf::Polyhedron@{sf::Polyhedron}}
+\doxysubsubsection{\texorpdfstring{Polyhedron()}{Polyhedron()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sf\+::\+Polyhedron\+::\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{std\+::string}]{graphics\+Filename,  }\item[{Scalar}]{graphics\+Scale,  }\item[{const Transform \&}]{graphics\+Origin,  }\item[{std\+::string}]{physics\+Filename,  }\item[{Scalar}]{physics\+Scale,  }\item[{const Transform \&}]{physics\+Origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)},  }\item[{Geometry\+Approx\+Type}]{approx = {\ttfamily GeometryApproxType\+:\+:AUTO} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em graphics\+Filename} & a path to the 3d model used for rendering \\
+\hline
+{\em graphics\+Scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em graphics\+Origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em physics\+Filename} & a path to the 3d model used for physics computation (collisions, fluid dynamics) \\
+\hline
+{\em physics\+Scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em physics\+Origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the physics geometry walls, if higher than zero the mesh is considered a shell \\
+\hline
+{\em approx} & defines what type of approximation of the body shape should be used in the fluid dynamics computation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Polyhedron.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_polyhedron_a2532d0e990daffcf8af763091db43456}\label{classsf_1_1_polyhedron_a2532d0e990daffcf8af763091db43456}} 
+\index{sf::Polyhedron@{sf::Polyhedron}!Polyhedron@{Polyhedron}}
+\index{Polyhedron@{Polyhedron}!sf::Polyhedron@{sf::Polyhedron}}
+\doxysubsubsection{\texorpdfstring{Polyhedron()}{Polyhedron()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sf\+::\+Polyhedron\+::\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{std\+::string}]{model\+Filename,  }\item[{Scalar}]{scale,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)},  }\item[{Geometry\+Approx\+Type}]{approx = {\ttfamily GeometryApproxType\+:\+:AUTO} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the body \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em model\+Filename} & a path to the 3d model used for both physics and rendering \\
+\hline
+{\em scale} & a scale factor to be used when reading the mesh file \\
+\hline
+{\em origin} & a pose of the mesh with respect to the body origin frame \\
+\hline
+{\em material} & the name of the material the body is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the model walls, if higher than zero the mesh is considered a shell \\
+\hline
+{\em approx} & defines what type of approximation of the body shape should be used in the fluid dynamics computation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Polyhedron.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Polyhedron.\+h\item 
+Library/src/entities/solids/Polyhedron.\+cpp\end{DoxyCompactItemize}

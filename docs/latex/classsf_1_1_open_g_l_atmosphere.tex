@@ -1,0 +1,234 @@
+\hypertarget{classsf_1_1_open_g_l_atmosphere}{}\doxysection{sf\+::Open\+G\+L\+Atmosphere Class Reference}
+\label{classsf_1_1_open_g_l_atmosphere}\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+
+
+A class implementing a physically correct atmosphere in Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Atmosphere.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a245c8bb219932d37da84261e265278a9}{Open\+G\+L\+Atmosphere}} (const std\+::string \&model\+Filename, Render\+Quality shadow)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a0c0fbda32621ad40351322b5b8584717}\label{classsf_1_1_open_g_l_atmosphere_a0c0fbda32621ad40351322b5b8584717}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a0c0fbda32621ad40351322b5b8584717}{$\sim$\+Open\+G\+L\+Atmosphere}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a594eb4f3f2c463b7081d7cb157ff4a0a}{Load\+Atmosphere\+Data}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em A method loading the precomputed atmosphere model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a9a99ac1d55b7ef5fb61586211cc63ed1}{Draw\+Sky\+And\+Sun}} (const \mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$view)
+\begin{DoxyCompactList}\small\item\em A method that draws the sky and sun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_af598db176eb62968ceb0dde9cc1dc0da}{Bake\+Shadowmaps}} (\mbox{\hyperlink{classsf_1_1_open_g_l_pipeline}{Open\+G\+L\+Pipeline}} $\ast$pipe, \mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$view)
+\begin{DoxyCompactList}\small\item\em A method that bakes the shadow maps for the sun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a0a40a53efdf711f0bce39b2624649dbc}\label{classsf_1_1_open_g_l_atmosphere_a0a40a53efdf711f0bce39b2624649dbc}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a0a40a53efdf711f0bce39b2624649dbc}{Setup\+Material\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em A method to setup a material shaders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_ab67cd0541e0e8ad5687b6a233f055f8f}{Set\+Sun\+Position}} (G\+Lfloat azimuth\+Deg, G\+Lfloat elevation\+Deg)
+\begin{DoxyCompactList}\small\item\em A method to set position of the sun in the sky. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a03da10e5b50e37f2da16de2132ecd9de}{Get\+Sun\+Position}} (G\+Lfloat \&azimuth\+Deg, G\+Lfloat \&elevation\+Deg)
+\begin{DoxyCompactList}\small\item\em A method to get position of the sun in the sky. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a391d93f6a392feb01acd5689edbc66ab}{get\+Atmosphere\+Texture}} (Atmosphere\+Textures id)
+\begin{DoxyCompactList}\small\item\em A method returning the Open\+GL id of a texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_ad3bfba8ed03531c1559ad5e8393b063a}\label{classsf_1_1_open_g_l_atmosphere_ad3bfba8ed03531c1559ad5e8393b063a}} 
+glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_ad3bfba8ed03531c1559ad5e8393b063a}{Get\+Sun\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the sun direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_af564a49c3aa5bb45331f069f59a612c5}{Show\+Sun\+Shadowmaps}} (G\+Lfloat x, G\+Lfloat y, G\+Lfloat scale)
+\begin{DoxyCompactList}\small\item\em A method displaying the sun shadow maps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a546774b576957d58de15e181a163c34d}\label{classsf_1_1_open_g_l_atmosphere_a546774b576957d58de15e181a163c34d}} 
+static void \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a546774b576957d58de15e181a163c34d}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Load atmosphere A\+PI needed for loading shaders of other objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a74c1dcdde09cafaa591029a72270e3b5}\label{classsf_1_1_open_g_l_atmosphere_a74c1dcdde09cafaa591029a72270e3b5}} 
+static G\+Luint \mbox{\hyperlink{classsf_1_1_open_g_l_atmosphere_a74c1dcdde09cafaa591029a72270e3b5}{get\+Atmosphere\+A\+PI}} ()
+\begin{DoxyCompactList}\small\item\em A static method returning the Open\+GL id of the compiled A\+PI shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a physically correct atmosphere in Open\+GL. 
+
+Definition at line 62 of file Open\+G\+L\+Atmosphere.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a245c8bb219932d37da84261e265278a9}\label{classsf_1_1_open_g_l_atmosphere_a245c8bb219932d37da84261e265278a9}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!OpenGLAtmosphere@{OpenGLAtmosphere}}
+\index{OpenGLAtmosphere@{OpenGLAtmosphere}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{OpenGLAtmosphere()}{OpenGLAtmosphere()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+Atmosphere\+::\+Open\+G\+L\+Atmosphere (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{model\+Filename,  }\item[{Render\+Quality}]{shadow }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Filename} & a path to the atmosphere model file \\
+\hline
+{\em shadow} & a rendering quality od the shadow \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_af598db176eb62968ceb0dde9cc1dc0da}\label{classsf_1_1_open_g_l_atmosphere_af598db176eb62968ceb0dde9cc1dc0da}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!BakeShadowmaps@{BakeShadowmaps}}
+\index{BakeShadowmaps@{BakeShadowmaps}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{BakeShadowmaps()}{BakeShadowmaps()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Bake\+Shadowmaps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_pipeline}{Open\+G\+L\+Pipeline}} $\ast$}]{pipe,  }\item[{\mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{view }\end{DoxyParamCaption})}
+
+
+
+A method that bakes the shadow maps for the sun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pipe} & a pointer to the rendering pipeline \\
+\hline
+{\em view} & a pointer to the current view \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 317 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a9a99ac1d55b7ef5fb61586211cc63ed1}\label{classsf_1_1_open_g_l_atmosphere_a9a99ac1d55b7ef5fb61586211cc63ed1}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!DrawSkyAndSun@{DrawSkyAndSun}}
+\index{DrawSkyAndSun@{DrawSkyAndSun}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{DrawSkyAndSun()}{DrawSkyAndSun()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Draw\+Sky\+And\+Sun (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsf_1_1_open_g_l_camera}{Open\+G\+L\+Camera}} $\ast$}]{view }\end{DoxyParamCaption})}
+
+
+
+A method that draws the sky and sun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & a pointer to the current view \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 291 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a391d93f6a392feb01acd5689edbc66ab}\label{classsf_1_1_open_g_l_atmosphere_a391d93f6a392feb01acd5689edbc66ab}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!getAtmosphereTexture@{getAtmosphereTexture}}
+\index{getAtmosphereTexture@{getAtmosphereTexture}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{getAtmosphereTexture()}{getAtmosphereTexture()}}
+{\footnotesize\ttfamily G\+Luint sf\+::\+Open\+G\+L\+Atmosphere\+::get\+Atmosphere\+Texture (\begin{DoxyParamCaption}\item[{Atmosphere\+Textures}]{id }\end{DoxyParamCaption})}
+
+
+
+A method returning the Open\+GL id of a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the atmosphere texture to get id for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Open\+GL id of the requested texture 
+\end{DoxyReturn}
+
+
+Definition at line 237 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a03da10e5b50e37f2da16de2132ecd9de}\label{classsf_1_1_open_g_l_atmosphere_a03da10e5b50e37f2da16de2132ecd9de}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!GetSunPosition@{GetSunPosition}}
+\index{GetSunPosition@{GetSunPosition}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{GetSunPosition()}{GetSunPosition()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Get\+Sun\+Position (\begin{DoxyParamCaption}\item[{G\+Lfloat \&}]{azimuth\+Deg,  }\item[{G\+Lfloat \&}]{elevation\+Deg }\end{DoxyParamCaption})}
+
+
+
+A method to get position of the sun in the sky. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em azimuth\+Deg} & a reference to a variable to store the sun azimuth \mbox{[}deg\mbox{]} \\
+\hline
+{\em elevation\+Deg} & a reference to a variable to store the sun elevation \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 226 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_a594eb4f3f2c463b7081d7cb157ff4a0a}\label{classsf_1_1_open_g_l_atmosphere_a594eb4f3f2c463b7081d7cb157ff4a0a}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!LoadAtmosphereData@{LoadAtmosphereData}}
+\index{LoadAtmosphereData@{LoadAtmosphereData}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{LoadAtmosphereData()}{LoadAtmosphereData()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Load\+Atmosphere\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+A method loading the precomputed atmosphere model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a path to the model data file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_ab67cd0541e0e8ad5687b6a233f055f8f}\label{classsf_1_1_open_g_l_atmosphere_ab67cd0541e0e8ad5687b6a233f055f8f}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!SetSunPosition@{SetSunPosition}}
+\index{SetSunPosition@{SetSunPosition}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{SetSunPosition()}{SetSunPosition()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Set\+Sun\+Position (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{azimuth\+Deg,  }\item[{G\+Lfloat}]{elevation\+Deg }\end{DoxyParamCaption})}
+
+
+
+A method to set position of the sun in the sky. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em azimuth\+Deg} & the azimuth of the sun \mbox{[}deg\mbox{]} \\
+\hline
+{\em elevation\+Deg} & the elevation of the sun \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 205 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_atmosphere_af564a49c3aa5bb45331f069f59a612c5}\label{classsf_1_1_open_g_l_atmosphere_af564a49c3aa5bb45331f069f59a612c5}} 
+\index{sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}!ShowSunShadowmaps@{ShowSunShadowmaps}}
+\index{ShowSunShadowmaps@{ShowSunShadowmaps}!sf::OpenGLAtmosphere@{sf::OpenGLAtmosphere}}
+\doxysubsubsection{\texorpdfstring{ShowSunShadowmaps()}{ShowSunShadowmaps()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Atmosphere\+::\+Show\+Sun\+Shadowmaps (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y,  }\item[{G\+Lfloat}]{scale }\end{DoxyParamCaption})}
+
+
+
+A method displaying the sun shadow maps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the origin of the shadow map display on screen \\
+\hline
+{\em y} & the y coordinate of the origin of the shadow map display on screen \\
+\hline
+{\em scale} & a scale to use when displaying the shadow map \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 530 of file Open\+G\+L\+Atmosphere.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Atmosphere.\+h\item 
+Library/src/graphics/Open\+G\+L\+Atmosphere.\+cpp\end{DoxyCompactItemize}

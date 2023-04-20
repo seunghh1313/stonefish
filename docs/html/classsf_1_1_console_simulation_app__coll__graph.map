@@ -1,0 +1,5 @@
+<map id="sf::ConsoleSimulationApp" name="sf::ConsoleSimulationApp">
+<area shape="rect" id="node1" title="A class that defines a console application interface." alt="" coords="5,171,193,197"/>
+<area shape="rect" id="node2" href="$classsf_1_1_simulation_app.html" title="An abstract class that defines an application interface hosting a simulation manager." alt="" coords="31,95,167,121"/>
+<area shape="rect" id="node3" href="$classsf_1_1_console.html" title="A class implementing a text console." alt="" coords="53,5,146,32"/>
+</map>

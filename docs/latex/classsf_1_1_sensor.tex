@@ -1,0 +1,182 @@
+\hypertarget{classsf_1_1_sensor}{}\doxysection{sf\+::Sensor Class Reference}
+\label{classsf_1_1_sensor}\index{sf::Sensor@{sf::Sensor}}
+
+
+An abstract class representing a sensor.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_sensor__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_sensor_a4fa5066daa661b490da39847a33f7f9e}{Sensor}} (std\+::string unique\+Name, Scalar frequency)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a3cbf4a52d00e960c54f2e48fe65a8d9e}\label{classsf_1_1_sensor_a3cbf4a52d00e960c54f2e48fe65a8d9e}} 
+virtual \mbox{\hyperlink{classsf_1_1_sensor_a3cbf4a52d00e960c54f2e48fe65a8d9e}{$\sim$\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a21e4c9bec38f3ef1be7f118b49dd0ac4}\label{classsf_1_1_sensor_a21e4c9bec38f3ef1be7f118b49dd0ac4}} 
+virtual void \mbox{\hyperlink{classsf_1_1_sensor_a21e4c9bec38f3ef1be7f118b49dd0ac4}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em A method that resets the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a6e4955d7a77bbba84c2bdfb9a57c8388}\label{classsf_1_1_sensor_a6e4955d7a77bbba84c2bdfb9a57c8388}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_sensor_a6e4955d7a77bbba84c2bdfb9a57c8388}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_sensor_a98d2a4098ed80b201ff5bbd6806d4186}{Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method that updates the sensor readings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a0ea8c6219ae2902d628173d3e6f15598}\label{classsf_1_1_sensor_a0ea8c6219ae2902d628173d3e6f15598}} 
+void \mbox{\hyperlink{classsf_1_1_sensor_a0ea8c6219ae2902d628173d3e6f15598}{Mark\+Data\+Old}} ()
+\begin{DoxyCompactList}\small\item\em A method used to mark data as old. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_ae3c3f0c963cc7b3aab66aae0172b2e85}\label{classsf_1_1_sensor_ae3c3f0c963cc7b3aab66aae0172b2e85}} 
+bool \mbox{\hyperlink{classsf_1_1_sensor_ae3c3f0c963cc7b3aab66aae0172b2e85}{is\+New\+Data\+Available}} ()
+\begin{DoxyCompactList}\small\item\em A method to check if new data is available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_sensor_a8ee40c7aac3f5bbe96ed518f9154a461}{set\+Update\+Frequency}} (Scalar f)
+\begin{DoxyCompactList}\small\item\em A method to set the sampling rate of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a32667c8203a31868071359a228b7db5f}\label{classsf_1_1_sensor_a32667c8203a31868071359a228b7db5f}} 
+Scalar \mbox{\hyperlink{classsf_1_1_sensor_a32667c8203a31868071359a228b7db5f}{get\+Update\+Frequency}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the sampling rate of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_af6205a1e6244c13fa0582d16851f7b2e}\label{classsf_1_1_sensor_af6205a1e6244c13fa0582d16851f7b2e}} 
+bool \mbox{\hyperlink{classsf_1_1_sensor_af6205a1e6244c13fa0582d16851f7b2e}{is\+Renderable}} ()
+\begin{DoxyCompactList}\small\item\em A method informing if the sensor is renderable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_afbfa0a29c2630172237d3676cc7d8a31}\label{classsf_1_1_sensor_afbfa0a29c2630172237d3676cc7d8a31}} 
+void \mbox{\hyperlink{classsf_1_1_sensor_afbfa0a29c2630172237d3676cc7d8a31}{set\+Renderable}} (bool render)
+\begin{DoxyCompactList}\small\item\em A method to set if the sensor is renderable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a0e76030532c4d10f55413d561289a8a1}\label{classsf_1_1_sensor_a0e76030532c4d10f55413d561289a8a1}} 
+void \mbox{\hyperlink{classsf_1_1_sensor_a0e76030532c4d10f55413d561289a8a1}{set\+Visual}} (const std\+::string \&mesh\+Filename, Scalar scale, const std\+::string \&look)
+\begin{DoxyCompactList}\small\item\em A method to set the visual representation of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a91dd2be0460f784712c8022f4cbaf9f6}\label{classsf_1_1_sensor_a91dd2be0460f784712c8022f4cbaf9f6}} 
+std\+::string \mbox{\hyperlink{classsf_1_1_sensor_a91dd2be0460f784712c8022f4cbaf9f6}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the sensor name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_sensor_a9d56588d2d0b417d5021ff616ccb5014}{Internal\+Update}} (Scalar dt)=0
+\begin{DoxyCompactList}\small\item\em A method performing an internal update of the sensor state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a05d56e23c1896e5e899596d21d30bc2c}\label{classsf_1_1_sensor_a05d56e23c1896e5e899596d21d30bc2c}} 
+virtual Sensor\+Type \mbox{\hyperlink{classsf_1_1_sensor_a05d56e23c1896e5e899596d21d30bc2c}{get\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the type of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_aafe871b6787fd19586c4212efb33e6c7}\label{classsf_1_1_sensor_aafe871b6787fd19586c4212efb33e6c7}} 
+virtual Transform \mbox{\hyperlink{classsf_1_1_sensor_aafe871b6787fd19586c4212efb33e6c7}{get\+Sensor\+Frame}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning the sensor measurement frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a43d8bcedc897b7918cc4f019986057a0}\label{classsf_1_1_sensor_a43d8bcedc897b7918cc4f019986057a0}} 
+Scalar {\bfseries freq}
+\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_a32f058239946917dfa6c2c0becf924aa}\label{classsf_1_1_sensor_a32f058239946917dfa6c2c0becf924aa}} 
+S\+D\+L\+\_\+mutex $\ast$ {\bfseries update\+Mutex}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_aaae6aef349de11ef7cdbf211688ff04d}\label{classsf_1_1_sensor_aaae6aef349de11ef7cdbf211688ff04d}} 
+static std\+::random\+\_\+device {\bfseries random\+Device}
+\item 
+\mbox{\Hypertarget{classsf_1_1_sensor_afc04af9b6666291829b792963ee558ad}\label{classsf_1_1_sensor_afc04af9b6666291829b792963ee558ad}} 
+static std\+::mt19937 {\bfseries random\+Generator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a sensor. 
+
+Definition at line 41 of file Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_sensor_a4fa5066daa661b490da39847a33f7f9e}\label{classsf_1_1_sensor_a4fa5066daa661b490da39847a33f7f9e}} 
+\index{sf::Sensor@{sf::Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!sf::Sensor@{sf::Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily sf\+::\+Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{frequency }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (0 if updated every simulation step) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Sensor.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_sensor_a9d56588d2d0b417d5021ff616ccb5014}\label{classsf_1_1_sensor_a9d56588d2d0b417d5021ff616ccb5014}} 
+\index{sf::Sensor@{sf::Sensor}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::Sensor@{sf::Sensor}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Sensor\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method performing an internal update of the sensor state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the sampling time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_scalar_sensor_aa9fa7c8963ccdc8bc88d41aa6ac1bd6a}{sf\+::\+Scalar\+Sensor}}, \mbox{\hyperlink{classsf_1_1_vision_sensor_a91ebad0fc4a9a53d95ffd1ce6b34e5b3}{sf\+::\+Vision\+Sensor}}, \mbox{\hyperlink{classsf_1_1_link_sensor_ad70c63c034e05cb9f89c01d50f4f103b}{sf\+::\+Link\+Sensor}}, \mbox{\hyperlink{classsf_1_1_camera_ae7a9ff23b4c4f51d3b2d8112fe145309}{sf\+::\+Camera}}, \mbox{\hyperlink{classsf_1_1_joint_sensor_ab14a789669f205ec6115e48f61e4b7bf}{sf\+::\+Joint\+Sensor}}, \mbox{\hyperlink{classsf_1_1_multibeam2_a72bad46d61d6464f2c1aea4837836770}{sf\+::\+Multibeam2}}, \mbox{\hyperlink{classsf_1_1_m_s_i_s_ab31973f76ede4728c4fd3df3c2233999}{sf\+::\+M\+S\+IS}}, \mbox{\hyperlink{classsf_1_1_s_s_s_ac4e1ff046db7dbb0fb32d8b8a5a2b6a5}{sf\+::\+S\+SS}}, \mbox{\hyperlink{classsf_1_1_rotary_encoder_ad8f229333bbf284723b821b4a098412e}{sf\+::\+Rotary\+Encoder}}, \mbox{\hyperlink{classsf_1_1_f_l_s_a20dd0c79f9522958c1124cc08ae6f186}{sf\+::\+F\+LS}}, \mbox{\hyperlink{classsf_1_1_force_torque_ae39a13d7d0c98157558760f48410ae2a}{sf\+::\+Force\+Torque}}, \mbox{\hyperlink{classsf_1_1_color_camera_a72fb98735266bacf7896f7f389a9d443}{sf\+::\+Color\+Camera}}, \mbox{\hyperlink{classsf_1_1_depth_camera_a4da912567bcb63e17c6b509bd17d7e3f}{sf\+::\+Depth\+Camera}}, \mbox{\hyperlink{classsf_1_1_i_n_s_aab8b9bc95aed3bdb368f2157058bd2f8}{sf\+::\+I\+NS}}, \mbox{\hyperlink{classsf_1_1_current_ad6b77aa2fa7c9ef85210a878cd7fb71c}{sf\+::\+Current}}, \mbox{\hyperlink{classsf_1_1_d_v_l_ac335050d300d260787e745ac4cd08352}{sf\+::\+D\+VL}}, \mbox{\hyperlink{classsf_1_1_multibeam_aa511201b40766a38f2c529d741d075b4}{sf\+::\+Multibeam}}, \mbox{\hyperlink{classsf_1_1_profiler_a180f5ea652493c9656cc9e51cee4fac9}{sf\+::\+Profiler}}, \mbox{\hyperlink{classsf_1_1_accelerometer_a1f9aab374cdf926df504de6bcd034982}{sf\+::\+Accelerometer}}, \mbox{\hyperlink{classsf_1_1_compass_a03d9c461814e16dd357c6bb382684892}{sf\+::\+Compass}}, \mbox{\hyperlink{classsf_1_1_g_p_s_ac5d8fd3f83c83d086cfc756a23e31f00}{sf\+::\+G\+PS}}, \mbox{\hyperlink{classsf_1_1_gyroscope_aed34f7b9142c9e3f459e7dc3a8f3bac6}{sf\+::\+Gyroscope}}, \mbox{\hyperlink{classsf_1_1_i_m_u_a86a29449a8bc145f4cd7e1e1c98d2da2}{sf\+::\+I\+MU}}, \mbox{\hyperlink{classsf_1_1_odometry_aff59f4aec87d16521a1a7190298d6f53}{sf\+::\+Odometry}}, \mbox{\hyperlink{classsf_1_1_pose_afadbc1462d1b20aa395c7067e0503075}{sf\+::\+Pose}}, \mbox{\hyperlink{classsf_1_1_pressure_ab86dcb9800a60f6319ddd9166410cac3}{sf\+::\+Pressure}}, \mbox{\hyperlink{classsf_1_1_real_rotary_encoder_ace48bba40185d71e06fcdba6c5e8380f}{sf\+::\+Real\+Rotary\+Encoder}}, and \mbox{\hyperlink{classsf_1_1_torque_a3b897c896ab90132fde90d2b5c663e59}{sf\+::\+Torque}}.
+
+\mbox{\Hypertarget{classsf_1_1_sensor_a8ee40c7aac3f5bbe96ed518f9154a461}\label{classsf_1_1_sensor_a8ee40c7aac3f5bbe96ed518f9154a461}} 
+\index{sf::Sensor@{sf::Sensor}!setUpdateFrequency@{setUpdateFrequency}}
+\index{setUpdateFrequency@{setUpdateFrequency}!sf::Sensor@{sf::Sensor}}
+\doxysubsubsection{\texorpdfstring{setUpdateFrequency()}{setUpdateFrequency()}}
+{\footnotesize\ttfamily void sf\+::\+Sensor\+::set\+Update\+Frequency (\begin{DoxyParamCaption}\item[{Scalar}]{f }\end{DoxyParamCaption})}
+
+
+
+A method to set the sampling rate of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Sensor.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_sensor_a98d2a4098ed80b201ff5bbd6806d4186}\label{classsf_1_1_sensor_a98d2a4098ed80b201ff5bbd6806d4186}} 
+\index{sf::Sensor@{sf::Sensor}!Update@{Update}}
+\index{Update@{Update}!sf::Sensor@{sf::Sensor}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void sf\+::\+Sensor\+::\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})}
+
+
+
+A method that updates the sensor readings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & a time step of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Sensor.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/Sensor.\+h\item 
+Library/src/sensors/Sensor.\+cpp\end{DoxyCompactItemize}

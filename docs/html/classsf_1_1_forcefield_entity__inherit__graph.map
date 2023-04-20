@@ -1,0 +1,7 @@
+<map id="sf::ForcefieldEntity" name="sf::ForcefieldEntity">
+<area shape="rect" id="node1" title="An abstract class representing some kind of a force field." alt="" coords="119,80,262,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_atmosphere.html" title="A class representing the atmosphere." alt="" coords="5,155,125,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_ocean.html" title="A class implementing an ocean." alt="" coords="149,155,232,181"/>
+<area shape="rect" id="node5" href="$classsf_1_1_trigger.html" title="A class implementing a virtual object that can be used to trigger actions." alt="" coords="257,155,343,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="151,5,230,32"/>
+</map>

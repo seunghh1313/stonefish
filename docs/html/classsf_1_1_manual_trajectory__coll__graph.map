@@ -1,0 +1,4 @@
+<map id="sf::ManualTrajectory" name="sf::ManualTrajectory">
+<area shape="rect" id="node1" title="A class representing a dummy trajectory for setting the transforms and velocities manually." alt="" coords="5,80,160,107"/>
+<area shape="rect" id="node2" href="$classsf_1_1_trajectory.html" title="An abstract class representing a trajectory (time parametrized path)." alt="" coords="29,5,136,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="sf::Collision" name="sf::Collision">
+<area shape="rect" id="node1" title="A structure used to define collision pairs." alt="" coords="5,109,103,136"/>
+<area shape="rect" id="node2" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="15,5,93,32"/>
+</map>

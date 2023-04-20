@@ -1,0 +1,121 @@
+\hypertarget{classsf_1_1_manual_trajectory}{}\doxysection{sf\+::Manual\+Trajectory Class Reference}
+\label{classsf_1_1_manual_trajectory}\index{sf::ManualTrajectory@{sf::ManualTrajectory}}
+
+
+A class representing a dummy trajectory for setting the transforms and velocities manually.  
+
+
+
+
+{\ttfamily \#include $<$Manual\+Trajectory.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Manual\+Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classsf_1_1_manual_trajectory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Manual\+Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classsf_1_1_manual_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_a50e8f9eb409814ac1d255cd20d8da952}\label{classsf_1_1_manual_trajectory_a50e8f9eb409814ac1d255cd20d8da952}} 
+\mbox{\hyperlink{classsf_1_1_manual_trajectory_a50e8f9eb409814ac1d255cd20d8da952}{Manual\+Trajectory}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_manual_trajectory_ac4a74c3c35ddec94ce68cd9b094e7b1c}{set\+Transform}} (const Transform \&T)
+\begin{DoxyCompactList}\small\item\em A method setting the current transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_manual_trajectory_a5c56d68ec199f3fd2e9a99f11aaa2df3}{set\+Linear\+Velocity}} (const Vector3 \&v)
+\begin{DoxyCompactList}\small\item\em A method setting the current linear velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_manual_trajectory_ae46ddc6a3daa94074e5b6b08c22fcd77}{set\+Angular\+Velocity}} (const Vector3 \&omega)
+\begin{DoxyCompactList}\small\item\em A method setting the current angular velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_a6202960483972d05218a54073293aa6c}\label{classsf_1_1_manual_trajectory_a6202960483972d05218a54073293aa6c}} 
+virtual void \mbox{\hyperlink{classsf_1_1_manual_trajectory_a6202960483972d05218a54073293aa6c}{Interpolate}} ()
+\begin{DoxyCompactList}\small\item\em A method updating the interpolated transform and velocities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_a7ee3ffe217d8bccc1cde00f97c091d7c}\label{classsf_1_1_manual_trajectory_a7ee3ffe217d8bccc1cde00f97c091d7c}} 
+\mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} \mbox{\hyperlink{classsf_1_1_manual_trajectory_a7ee3ffe217d8bccc1cde00f97c091d7c}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the elements that should be rendered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a dummy trajectory for setting the transforms and velocities manually. 
+
+Definition at line 34 of file Manual\+Trajectory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_ae46ddc6a3daa94074e5b6b08c22fcd77}\label{classsf_1_1_manual_trajectory_ae46ddc6a3daa94074e5b6b08c22fcd77}} 
+\index{sf::ManualTrajectory@{sf::ManualTrajectory}!setAngularVelocity@{setAngularVelocity}}
+\index{setAngularVelocity@{setAngularVelocity}!sf::ManualTrajectory@{sf::ManualTrajectory}}
+\doxysubsubsection{\texorpdfstring{setAngularVelocity()}{setAngularVelocity()}}
+{\footnotesize\ttfamily void sf\+::\+Manual\+Trajectory\+::set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{omega }\end{DoxyParamCaption})}
+
+
+
+A method setting the current angular velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em omega} & angular velocity \mbox{[}rad/s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Manual\+Trajectory.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_a5c56d68ec199f3fd2e9a99f11aaa2df3}\label{classsf_1_1_manual_trajectory_a5c56d68ec199f3fd2e9a99f11aaa2df3}} 
+\index{sf::ManualTrajectory@{sf::ManualTrajectory}!setLinearVelocity@{setLinearVelocity}}
+\index{setLinearVelocity@{setLinearVelocity}!sf::ManualTrajectory@{sf::ManualTrajectory}}
+\doxysubsubsection{\texorpdfstring{setLinearVelocity()}{setLinearVelocity()}}
+{\footnotesize\ttfamily void sf\+::\+Manual\+Trajectory\+::set\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+A method setting the current linear velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Manual\+Trajectory.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_manual_trajectory_ac4a74c3c35ddec94ce68cd9b094e7b1c}\label{classsf_1_1_manual_trajectory_ac4a74c3c35ddec94ce68cd9b094e7b1c}} 
+\index{sf::ManualTrajectory@{sf::ManualTrajectory}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!sf::ManualTrajectory@{sf::ManualTrajectory}}
+\doxysubsubsection{\texorpdfstring{setTransform()}{setTransform()}}
+{\footnotesize\ttfamily void sf\+::\+Manual\+Trajectory\+::set\+Transform (\begin{DoxyParamCaption}\item[{const Transform \&}]{T }\end{DoxyParamCaption})}
+
+
+
+A method setting the current transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & current transform \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Manual\+Trajectory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/animation/Manual\+Trajectory.\+h\item 
+Library/src/entities/animation/Manual\+Trajectory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="sf::OpenGLView" name="sf::OpenGLView">
+<area shape="rect" id="node1" title="An abstract class representing an OpenGL view." alt="" coords="369,5,491,32"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_camera.html" title="An abstract class implementing a camera view." alt="" coords="172,80,315,107"/>
+<area shape="rect" id="node5" href="$classsf_1_1_open_g_l_depth_camera.html" title="A class representing a depth camera." alt="" coords="339,80,521,107"/>
+<area shape="rect" id="node6" href="$classsf_1_1_open_g_l_sonar.html" title="An abstract class representing a sonar view." alt="" coords="545,80,675,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_open_g_l_real_camera.html" title="A class implementing a real camera in OpenGL." alt="" coords="5,155,177,181"/>
+<area shape="rect" id="node4" href="$classsf_1_1_open_g_l_trackball.html" title="A class implementing a camera that can be rotated as a trackball, with mouse." alt="" coords="201,155,352,181"/>
+<area shape="rect" id="node7" href="$classsf_1_1_open_g_l_f_l_s.html" title="A class representing a forward looking sonar (FLS)." alt="" coords="409,155,523,181"/>
+<area shape="rect" id="node8" href="$classsf_1_1_open_g_l_m_s_i_s.html" title="A class representing a mechanical scanning imaging sonar (MSIS)." alt="" coords="548,155,672,181"/>
+<area shape="rect" id="node9" href="$classsf_1_1_open_g_l_s_s_s.html" title="A class representing a side&#45;scan sonar (SSS)." alt="" coords="696,155,812,181"/>
+</map>

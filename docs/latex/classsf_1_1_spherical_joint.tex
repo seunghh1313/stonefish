@@ -1,0 +1,155 @@
+\hypertarget{classsf_1_1_spherical_joint}{}\doxysection{sf\+::Spherical\+Joint Class Reference}
+\label{classsf_1_1_spherical_joint}\index{sf::SphericalJoint@{sf::SphericalJoint}}
+
+
+A class representing a spherical joint.  
+
+
+
+
+{\ttfamily \#include $<$Spherical\+Joint.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Spherical\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classsf_1_1_spherical_joint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Spherical\+Joint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classsf_1_1_spherical_joint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_spherical_joint_a9f187f66690bf60c1ce410b46a227cd3}{Spherical\+Joint}} (std\+::string unique\+Name, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidA, \mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$solidB, const Vector3 \&pivot, bool collide\+Linked=true)
+\begin{DoxyCompactList}\small\item\em A constructor (a spherical joint between two solid bodies). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_spherical_joint_a517ab730eeee12154dcc23c9b436925b}{Apply\+Torque}} (Vector3 T)
+\begin{DoxyCompactList}\small\item\em A method used to apply torque to the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_ab9edc0d2dc0f485706fe696775bf1e1c}\label{classsf_1_1_spherical_joint_ab9edc0d2dc0f485706fe696775bf1e1c}} 
+void \mbox{\hyperlink{classsf_1_1_spherical_joint_ab9edc0d2dc0f485706fe696775bf1e1c}{Apply\+Damping}} ()
+\begin{DoxyCompactList}\small\item\em A method applying damping to the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_a96d8f603ba5d98e13ece025368bfa6f9}\label{classsf_1_1_spherical_joint_a96d8f603ba5d98e13ece025368bfa6f9}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_spherical_joint_a96d8f603ba5d98e13ece025368bfa6f9}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_spherical_joint_ac8af3813b2f49747c17961838d2d28d8}{set\+Damping}} (Vector3 constant\+Factor, Vector3 viscous\+Factor)
+\begin{DoxyCompactList}\small\item\em A method to set the damping characteristics of the joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_spherical_joint_ae729ed06093877b253a514285ec351fc}{set\+IC}} (Vector3 angles)
+\begin{DoxyCompactList}\small\item\em A method to set the desired initial condition of the joint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_a5d5593e337068e36016200e655c5e7be}\label{classsf_1_1_spherical_joint_a5d5593e337068e36016200e655c5e7be}} 
+Joint\+Type \mbox{\hyperlink{classsf_1_1_spherical_joint_a5d5593e337068e36016200e655c5e7be}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the type of the joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a spherical joint. 
+
+Definition at line 36 of file Spherical\+Joint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_a9f187f66690bf60c1ce410b46a227cd3}\label{classsf_1_1_spherical_joint_a9f187f66690bf60c1ce410b46a227cd3}} 
+\index{sf::SphericalJoint@{sf::SphericalJoint}!SphericalJoint@{SphericalJoint}}
+\index{SphericalJoint@{SphericalJoint}!sf::SphericalJoint@{sf::SphericalJoint}}
+\doxysubsubsection{\texorpdfstring{SphericalJoint()}{SphericalJoint()}}
+{\footnotesize\ttfamily sf\+::\+Spherical\+Joint\+::\+Spherical\+Joint (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidA,  }\item[{\mbox{\hyperlink{classsf_1_1_solid_entity}{Solid\+Entity}} $\ast$}]{solidB,  }\item[{const Vector3 \&}]{pivot,  }\item[{bool}]{collide\+Linked = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+A constructor (a spherical joint between two solid bodies). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the spherical joint \\
+\hline
+{\em solidA} & pointer to the first solid body \\
+\hline
+{\em solidB} & pointer to the second solid body \\
+\hline
+{\em pivot} & a point where the axis of joint is located \\
+\hline
+{\em collide\+Linked} & a flag that sets if the bodies connected by the joint should coliide \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Spherical\+Joint.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_a517ab730eeee12154dcc23c9b436925b}\label{classsf_1_1_spherical_joint_a517ab730eeee12154dcc23c9b436925b}} 
+\index{sf::SphericalJoint@{sf::SphericalJoint}!ApplyTorque@{ApplyTorque}}
+\index{ApplyTorque@{ApplyTorque}!sf::SphericalJoint@{sf::SphericalJoint}}
+\doxysubsubsection{\texorpdfstring{ApplyTorque()}{ApplyTorque()}}
+{\footnotesize\ttfamily void sf\+::\+Spherical\+Joint\+::\+Apply\+Torque (\begin{DoxyParamCaption}\item[{Vector3}]{T }\end{DoxyParamCaption})}
+
+
+
+A method used to apply torque to the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & a torque vector to be applied to the joint \mbox{[}Nm\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Spherical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_ac8af3813b2f49747c17961838d2d28d8}\label{classsf_1_1_spherical_joint_ac8af3813b2f49747c17961838d2d28d8}} 
+\index{sf::SphericalJoint@{sf::SphericalJoint}!setDamping@{setDamping}}
+\index{setDamping@{setDamping}!sf::SphericalJoint@{sf::SphericalJoint}}
+\doxysubsubsection{\texorpdfstring{setDamping()}{setDamping()}}
+{\footnotesize\ttfamily void sf\+::\+Spherical\+Joint\+::set\+Damping (\begin{DoxyParamCaption}\item[{Vector3}]{constant\+Factor,  }\item[{Vector3}]{viscous\+Factor }\end{DoxyParamCaption})}
+
+
+
+A method to set the damping characteristics of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em constant\+Factor} & a constant damping torque vector \mbox{[}Nm\mbox{]} \\
+\hline
+{\em viscous\+Factor} & a coefficient of viscous damping \mbox{[}Nm$\ast$s$\ast$rad$^\wedge$-\/1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Spherical\+Joint.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_spherical_joint_ae729ed06093877b253a514285ec351fc}\label{classsf_1_1_spherical_joint_ae729ed06093877b253a514285ec351fc}} 
+\index{sf::SphericalJoint@{sf::SphericalJoint}!setIC@{setIC}}
+\index{setIC@{setIC}!sf::SphericalJoint@{sf::SphericalJoint}}
+\doxysubsubsection{\texorpdfstring{setIC()}{setIC()}}
+{\footnotesize\ttfamily void sf\+::\+Spherical\+Joint\+::set\+IC (\begin{DoxyParamCaption}\item[{Vector3}]{angles }\end{DoxyParamCaption})}
+
+
+
+A method to set the desired initial condition of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & the initial angles of rotation the joint \mbox{[}rad\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Spherical\+Joint.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/joints/Spherical\+Joint.\+h\item 
+Library/src/joints/Spherical\+Joint.\+cpp\end{DoxyCompactItemize}

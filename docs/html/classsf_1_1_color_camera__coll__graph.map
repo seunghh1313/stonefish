@@ -1,0 +1,6 @@
+<map id="sf::ColorCamera" name="sf::ColorCamera">
+<area shape="rect" id="node1" title="A class representing a color camera." alt="" coords="5,229,132,256"/>
+<area shape="rect" id="node2" href="$classsf_1_1_camera.html" title="An abstract class representing a camera type sensor." alt="" coords="23,155,115,181"/>
+<area shape="rect" id="node3" href="$classsf_1_1_vision_sensor.html" title="An abstract class representing a vision sensor." alt="" coords="6,80,131,107"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sensor.html" title="An abstract class representing a sensor." alt="" coords="26,5,111,32"/>
+</map>

@@ -1,0 +1,123 @@
+\hypertarget{classsf_1_1_open_g_l_console}{}\doxysection{sf\+::Open\+G\+L\+Console Class Reference}
+\label{classsf_1_1_open_g_l_console}\index{sf::OpenGLConsole@{sf::OpenGLConsole}}
+
+
+A class implementing a graphical console.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Console.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+Console\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classsf_1_1_open_g_l_console__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+Console\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classsf_1_1_open_g_l_console__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_ad1acd15a2028b6f2b3f330859ffd555d}\label{classsf_1_1_open_g_l_console_ad1acd15a2028b6f2b3f330859ffd555d}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_console_ad1acd15a2028b6f2b3f330859ffd555d}{Open\+G\+L\+Console}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_a6defa2f52a33844eec3b923295ba7cc8}\label{classsf_1_1_open_g_l_console_a6defa2f52a33844eec3b923295ba7cc8}} 
+\mbox{\hyperlink{classsf_1_1_open_g_l_console_a6defa2f52a33844eec3b923295ba7cc8}{$\sim$\+Open\+G\+L\+Console}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_console_a737df4af33bbcd8a2849a69b749a363a}{Init}} (int windowW, int windowH)
+\begin{DoxyCompactList}\small\item\em A method that allocates buffers and textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_console_a9b1ceab7c694b63e8470349a716f953f}{Render}} (bool overlay)
+\begin{DoxyCompactList}\small\item\em A method which renders the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_console_a12609d152f47ceb799477264adfb3395}{Scroll}} (float amount)
+\begin{DoxyCompactList}\small\item\em A method that scrolls the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_a2fc1a8743dcaaaa22fa89bb69e93ac1a}\label{classsf_1_1_open_g_l_console_a2fc1a8743dcaaaa22fa89bb69e93ac1a}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_console_a2fc1a8743dcaaaa22fa89bb69e93ac1a}{Reset\+Scroll}} ()
+\begin{DoxyCompactList}\small\item\em A method that resets the position of the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a graphical console. 
+
+Definition at line 38 of file Open\+G\+L\+Console.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_a737df4af33bbcd8a2849a69b749a363a}\label{classsf_1_1_open_g_l_console_a737df4af33bbcd8a2849a69b749a363a}} 
+\index{sf::OpenGLConsole@{sf::OpenGLConsole}!Init@{Init}}
+\index{Init@{Init}!sf::OpenGLConsole@{sf::OpenGLConsole}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Console\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{windowW,  }\item[{int}]{windowH }\end{DoxyParamCaption})}
+
+
+
+A method that allocates buffers and textures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windowW} & width of the window in pixels \\
+\hline
+{\em windowH} & height of the window in pixels \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file Open\+G\+L\+Console.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_a9b1ceab7c694b63e8470349a716f953f}\label{classsf_1_1_open_g_l_console_a9b1ceab7c694b63e8470349a716f953f}} 
+\index{sf::OpenGLConsole@{sf::OpenGLConsole}!Render@{Render}}
+\index{Render@{Render}!sf::OpenGLConsole@{sf::OpenGLConsole}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Console\+::\+Render (\begin{DoxyParamCaption}\item[{bool}]{overlay }\end{DoxyParamCaption})}
+
+
+
+A method which renders the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em overlay} & defines if the console should be overlayed on the scene rendering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Open\+G\+L\+Console.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_console_a12609d152f47ceb799477264adfb3395}\label{classsf_1_1_open_g_l_console_a12609d152f47ceb799477264adfb3395}} 
+\index{sf::OpenGLConsole@{sf::OpenGLConsole}!Scroll@{Scroll}}
+\index{Scroll@{Scroll}!sf::OpenGLConsole@{sf::OpenGLConsole}}
+\doxysubsubsection{\texorpdfstring{Scroll()}{Scroll()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+Console\+::\+Scroll (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+A method that scrolls the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & number of lines to scroll \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Open\+G\+L\+Console.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+Console.\+h\item 
+Library/src/graphics/Open\+G\+L\+Console.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,403 @@
+\hypertarget{classsf_1_1_m_s_i_s}{}\doxysection{sf\+::M\+S\+IS Class Reference}
+\label{classsf_1_1_m_s_i_s}\index{sf::MSIS@{sf::MSIS}}
+
+
+A class representing a mechanical scanning imaging sonar.  
+
+
+
+
+{\ttfamily \#include $<$M\+S\+I\+S.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::M\+S\+IS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classsf_1_1_m_s_i_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::M\+S\+IS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classsf_1_1_m_s_i_s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_m_s_i_s_ae2c03fcdcaf7b1c0418e065bc4a5e917}{M\+S\+IS}} (std\+::string unique\+Name, Scalar step\+Angle\+Deg, unsigned int num\+Of\+Bins, Scalar horizontal\+Beam\+Width\+Deg, Scalar vertical\+Beam\+Width\+Deg, Scalar min\+Rotation\+Deg, Scalar max\+Rotation\+Deg, Scalar min\+Range, Scalar max\+Range, Color\+Map cm, Scalar frequency=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a2af60fac0af286f7f241a64903d1d530}\label{classsf_1_1_m_s_i_s_a2af60fac0af286f7f241a64903d1d530}} 
+\mbox{\hyperlink{classsf_1_1_m_s_i_s_a2af60fac0af286f7f241a64903d1d530}{$\sim$\+M\+S\+IS}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_ab31973f76ede4728c4fd3df3c2233999}{Internal\+Update}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method performing internal sensor state update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_aea4a1e77490725f5debf005bafc6a6c4}{Setup\+Camera}} (const Vector3 \&eye, const Vector3 \&dir, const Vector3 \&up)
+\begin{DoxyCompactList}\small\item\em A method used to setup the Open\+GL sonar transformation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_af7608472ab3d5040b55dc6515a3d0322}{New\+Data\+Ready}} (void $\ast$data, unsigned int index=0)
+\begin{DoxyCompactList}\small\item\em A method used to inform about new data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_ae41b7d56ccdd77da43e92f8d3c396f57}{Install\+New\+Data\+Handler}} (std\+::function$<$ void(\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}} $\ast$)$>$ callback)
+\begin{DoxyCompactList}\small\item\em A method used to set a callback function called when new data is available. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a457054e83ec514cc35b6930cf37b0768}\label{classsf_1_1_m_s_i_s_a457054e83ec514cc35b6930cf37b0768}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} $>$ \mbox{\hyperlink{classsf_1_1_m_s_i_s_a457054e83ec514cc35b6930cf37b0768}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method implementing the rendering of the sonar dummy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a072f0540a6e0366f77cd45ebe6b9fe52}{set\+Rotation\+Limits}} (Scalar l1\+Deg, Scalar l2\+Deg)
+\begin{DoxyCompactList}\small\item\em A method setting the limits of the sonar head rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a8f5aa299f17395a1bb642e2a134bc293}{set\+Range\+Min}} (Scalar r)
+\begin{DoxyCompactList}\small\item\em A method setting the minimum range of the sonar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a8b2499c72c0277617ff8a857571e7026}{set\+Range\+Max}} (Scalar r)
+\begin{DoxyCompactList}\small\item\em A method setting the minimum range of the sonar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a5028a35398826f8b725855579508efe5}{set\+Gain}} (Scalar g)
+\begin{DoxyCompactList}\small\item\em A method setting the gain of the sonar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a1dc4b8f36093612135eeaeb71e3898ae}{set\+Noise}} (float multiplicative\+Std\+Dev, float additive\+Std\+Dev)
+\begin{DoxyCompactList}\small\item\em A method setting the noise characteristics of the sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_af00e2d604b5ec6bfad6f122acb241f6f}{get\+Rotation\+Limits}} (Scalar \&l1\+Deg, Scalar \&l2\+Deg) const
+\begin{DoxyCompactList}\small\item\em A method returning the rotation limits. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a33525b0e115659c4f0ed964822501c00}\label{classsf_1_1_m_s_i_s_a33525b0e115659c4f0ed964822501c00}} 
+Scalar \mbox{\hyperlink{classsf_1_1_m_s_i_s_a33525b0e115659c4f0ed964822501c00}{get\+Range\+Min}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the minimum range of the sonar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_ad38be78b88a28853ed5b15622ccb87b7}\label{classsf_1_1_m_s_i_s_ad38be78b88a28853ed5b15622ccb87b7}} 
+Scalar \mbox{\hyperlink{classsf_1_1_m_s_i_s_ad38be78b88a28853ed5b15622ccb87b7}{get\+Range\+Max}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the maximum range of the sonar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a1349f32b34fb1e4abed301f0d49e38e7}\label{classsf_1_1_m_s_i_s_a1349f32b34fb1e4abed301f0d49e38e7}} 
+Scalar \mbox{\hyperlink{classsf_1_1_m_s_i_s_a1349f32b34fb1e4abed301f0d49e38e7}{get\+Gain}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the gain of the sonar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a5b2e6e4a8fd58ad0a171ce07396e60dd}\label{classsf_1_1_m_s_i_s_a5b2e6e4a8fd58ad0a171ce07396e60dd}} 
+Scalar \mbox{\hyperlink{classsf_1_1_m_s_i_s_a5b2e6e4a8fd58ad0a171ce07396e60dd}{get\+Rotation\+Step\+Angle}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the step size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a6f38af1fa37b5e4d227adbcede1052bb}\label{classsf_1_1_m_s_i_s_a6f38af1fa37b5e4d227adbcede1052bb}} 
+int \mbox{\hyperlink{classsf_1_1_m_s_i_s_a6f38af1fa37b5e4d227adbcede1052bb}{get\+Current\+Rotation\+Step}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current rotation step. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{classsf_1_1_m_s_i_s_ade583617aeb942af2633f8a7f0085b64}{get\+Image\+Data\+Pointer}} (unsigned int index=0)
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to the sonar data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_m_s_i_s_a70513cd8e7ae0785e8785103bf2bcbd1}{get\+Display\+Resolution}} (unsigned int \&x, unsigned int \&y)
+\begin{DoxyCompactList}\small\item\em A method returning the resolution of the simulated display image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_acc37e49f89093b307bfd0b1b323f0f72}\label{classsf_1_1_m_s_i_s_acc37e49f89093b307bfd0b1b323f0f72}} 
+G\+Lubyte $\ast$ \mbox{\hyperlink{classsf_1_1_m_s_i_s_acc37e49f89093b307bfd0b1b323f0f72}{get\+Display\+Data\+Pointer}} ()
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to the visualisation image data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_aac47ca8d0c85f25fb08307ebe3e05036}\label{classsf_1_1_m_s_i_s_aac47ca8d0c85f25fb08307ebe3e05036}} 
+Vision\+Sensor\+Type \mbox{\hyperlink{classsf_1_1_m_s_i_s_aac47ca8d0c85f25fb08307ebe3e05036}{get\+Vision\+Sensor\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the type of the vision sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a mechanical scanning imaging sonar. 
+
+Definition at line 38 of file M\+S\+I\+S.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_ae2c03fcdcaf7b1c0418e065bc4a5e917}\label{classsf_1_1_m_s_i_s_ae2c03fcdcaf7b1c0418e065bc4a5e917}} 
+\index{sf::MSIS@{sf::MSIS}!MSIS@{MSIS}}
+\index{MSIS@{MSIS}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{MSIS()}{MSIS()}}
+{\footnotesize\ttfamily sf\+::\+M\+S\+I\+S\+::\+M\+S\+IS (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{Scalar}]{step\+Angle\+Deg,  }\item[{unsigned int}]{num\+Of\+Bins,  }\item[{Scalar}]{horizontal\+Beam\+Width\+Deg,  }\item[{Scalar}]{vertical\+Beam\+Width\+Deg,  }\item[{Scalar}]{min\+Rotation\+Deg,  }\item[{Scalar}]{max\+Rotation\+Deg,  }\item[{Scalar}]{min\+Range,  }\item[{Scalar}]{max\+Range,  }\item[{Color\+Map}]{cm,  }\item[{Scalar}]{frequency = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the sensor \\
+\hline
+{\em step\+Angle\+Deg} & size of the rotation step \mbox{[}deg\mbox{]} \\
+\hline
+{\em num\+Of\+Bins} & a range resolution of the sonar image \\
+\hline
+{\em horizontal\+Beam\+Width\+Deg} & the horizontal beam width \mbox{[}deg\mbox{]} \\
+\hline
+{\em vertical\+Beam\+Width\+Deg} & the vertical beam width \mbox{[}deg\mbox{]} \\
+\hline
+{\em min\+Rotation\+Deg} & the minimum rotation of the sonar head \mbox{[}deg\mbox{]} \\
+\hline
+{\em max\+Rotation\+Deg} & the maximum rotation of the sonar head \mbox{[}deg\mbox{]} \\
+\hline
+{\em min\+Range} & the minimum measured range \mbox{[}m\mbox{]} \\
+\hline
+{\em max\+Range} & the maximum measured range \mbox{[}m\mbox{]} \\
+\hline
+{\em cm} & the color map used to display sonar data \\
+\hline
+{\em frequency} & the sampling frequency of the sensor \mbox{[}Hz\mbox{]} (-\/1 if updated based on maximum range) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file M\+S\+I\+S.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a70513cd8e7ae0785e8785103bf2bcbd1}\label{classsf_1_1_m_s_i_s_a70513cd8e7ae0785e8785103bf2bcbd1}} 
+\index{sf::MSIS@{sf::MSIS}!getDisplayResolution@{getDisplayResolution}}
+\index{getDisplayResolution@{getDisplayResolution}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{getDisplayResolution()}{getDisplayResolution()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::get\+Display\+Resolution (\begin{DoxyParamCaption}\item[{unsigned int \&}]{x,  }\item[{unsigned int \&}]{y }\end{DoxyParamCaption})}
+
+
+
+A method returning the resolution of the simulated display image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a reference to a variable that will store the horizontal resolution \mbox{[}pix\mbox{]} \\
+\hline
+{\em y} & a reference to a variable that will store the vertical resolution \mbox{[}pix\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_ade583617aeb942af2633f8a7f0085b64}\label{classsf_1_1_m_s_i_s_ade583617aeb942af2633f8a7f0085b64}} 
+\index{sf::MSIS@{sf::MSIS}!getImageDataPointer@{getImageDataPointer}}
+\index{getImageDataPointer@{getImageDataPointer}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{getImageDataPointer()}{getImageDataPointer()}}
+{\footnotesize\ttfamily void $\ast$ sf\+::\+M\+S\+I\+S\+::get\+Image\+Data\+Pointer (\begin{DoxyParamCaption}\item[{unsigned int}]{index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method returning a pointer to the sonar data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the id of the Open\+GL camera (here sonar) for which the data pointer is requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the image data buffer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_camera_aa4ab4b58add8eb370440d336a135ee36}{sf\+::\+Camera}}.
+
+
+
+Definition at line 114 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_af00e2d604b5ec6bfad6f122acb241f6f}\label{classsf_1_1_m_s_i_s_af00e2d604b5ec6bfad6f122acb241f6f}} 
+\index{sf::MSIS@{sf::MSIS}!getRotationLimits@{getRotationLimits}}
+\index{getRotationLimits@{getRotationLimits}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{getRotationLimits()}{getRotationLimits()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::get\+Rotation\+Limits (\begin{DoxyParamCaption}\item[{Scalar \&}]{l1\+Deg,  }\item[{Scalar \&}]{l2\+Deg }\end{DoxyParamCaption}) const}
+
+
+
+A method returning the rotation limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l1\+Deg} & first limit of rotation angle \mbox{[}deg\mbox{]} \\
+\hline
+{\em l2\+Deg} & second limit of rotation angle \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 130 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_ae41b7d56ccdd77da43e92f8d3c396f57}\label{classsf_1_1_m_s_i_s_ae41b7d56ccdd77da43e92f8d3c396f57}} 
+\index{sf::MSIS@{sf::MSIS}!InstallNewDataHandler@{InstallNewDataHandler}}
+\index{InstallNewDataHandler@{InstallNewDataHandler}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{InstallNewDataHandler()}{InstallNewDataHandler()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::\+Install\+New\+Data\+Handler (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{classsf_1_1_m_s_i_s}{M\+S\+IS}} $\ast$)$>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+A method used to set a callback function called when new data is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & a function to be called \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 191 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_ab31973f76ede4728c4fd3df3c2233999}\label{classsf_1_1_m_s_i_s_ab31973f76ede4728c4fd3df3c2233999}} 
+\index{sf::MSIS@{sf::MSIS}!InternalUpdate@{InternalUpdate}}
+\index{InternalUpdate@{InternalUpdate}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{InternalUpdate()}{InternalUpdate()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::\+Internal\+Update (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method performing internal sensor state update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the step time of the simulation \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_camera_ae7a9ff23b4c4f51d3b2d8112fe145309}{sf\+::\+Camera}}.
+
+
+
+Definition at line 235 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_af7608472ab3d5040b55dc6515a3d0322}\label{classsf_1_1_m_s_i_s_af7608472ab3d5040b55dc6515a3d0322}} 
+\index{sf::MSIS@{sf::MSIS}!NewDataReady@{NewDataReady}}
+\index{NewDataReady@{NewDataReady}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{NewDataReady()}{NewDataReady()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::\+New\+Data\+Ready (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{unsigned int}]{index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to inform about new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the id of the Open\+GL camera (here sonar) uploading the data \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_camera_a2573a5fa3ff14b022cae3e93be5e781a}{sf\+::\+Camera}}.
+
+
+
+Definition at line 196 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a5028a35398826f8b725855579508efe5}\label{classsf_1_1_m_s_i_s_a5028a35398826f8b725855579508efe5}} 
+\index{sf::MSIS@{sf::MSIS}!setGain@{setGain}}
+\index{setGain@{setGain}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{setGain()}{setGain()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::set\+Gain (\begin{DoxyParamCaption}\item[{Scalar}]{g }\end{DoxyParamCaption})}
+
+
+
+A method setting the gain of the sonar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & gain factor \mbox{[}1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a1dc4b8f36093612135eeaeb71e3898ae}\label{classsf_1_1_m_s_i_s_a1dc4b8f36093612135eeaeb71e3898ae}} 
+\index{sf::MSIS@{sf::MSIS}!setNoise@{setNoise}}
+\index{setNoise@{setNoise}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{setNoise()}{setNoise()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::set\+Noise (\begin{DoxyParamCaption}\item[{float}]{multiplicative\+Std\+Dev,  }\item[{float}]{additive\+Std\+Dev }\end{DoxyParamCaption})}
+
+
+
+A method setting the noise characteristics of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em multiplicative\+Std\+Dev} & the standard deviation of the multiplicative noise \\
+\hline
+{\em additive\+Std\+Dev} & the standard deviation of the additive noise \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a8b2499c72c0277617ff8a857571e7026}\label{classsf_1_1_m_s_i_s_a8b2499c72c0277617ff8a857571e7026}} 
+\index{sf::MSIS@{sf::MSIS}!setRangeMax@{setRangeMax}}
+\index{setRangeMax@{setRangeMax}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{setRangeMax()}{setRangeMax()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::set\+Range\+Max (\begin{DoxyParamCaption}\item[{Scalar}]{r }\end{DoxyParamCaption})}
+
+
+
+A method setting the minimum range of the sonar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & range \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a8f5aa299f17395a1bb642e2a134bc293}\label{classsf_1_1_m_s_i_s_a8f5aa299f17395a1bb642e2a134bc293}} 
+\index{sf::MSIS@{sf::MSIS}!setRangeMin@{setRangeMin}}
+\index{setRangeMin@{setRangeMin}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{setRangeMin()}{setRangeMin()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::set\+Range\+Min (\begin{DoxyParamCaption}\item[{Scalar}]{r }\end{DoxyParamCaption})}
+
+
+
+A method setting the minimum range of the sonar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & range \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_a072f0540a6e0366f77cd45ebe6b9fe52}\label{classsf_1_1_m_s_i_s_a072f0540a6e0366f77cd45ebe6b9fe52}} 
+\index{sf::MSIS@{sf::MSIS}!setRotationLimits@{setRotationLimits}}
+\index{setRotationLimits@{setRotationLimits}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{setRotationLimits()}{setRotationLimits()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::set\+Rotation\+Limits (\begin{DoxyParamCaption}\item[{Scalar}]{l1\+Deg,  }\item[{Scalar}]{l2\+Deg }\end{DoxyParamCaption})}
+
+
+
+A method setting the limits of the sonar head rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l1\+Deg} & first limit of rotation angle \mbox{[}deg\mbox{]} \\
+\hline
+{\em l2\+Deg} & second limit of rotation angle \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file M\+S\+I\+S.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_m_s_i_s_aea4a1e77490725f5debf005bafc6a6c4}\label{classsf_1_1_m_s_i_s_aea4a1e77490725f5debf005bafc6a6c4}} 
+\index{sf::MSIS@{sf::MSIS}!SetupCamera@{SetupCamera}}
+\index{SetupCamera@{SetupCamera}!sf::MSIS@{sf::MSIS}}
+\doxysubsubsection{\texorpdfstring{SetupCamera()}{SetupCamera()}}
+{\footnotesize\ttfamily void sf\+::\+M\+S\+I\+S\+::\+Setup\+Camera (\begin{DoxyParamCaption}\item[{const Vector3 \&}]{eye,  }\item[{const Vector3 \&}]{dir,  }\item[{const Vector3 \&}]{up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method used to setup the Open\+GL sonar transformation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & the position of the sonar eye \mbox{[}m\mbox{]} \\
+\hline
+{\em dir} & a unit vector parallel to the central axis of the sonar \\
+\hline
+{\em up} & a unit vector perpendicular to the sonar scanning plane \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classsf_1_1_camera_a634bfc5cc912f01b7f5c2bd9a1b8ea35}{sf\+::\+Camera}}.
+
+
+
+Definition at line 183 of file M\+S\+I\+S.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/sensors/vision/M\+S\+I\+S.\+h\item 
+Library/src/sensors/vision/M\+S\+I\+S.\+cpp\end{DoxyCompactItemize}

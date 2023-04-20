@@ -1,0 +1,6 @@
+<map id="sf::AnimatedEntity" name="sf::AnimatedEntity">
+<area shape="rect" id="node1" title="An abstract class defining an animated simulation entity." alt="" coords="28,171,171,197"/>
+<area shape="rect" id="node2" href="$classsf_1_1_moving_entity.html" title="An abstract class representing a moving rigid body." alt="" coords="36,95,163,121"/>
+<area shape="rect" id="node3" href="$classsf_1_1_entity.html" title="An abstract class representing a simulation entity." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node4" href="$structsf_1_1_material.html" title="A structure holding material properties." alt="" coords="108,5,203,32"/>
+</map>

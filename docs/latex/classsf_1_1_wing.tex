@@ -1,0 +1,137 @@
+\hypertarget{classsf_1_1_wing}{}\doxysection{sf\+::Wing Class Reference}
+\label{classsf_1_1_wing}\index{sf::Wing@{sf::Wing}}
+
+
+A class representing a wing-\/shaped rigid body. The profile of the wing is generated based on 4-\/digit N\+A\+CA system.  
+
+
+
+
+{\ttfamily \#include $<$Wing.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Wing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classsf_1_1_wing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Wing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_wing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_wing_a7948aaac233094f15dba3010c4c6e69d}{Wing}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, Scalar base\+Chord\+Length, Scalar tip\+Chord\+Length, Scalar max\+Camber, Scalar max\+Camber\+Pos, Scalar profile\+Thickness, Scalar wing\+Length, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_wing_a259493ba5860f348f29f42b7092eeafc}{Wing}} (std\+::string unique\+Name, \mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}} phy, Scalar base\+Chord\+Length, Scalar tip\+Chord\+Length, std\+::string N\+A\+CA, Scalar wing\+Length, const Transform \&origin, std\+::string material, std\+::string look, Scalar thickness=Scalar(-\/1))
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_wing_a5900c24b6b2985919f1373df70781bfc}\label{classsf_1_1_wing_a5900c24b6b2985919f1373df70781bfc}} 
+Solid\+Type \mbox{\hyperlink{classsf_1_1_wing_a5900c24b6b2985919f1373df70781bfc}{get\+Solid\+Type}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the type of body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_wing_a7d1825637b8c314b642c49c706f29631}\label{classsf_1_1_wing_a7d1825637b8c314b642c49c706f29631}} 
+bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classsf_1_1_wing_a7d1825637b8c314b642c49c706f29631}{Build\+Collision\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the collision shape for the wing (tapered box). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a wing-\/shaped rigid body. The profile of the wing is generated based on 4-\/digit N\+A\+CA system. 
+
+Definition at line 34 of file Wing.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_wing_a7948aaac233094f15dba3010c4c6e69d}\label{classsf_1_1_wing_a7948aaac233094f15dba3010c4c6e69d}} 
+\index{sf::Wing@{sf::Wing}!Wing@{Wing}}
+\index{Wing@{Wing}!sf::Wing@{sf::Wing}}
+\doxysubsubsection{\texorpdfstring{Wing()}{Wing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sf\+::\+Wing\+::\+Wing (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{Scalar}]{base\+Chord\+Length,  }\item[{Scalar}]{tip\+Chord\+Length,  }\item[{Scalar}]{max\+Camber,  }\item[{Scalar}]{max\+Camber\+Pos,  }\item[{Scalar}]{profile\+Thickness,  }\item[{Scalar}]{wing\+Length,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the wing \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em base\+Chord\+Length} & the length of the chord at the base of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em tip\+Chord\+Length} & the length of the chord at the tip of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em max\+Camber} & the maximum camber as percent of the chord length \\
+\hline
+{\em max\+Camber\+Pos} & the position of the maximum camber point as percent of chord length \\
+\hline
+{\em profile\+Thickness} & the thickness of the profile as percent of chord length \\
+\hline
+{\em wing\+Length} & the length of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for wing) \\
+\hline
+{\em material} & the name of the material the wing is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the wing walls, if positive the wing is treated as shell \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Wing.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_wing_a259493ba5860f348f29f42b7092eeafc}\label{classsf_1_1_wing_a259493ba5860f348f29f42b7092eeafc}} 
+\index{sf::Wing@{sf::Wing}!Wing@{Wing}}
+\index{Wing@{Wing}!sf::Wing@{sf::Wing}}
+\doxysubsubsection{\texorpdfstring{Wing()}{Wing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sf\+::\+Wing\+::\+Wing (\begin{DoxyParamCaption}\item[{std\+::string}]{unique\+Name,  }\item[{\mbox{\hyperlink{structsf_1_1_body_physics_settings}{Body\+Physics\+Settings}}}]{phy,  }\item[{Scalar}]{base\+Chord\+Length,  }\item[{Scalar}]{tip\+Chord\+Length,  }\item[{std\+::string}]{N\+A\+CA,  }\item[{Scalar}]{wing\+Length,  }\item[{const Transform \&}]{origin,  }\item[{std\+::string}]{material,  }\item[{std\+::string}]{look,  }\item[{Scalar}]{thickness = {\ttfamily Scalar(-\/1)} }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+Name} & a name for the wing \\
+\hline
+{\em phy} & the specific settings of the physics computation for the body \\
+\hline
+{\em base\+Chord\+Length} & the length of the chord at the base of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em tip\+Chord\+Length} & the length of the chord at the tip of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em N\+A\+CA} & the code of the profile in 4-\/digit N\+A\+CA system \\
+\hline
+{\em wing\+Length} & the length of the wing \mbox{[}m\mbox{]} \\
+\hline
+{\em origin} & a transformation of the physical mesh (graphical is the same for wing) \\
+\hline
+{\em material} & the name of the material the wing is made of \\
+\hline
+{\em look} & the name of the graphical material used for rendering \\
+\hline
+{\em thickness} & defines the thickness of the wing walls, if positive the wing is treated as shell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Wing.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/solids/Wing.\+h\item 
+Library/src/entities/solids/Wing.\+cpp\end{DoxyCompactItemize}

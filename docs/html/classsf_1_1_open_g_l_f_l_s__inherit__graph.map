@@ -1,0 +1,5 @@
+<map id="sf::OpenGLFLS" name="sf::OpenGLFLS">
+<area shape="rect" id="node1" title="A class representing a forward looking sonar (FLS)." alt="" coords="13,155,127,181"/>
+<area shape="rect" id="node2" href="$classsf_1_1_open_g_l_sonar.html" title="An abstract class representing a sonar view." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$classsf_1_1_open_g_l_view.html" title="An abstract class representing an OpenGL view." alt="" coords="9,5,131,32"/>
+</map>

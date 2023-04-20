@@ -1,0 +1,226 @@
+\hypertarget{classsf_1_1_open_g_l_view}{}\doxysection{sf\+::Open\+G\+L\+View Class Reference}
+\label{classsf_1_1_open_g_l_view}\index{sf::OpenGLView@{sf::OpenGLView}}
+
+
+An abstract class representing an Open\+GL view.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+View.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Open\+G\+L\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsf_1_1_open_g_l_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::Open\+G\+L\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classsf_1_1_open_g_l_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_open_g_l_view_a7370ff61aa8c4a8695e2d5728675e5bd}{Open\+G\+L\+View}} (G\+Lint originX, G\+Lint originY, G\+Lint width, G\+Lint height)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a5b4b34ee2d8bc7dc0b82b3bc818a71a2}\label{classsf_1_1_open_g_l_view_a5b4b34ee2d8bc7dc0b82b3bc818a71a2}} 
+virtual \mbox{\hyperlink{classsf_1_1_open_g_l_view_a5b4b34ee2d8bc7dc0b82b3bc818a71a2}{$\sim$\+Open\+G\+L\+View}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsf_1_1_open_g_l_view_a667d02f6f69b5aab922905d564643be9}{Draw\+L\+DR}} (G\+Luint destination\+F\+BO, bool updated)=0
+\begin{DoxyCompactList}\small\item\em A method to render the low dynamic range (final) image to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a957e6d117ce82c4a6bd05ea639e6a9a1}\label{classsf_1_1_open_g_l_view_a957e6d117ce82c4a6bd05ea639e6a9a1}} 
+virtual void \mbox{\hyperlink{classsf_1_1_open_g_l_view_a957e6d117ce82c4a6bd05ea639e6a9a1}{Update\+Transform}} ()=0
+\begin{DoxyCompactList}\small\item\em A method that updates view world transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a3004c25e0ea08a246baaa7e4de0b8e08}\label{classsf_1_1_open_g_l_view_a3004c25e0ea08a246baaa7e4de0b8e08}} 
+virtual glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_view_a3004c25e0ea08a246baaa7e4de0b8e08}{Get\+Eye\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em A method that returns eye position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_af014795803f1871aefee3be8f850ef91}\label{classsf_1_1_open_g_l_view_af014795803f1871aefee3be8f850ef91}} 
+virtual glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_view_af014795803f1871aefee3be8f850ef91}{Get\+Looking\+Direction}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning a unit vector parallel to the optical axis of the camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a5ff43bff477d57cc34f56fd3cb1f34f2}\label{classsf_1_1_open_g_l_view_a5ff43bff477d57cc34f56fd3cb1f34f2}} 
+virtual glm\+::vec3 \mbox{\hyperlink{classsf_1_1_open_g_l_view_a5ff43bff477d57cc34f56fd3cb1f34f2}{Get\+Up\+Direction}} () const =0
+\begin{DoxyCompactList}\small\item\em A method returning a unit vector pointing to the top edge of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_aae95d77fc472462ec4a38ccd4921b82b}\label{classsf_1_1_open_g_l_view_aae95d77fc472462ec4a38ccd4921b82b}} 
+virtual glm\+::mat4 \mbox{\hyperlink{classsf_1_1_open_g_l_view_aae95d77fc472462ec4a38ccd4921b82b}{Get\+Projection\+Matrix}} () const =0
+\begin{DoxyCompactList}\small\item\em A method that returns the projection matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_ae89743f88dbc6b53c0308c4d2d94c030}\label{classsf_1_1_open_g_l_view_ae89743f88dbc6b53c0308c4d2d94c030}} 
+virtual glm\+::mat4 \mbox{\hyperlink{classsf_1_1_open_g_l_view_ae89743f88dbc6b53c0308c4d2d94c030}{Get\+View\+Matrix}} () const =0
+\begin{DoxyCompactList}\small\item\em A method that returns the view matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a89362c254b59e32c9ac4bdb13e32a771}\label{classsf_1_1_open_g_l_view_a89362c254b59e32c9ac4bdb13e32a771}} 
+virtual G\+Lfloat \mbox{\hyperlink{classsf_1_1_open_g_l_view_a89362c254b59e32c9ac4bdb13e32a771}{Get\+Far\+Clip}} () const =0
+\begin{DoxyCompactList}\small\item\em A method that returns the far clip plane distance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a21fc921521be07cb3bf94ead40eebcee}\label{classsf_1_1_open_g_l_view_a21fc921521be07cb3bf94ead40eebcee}} 
+G\+Lfloat \mbox{\hyperlink{classsf_1_1_open_g_l_view_a21fc921521be07cb3bf94ead40eebcee}{Get\+Log\+Depth\+Constant}} () const
+\begin{DoxyCompactList}\small\item\em A method that return logarithmic depth constant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_abb9c6cd942de9272f9a688b2a9d44eaf}\label{classsf_1_1_open_g_l_view_abb9c6cd942de9272f9a688b2a9d44eaf}} 
+virtual bool \mbox{\hyperlink{classsf_1_1_open_g_l_view_abb9c6cd942de9272f9a688b2a9d44eaf}{needs\+Update}} ()=0
+\begin{DoxyCompactList}\small\item\em A method that checks if the view needs to be updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a7e35a15fa4c7bdb498f8ec6e7366b8e6}\label{classsf_1_1_open_g_l_view_a7e35a15fa4c7bdb498f8ec6e7366b8e6}} 
+virtual View\+Type \mbox{\hyperlink{classsf_1_1_open_g_l_view_a7e35a15fa4c7bdb498f8ec6e7366b8e6}{get\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the type of the view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a8414ca27c24bba6d03ef6dbbe781bfd7}\label{classsf_1_1_open_g_l_view_a8414ca27c24bba6d03ef6dbbe781bfd7}} 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_view_a8414ca27c24bba6d03ef6dbbe781bfd7}{Set\+Viewport}} ()
+\begin{DoxyCompactList}\small\item\em A method that sets the current viewport. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_ac53cf3b78d408ed133ab753e7e09a39b}\label{classsf_1_1_open_g_l_view_ac53cf3b78d408ed133ab753e7e09a39b}} 
+G\+Lint $\ast$ \mbox{\hyperlink{classsf_1_1_open_g_l_view_ac53cf3b78d408ed133ab753e7e09a39b}{Get\+Viewport}} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the viewport origin and size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a74ac244cc20a3b2eccea2b8465651b6e}\label{classsf_1_1_open_g_l_view_a74ac244cc20a3b2eccea2b8465651b6e}} 
+G\+Luint \mbox{\hyperlink{classsf_1_1_open_g_l_view_a74ac244cc20a3b2eccea2b8465651b6e}{get\+Render\+F\+BO}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the rendering framebuffer of the view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_af543f29936865c8188fe72734b7bd9fa}\label{classsf_1_1_open_g_l_view_af543f29936865c8188fe72734b7bd9fa}} 
+const \mbox{\hyperlink{structsf_1_1_view_u_b_o}{View\+U\+BO}} $\ast$ \mbox{\hyperlink{classsf_1_1_open_g_l_view_af543f29936865c8188fe72734b7bd9fa}{get\+View\+U\+B\+O\+Data}} () const
+\begin{DoxyCompactList}\small\item\em A method returning a pointer to the view U\+BO data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_open_g_l_view_a6a04b2231d2137085090262c67be8f8f}{set\+Enabled}} (bool en)
+\begin{DoxyCompactList}\small\item\em A method to set if the view is enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a8087553841ae91b68c51985af0a7dec7}\label{classsf_1_1_open_g_l_view_a8087553841ae91b68c51985af0a7dec7}} 
+bool \mbox{\hyperlink{classsf_1_1_open_g_l_view_a8087553841ae91b68c51985af0a7dec7}{is\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em A method returning a flag saying if the view is enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a6eab8c460b0fad02e9ff6888c7d9a62e}\label{classsf_1_1_open_g_l_view_a6eab8c460b0fad02e9ff6888c7d9a62e}} 
+bool \mbox{\hyperlink{classsf_1_1_open_g_l_view_a6eab8c460b0fad02e9ff6888c7d9a62e}{is\+Continuous}} ()
+\begin{DoxyCompactList}\small\item\em A method saying if the view works in continuous update mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classsf_1_1_open_g_l_view_a26325a55c76b871a7a9a68a4b8c039cc}{Extract\+Frustum\+From\+VP}} (glm\+::vec4 frustum\mbox{[}6\mbox{]}, const glm\+::mat4 \&VP)
+\begin{DoxyCompactList}\small\item\em A method extracting frustium planes from the view-\/projection matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_aac467a72d089b6d45bb190ae07f6d168}\label{classsf_1_1_open_g_l_view_aac467a72d089b6d45bb190ae07f6d168}} 
+G\+Lint {\bfseries originX}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_ab060c0ba1a37f954b543235790f8e429}\label{classsf_1_1_open_g_l_view_ab060c0ba1a37f954b543235790f8e429}} 
+G\+Lint {\bfseries originY}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a0cb353f9ab0088418c44edda979300e4}\label{classsf_1_1_open_g_l_view_a0cb353f9ab0088418c44edda979300e4}} 
+G\+Lint {\bfseries viewport\+Width}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a5c79f3a7fa27b4bb2a789f294c4dda66}\label{classsf_1_1_open_g_l_view_a5c79f3a7fa27b4bb2a789f294c4dda66}} 
+G\+Lint {\bfseries viewport\+Height}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a6e67b08a51dd9b592d9f3f4ee1ac1676}\label{classsf_1_1_open_g_l_view_a6e67b08a51dd9b592d9f3f4ee1ac1676}} 
+G\+Luint {\bfseries render\+F\+BO}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a0cab9ce33e19db36dd9b7e6731f0987c}\label{classsf_1_1_open_g_l_view_a0cab9ce33e19db36dd9b7e6731f0987c}} 
+bool {\bfseries enabled}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a4720968df6af181fb58f67379f01f547}\label{classsf_1_1_open_g_l_view_a4720968df6af181fb58f67379f01f547}} 
+bool {\bfseries continuous}
+\item 
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a61f092bf5e131bc7cfa56aff810ca3c4}\label{classsf_1_1_open_g_l_view_a61f092bf5e131bc7cfa56aff810ca3c4}} 
+\mbox{\hyperlink{structsf_1_1_view_u_b_o}{View\+U\+BO}} {\bfseries view\+U\+B\+O\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing an Open\+GL view. 
+
+Definition at line 47 of file Open\+G\+L\+View.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a7370ff61aa8c4a8695e2d5728675e5bd}\label{classsf_1_1_open_g_l_view_a7370ff61aa8c4a8695e2d5728675e5bd}} 
+\index{sf::OpenGLView@{sf::OpenGLView}!OpenGLView@{OpenGLView}}
+\index{OpenGLView@{OpenGLView}!sf::OpenGLView@{sf::OpenGLView}}
+\doxysubsubsection{\texorpdfstring{OpenGLView()}{OpenGLView()}}
+{\footnotesize\ttfamily sf\+::\+Open\+G\+L\+View\+::\+Open\+G\+L\+View (\begin{DoxyParamCaption}\item[{G\+Lint}]{originX,  }\item[{G\+Lint}]{originY,  }\item[{G\+Lint}]{width,  }\item[{G\+Lint}]{height }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em originX} & the x coordinate of the view origin in the program window \\
+\hline
+{\em originY} & the y coordinate of the view origin in the program window \\
+\hline
+{\em width} & the width of the view \\
+\hline
+{\em height} & the height of the view \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Open\+G\+L\+View.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a667d02f6f69b5aab922905d564643be9}\label{classsf_1_1_open_g_l_view_a667d02f6f69b5aab922905d564643be9}} 
+\index{sf::OpenGLView@{sf::OpenGLView}!DrawLDR@{DrawLDR}}
+\index{DrawLDR@{DrawLDR}!sf::OpenGLView@{sf::OpenGLView}}
+\doxysubsubsection{\texorpdfstring{DrawLDR()}{DrawLDR()}}
+{\footnotesize\ttfamily virtual void sf\+::\+Open\+G\+L\+View\+::\+Draw\+L\+DR (\begin{DoxyParamCaption}\item[{G\+Luint}]{destination\+F\+BO,  }\item[{bool}]{updated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method to render the low dynamic range (final) image to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination\+F\+BO} & the id of the framebuffer used as the destination for rendering \\
+\hline
+{\em updated} & a flag indicating if view content was updated \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classsf_1_1_open_g_l_sonar_ab807d0aeb64a0531608f461ad76a246f}{sf\+::\+Open\+G\+L\+Sonar}}, \mbox{\hyperlink{classsf_1_1_open_g_l_camera_a9f69340110ca14e4e6ffa4454d6280ea}{sf\+::\+Open\+G\+L\+Camera}}, \mbox{\hyperlink{classsf_1_1_open_g_l_depth_camera_a30029e741ff54db59294b7fdce712027}{sf\+::\+Open\+G\+L\+Depth\+Camera}}, \mbox{\hyperlink{classsf_1_1_open_g_l_f_l_s_aecd6bce1ff09fa4cc6f12d0f866ca636}{sf\+::\+Open\+G\+L\+F\+LS}}, \mbox{\hyperlink{classsf_1_1_open_g_l_s_s_s_a5b8c535b1a817c7f140159150a36e8ba}{sf\+::\+Open\+G\+L\+S\+SS}}, \mbox{\hyperlink{classsf_1_1_open_g_l_m_s_i_s_a250858988de9256e371295b03b1fffe6}{sf\+::\+Open\+G\+L\+M\+S\+IS}}, and \mbox{\hyperlink{classsf_1_1_open_g_l_real_camera_af8f9275e4287de8c4b759c737cb78d9a}{sf\+::\+Open\+G\+L\+Real\+Camera}}.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a26325a55c76b871a7a9a68a4b8c039cc}\label{classsf_1_1_open_g_l_view_a26325a55c76b871a7a9a68a4b8c039cc}} 
+\index{sf::OpenGLView@{sf::OpenGLView}!ExtractFrustumFromVP@{ExtractFrustumFromVP}}
+\index{ExtractFrustumFromVP@{ExtractFrustumFromVP}!sf::OpenGLView@{sf::OpenGLView}}
+\doxysubsubsection{\texorpdfstring{ExtractFrustumFromVP()}{ExtractFrustumFromVP()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+View\+::\+Extract\+Frustum\+From\+VP (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{frustum\mbox{[}6\mbox{]},  }\item[{const glm\+::mat4 \&}]{VP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method extracting frustium planes from the view-\/projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frustum} & a pointer to the 6 frustum planes \\
+\hline
+{\em VP} & the view-\/projection matrix \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Open\+G\+L\+View.\+cpp.
+
+\mbox{\Hypertarget{classsf_1_1_open_g_l_view_a6a04b2231d2137085090262c67be8f8f}\label{classsf_1_1_open_g_l_view_a6a04b2231d2137085090262c67be8f8f}} 
+\index{sf::OpenGLView@{sf::OpenGLView}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!sf::OpenGLView@{sf::OpenGLView}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void sf\+::\+Open\+G\+L\+View\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{en }\end{DoxyParamCaption})}
+
+
+
+A method to set if the view is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en} & a flag that says if the view should be enabled \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file Open\+G\+L\+View.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/graphics/Open\+G\+L\+View.\+h\item 
+Library/src/graphics/Open\+G\+L\+View.\+cpp\end{DoxyCompactItemize}

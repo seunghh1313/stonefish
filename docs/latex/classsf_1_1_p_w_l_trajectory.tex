@@ -1,0 +1,113 @@
+\hypertarget{classsf_1_1_p_w_l_trajectory}{}\doxysection{sf\+::P\+W\+L\+Trajectory Class Reference}
+\label{classsf_1_1_p_w_l_trajectory}\index{sf::PWLTrajectory@{sf::PWLTrajectory}}
+
+
+A class representing a piece-\/wise linear trajectory.  
+
+
+
+
+{\ttfamily \#include $<$P\+W\+L\+Trajectory.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::P\+W\+L\+Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classsf_1_1_p_w_l_trajectory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sf\+::P\+W\+L\+Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classsf_1_1_p_w_l_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_p_w_l_trajectory_a2a6bfc8b4a5087023b37cadebdb1017a}{P\+W\+L\+Trajectory}} (Playback\+Mode playback)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_p_w_l_trajectory_a7e1bf3850e07852701756f96d19fe590}{Add\+Key\+Point}} (Scalar key\+Time, Transform key\+Transform)
+\begin{DoxyCompactList}\small\item\em A method adding a new key point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_a8f23fe6ab858850aca9563b012094153}\label{classsf_1_1_p_w_l_trajectory_a8f23fe6ab858850aca9563b012094153}} 
+virtual void \mbox{\hyperlink{classsf_1_1_p_w_l_trajectory_a8f23fe6ab858850aca9563b012094153}{Interpolate}} ()
+\begin{DoxyCompactList}\small\item\em A method updating the interpolated transform and velocities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_a92cbf9bd0ef56693625a3a65460daafb}\label{classsf_1_1_p_w_l_trajectory_a92cbf9bd0ef56693625a3a65460daafb}} 
+virtual void \mbox{\hyperlink{classsf_1_1_p_w_l_trajectory_a92cbf9bd0ef56693625a3a65460daafb}{Build\+Graphical\+Path}} ()
+\begin{DoxyCompactList}\small\item\em A method that builds a graphical representation of the trajectory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_aa9b9e60571077cdc457b1a44870a0d69}\label{classsf_1_1_p_w_l_trajectory_aa9b9e60571077cdc457b1a44870a0d69}} 
+\mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} \mbox{\hyperlink{classsf_1_1_p_w_l_trajectory_aa9b9e60571077cdc457b1a44870a0d69}{Render}} ()
+\begin{DoxyCompactList}\small\item\em A method returning the elements that should be rendered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_a260887052a4c5dab81057e4b30a93871}\label{classsf_1_1_p_w_l_trajectory_a260887052a4c5dab81057e4b30a93871}} 
+std\+::vector$<$ \mbox{\hyperlink{structsf_1_1_key_point}{Key\+Point}} $>$ {\bfseries points}
+\item 
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_afb4aade0e7a30168cf327532041fe7af}\label{classsf_1_1_p_w_l_trajectory_afb4aade0e7a30168cf327532041fe7af}} 
+\mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} {\bfseries path}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a piece-\/wise linear trajectory. 
+
+Definition at line 44 of file P\+W\+L\+Trajectory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_a2a6bfc8b4a5087023b37cadebdb1017a}\label{classsf_1_1_p_w_l_trajectory_a2a6bfc8b4a5087023b37cadebdb1017a}} 
+\index{sf::PWLTrajectory@{sf::PWLTrajectory}!PWLTrajectory@{PWLTrajectory}}
+\index{PWLTrajectory@{PWLTrajectory}!sf::PWLTrajectory@{sf::PWLTrajectory}}
+\doxysubsubsection{\texorpdfstring{PWLTrajectory()}{PWLTrajectory()}}
+{\footnotesize\ttfamily sf\+::\+P\+W\+L\+Trajectory\+::\+P\+W\+L\+Trajectory (\begin{DoxyParamCaption}\item[{Playback\+Mode}]{playback }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playback} & an enum representing the desired playback mode \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file P\+W\+L\+Trajectory.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_p_w_l_trajectory_a7e1bf3850e07852701756f96d19fe590}\label{classsf_1_1_p_w_l_trajectory_a7e1bf3850e07852701756f96d19fe590}} 
+\index{sf::PWLTrajectory@{sf::PWLTrajectory}!AddKeyPoint@{AddKeyPoint}}
+\index{AddKeyPoint@{AddKeyPoint}!sf::PWLTrajectory@{sf::PWLTrajectory}}
+\doxysubsubsection{\texorpdfstring{AddKeyPoint()}{AddKeyPoint()}}
+{\footnotesize\ttfamily void sf\+::\+P\+W\+L\+Trajectory\+::\+Add\+Key\+Point (\begin{DoxyParamCaption}\item[{Scalar}]{key\+Time,  }\item[{Transform}]{key\+Transform }\end{DoxyParamCaption})}
+
+
+
+A method adding a new key point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Time} & the time at point \\
+\hline
+{\em key\+Transform} & the transform at point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file P\+W\+L\+Trajectory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/animation/P\+W\+L\+Trajectory.\+h\item 
+Library/src/entities/animation/P\+W\+L\+Trajectory.\+cpp\end{DoxyCompactItemize}

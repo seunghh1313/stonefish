@@ -1,0 +1,135 @@
+\hypertarget{classsf_1_1_trajectory}{}\doxysection{sf\+::Trajectory Class Reference}
+\label{classsf_1_1_trajectory}\index{sf::Trajectory@{sf::Trajectory}}
+
+
+An abstract class representing a trajectory (time parametrized path).  
+
+
+
+
+{\ttfamily \#include $<$Trajectory.\+h$>$}
+
+
+
+Inheritance diagram for sf\+::Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classsf_1_1_trajectory__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_trajectory_a502e6f3454a01d49bd2c8fcc2d4ef2e9}{Trajectory}} (Playback\+Mode playback)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a86162cfffa562cb3066f0adb1314b8ca}\label{classsf_1_1_trajectory_a86162cfffa562cb3066f0adb1314b8ca}} 
+virtual \mbox{\hyperlink{classsf_1_1_trajectory_a86162cfffa562cb3066f0adb1314b8ca}{$\sim$\+Trajectory}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsf_1_1_trajectory_afd929e40f1dfa983760de77cc1699ddb}{Play}} (Scalar dt)
+\begin{DoxyCompactList}\small\item\em A method updating the trajectory position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_ac89513cb3afdcb12d5a89f77bd161529}\label{classsf_1_1_trajectory_ac89513cb3afdcb12d5a89f77bd161529}} 
+virtual void \mbox{\hyperlink{classsf_1_1_trajectory_ac89513cb3afdcb12d5a89f77bd161529}{Interpolate}} ()=0
+\begin{DoxyCompactList}\small\item\em A method updating the interpolated transform and velocities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a544b07c6369acf6f773530604439331c}\label{classsf_1_1_trajectory_a544b07c6369acf6f773530604439331c}} 
+virtual \mbox{\hyperlink{structsf_1_1_renderable}{Renderable}} \mbox{\hyperlink{classsf_1_1_trajectory_a544b07c6369acf6f773530604439331c}{Render}} ()=0
+\begin{DoxyCompactList}\small\item\em A method returning the elements that should be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_aaa11712f003dead5d1c558803f9e8aeb}\label{classsf_1_1_trajectory_aaa11712f003dead5d1c558803f9e8aeb}} 
+Transform \mbox{\hyperlink{classsf_1_1_trajectory_aaa11712f003dead5d1c558803f9e8aeb}{get\+Interpolated\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current interpolated transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a180395b8661dc56dedd18d68b0664442}\label{classsf_1_1_trajectory_a180395b8661dc56dedd18d68b0664442}} 
+Vector3 \mbox{\hyperlink{classsf_1_1_trajectory_a180395b8661dc56dedd18d68b0664442}{get\+Interpolated\+Linear\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current interpolated linear velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_ae865a8d0d27d65dd54e87e456f766bc0}\label{classsf_1_1_trajectory_ae865a8d0d27d65dd54e87e456f766bc0}} 
+Vector3 \mbox{\hyperlink{classsf_1_1_trajectory_ae865a8d0d27d65dd54e87e456f766bc0}{get\+Interpolated\+Angular\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current interpolated angular velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_ad7268bf8576c77cd03be31c720db144b}\label{classsf_1_1_trajectory_ad7268bf8576c77cd03be31c720db144b}} 
+Scalar \mbox{\hyperlink{classsf_1_1_trajectory_ad7268bf8576c77cd03be31c720db144b}{get\+Playback\+Time}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current playback time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_ae320bb89c872cfff5d8d35eadc5cb40c}\label{classsf_1_1_trajectory_ae320bb89c872cfff5d8d35eadc5cb40c}} 
+unsigned int \mbox{\hyperlink{classsf_1_1_trajectory_ae320bb89c872cfff5d8d35eadc5cb40c}{get\+Playback\+Iteration}} () const
+\begin{DoxyCompactList}\small\item\em A method returning the current playback iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a40fcb12fa4b2db51607c817c5a7d93f3}\label{classsf_1_1_trajectory_a40fcb12fa4b2db51607c817c5a7d93f3}} 
+Playback\+Mode {\bfseries play\+Mode}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a2f910885ebb6bcdc78bb3f000ad7d4b5}\label{classsf_1_1_trajectory_a2f910885ebb6bcdc78bb3f000ad7d4b5}} 
+Scalar {\bfseries play\+Time}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a9347f04458bf20c2801fdb84c40d3af1}\label{classsf_1_1_trajectory_a9347f04458bf20c2801fdb84c40d3af1}} 
+Scalar {\bfseries end\+Time}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_ae9ccf4d8d5cc4ac25ca1ee11cdb1d920}\label{classsf_1_1_trajectory_ae9ccf4d8d5cc4ac25ca1ee11cdb1d920}} 
+unsigned int {\bfseries iteration}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a21a11a3558623003b083c86107543565}\label{classsf_1_1_trajectory_a21a11a3558623003b083c86107543565}} 
+bool {\bfseries forward}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a84ce86aa7ad3b26daf194793ac0e28aa}\label{classsf_1_1_trajectory_a84ce86aa7ad3b26daf194793ac0e28aa}} 
+Transform {\bfseries interp\+Trans}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a3b646ead6bd4faabb51c115b8b3a1192}\label{classsf_1_1_trajectory_a3b646ead6bd4faabb51c115b8b3a1192}} 
+Vector3 {\bfseries interp\+Vel}
+\item 
+\mbox{\Hypertarget{classsf_1_1_trajectory_a009736771ec38f154e8c1fc3703fa10d}\label{classsf_1_1_trajectory_a009736771ec38f154e8c1fc3703fa10d}} 
+Vector3 {\bfseries interp\+Ang\+Vel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a trajectory (time parametrized path). 
+
+Definition at line 38 of file Trajectory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_trajectory_a502e6f3454a01d49bd2c8fcc2d4ef2e9}\label{classsf_1_1_trajectory_a502e6f3454a01d49bd2c8fcc2d4ef2e9}} 
+\index{sf::Trajectory@{sf::Trajectory}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!sf::Trajectory@{sf::Trajectory}}
+\doxysubsubsection{\texorpdfstring{Trajectory()}{Trajectory()}}
+{\footnotesize\ttfamily sf\+::\+Trajectory\+::\+Trajectory (\begin{DoxyParamCaption}\item[{Playback\+Mode}]{playback }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playback} & an enum representing the desired playback mode \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Trajectory.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_trajectory_afd929e40f1dfa983760de77cc1699ddb}\label{classsf_1_1_trajectory_afd929e40f1dfa983760de77cc1699ddb}} 
+\index{sf::Trajectory@{sf::Trajectory}!Play@{Play}}
+\index{Play@{Play}!sf::Trajectory@{sf::Trajectory}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void sf\+::\+Trajectory\+::\+Play (\begin{DoxyParamCaption}\item[{Scalar}]{dt }\end{DoxyParamCaption})}
+
+
+
+A method updating the trajectory position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & a time step \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file Trajectory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Library/include/entities/animation/Trajectory.\+h\item 
+Library/src/entities/animation/Trajectory.\+cpp\end{DoxyCompactItemize}
